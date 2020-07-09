@@ -1,6 +1,6 @@
 ﻿namespace ECG_Analyzer
 {
-    partial class MainForm
+    partial class MasterLayoutForm
     {
         /// <summary>
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ECG_Analyzer
 {
-    public partial class MainForm : Form
+    public partial class MasterLayoutForm : Form
     {
-        public MainForm()
+        public MasterLayoutForm()
         {
             InitializeComponent();
         }
