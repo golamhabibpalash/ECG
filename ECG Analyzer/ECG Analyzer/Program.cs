@@ -16,7 +16,7 @@ namespace ECG_Analyzer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MasterLayoutForm());
+            Application.Run(new MDI());
         }
     }
 }

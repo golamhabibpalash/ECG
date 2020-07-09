@@ -31,17 +31,18 @@
             this.headerPanel = new System.Windows.Forms.Panel();
             this.leftMenuPanel = new System.Windows.Forms.Panel();
             this.footerPanel = new System.Windows.Forms.Panel();
-            this.mainPanel = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.masterLayoutPanel = new System.Windows.Forms.Panel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.mainPanel.SuspendLayout();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.masterLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // headerPanel
             // 
             this.headerPanel.BackColor = System.Drawing.Color.DarkBlue;
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.headerPanel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headerPanel.Location = new System.Drawing.Point(0, 0);
             this.headerPanel.Name = "headerPanel";
             this.headerPanel.Size = new System.Drawing.Size(804, 40);
@@ -65,33 +66,17 @@
             this.footerPanel.Size = new System.Drawing.Size(690, 21);
             this.footerPanel.TabIndex = 0;
             // 
-            // mainPanel
+            // masterLayoutPanel
             // 
-            this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.mainPanel.Controls.Add(this.flowLayoutPanel3);
-            this.mainPanel.Controls.Add(this.flowLayoutPanel2);
-            this.mainPanel.Controls.Add(this.flowLayoutPanel1);
-            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(114, 40);
-            this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(690, 417);
-            this.mainPanel.TabIndex = 0;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(238)))));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 6);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 405);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(238)))));
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(212, 6);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(131, 405);
-            this.flowLayoutPanel2.TabIndex = 0;
+            this.masterLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.masterLayoutPanel.Controls.Add(this.flowLayoutPanel3);
+            this.masterLayoutPanel.Controls.Add(this.flowLayoutPanel2);
+            this.masterLayoutPanel.Controls.Add(this.flowLayoutPanel1);
+            this.masterLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.masterLayoutPanel.Location = new System.Drawing.Point(114, 40);
+            this.masterLayoutPanel.Name = "masterLayoutPanel";
+            this.masterLayoutPanel.Size = new System.Drawing.Size(690, 417);
+            this.masterLayoutPanel.TabIndex = 0;
             // 
             // flowLayoutPanel3
             // 
@@ -101,20 +86,36 @@
             this.flowLayoutPanel3.Size = new System.Drawing.Size(329, 405);
             this.flowLayoutPanel3.TabIndex = 0;
             // 
-            // Form1
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(238)))));
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(212, 6);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(131, 405);
+            this.flowLayoutPanel2.TabIndex = 0;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(238)))));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 6);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 405);
+            this.flowLayoutPanel1.TabIndex = 0;
+            // 
+            // MasterLayoutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 478);
-            this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.masterLayoutPanel);
             this.Controls.Add(this.footerPanel);
             this.Controls.Add(this.leftMenuPanel);
             this.Controls.Add(this.headerPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "MasterLayoutForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.mainPanel.ResumeLayout(false);
+            this.masterLayoutPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -122,9 +123,9 @@
         #endregion
 
         private System.Windows.Forms.Panel headerPanel;
-        private System.Windows.Forms.Panel leftMenuPanel;
+        public System.Windows.Forms.Panel leftMenuPanel;
         private System.Windows.Forms.Panel footerPanel;
-        private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Panel masterLayoutPanel;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
