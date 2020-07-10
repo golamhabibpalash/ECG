@@ -16,6 +16,7 @@ namespace ECG_Analyzer
             closeWin.Close();
             openWin.WindowState = FormWindowState.Maximized;
             openWin.MdiParent = MDI;
+            openWin.Show();
         }
 
     }

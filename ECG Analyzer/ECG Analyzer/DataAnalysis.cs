@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ECG_Analyzer
 {
-    public partial class Login : MasterLayoutForm
+    public partial class DataAnalysis : MasterLayoutForm
     {
-        public Login()
+        public DataAnalysis()
         {
             InitializeComponent();
-        }
-        MainClass mClass = new MainClass();
-        private void enterBtn_Click(object sender, EventArgs e)
-        {
-            HomeScreen hs = new HomeScreen();
-            mClass.showWindow(hs,this,MDI.ActiveForm);
         }
     }
 }

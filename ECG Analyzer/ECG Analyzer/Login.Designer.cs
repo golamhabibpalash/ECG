@@ -73,6 +73,7 @@
             this.enterBtn.TabIndex = 2;
             this.enterBtn.Text = "Enter";
             this.enterBtn.UseVisualStyleBackColor = false;
+            this.enterBtn.Click += new System.EventHandler(this.enterBtn_Click);
             // 
             // passwordTBox
             // 
@@ -115,6 +116,7 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.enterBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);

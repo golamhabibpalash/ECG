@@ -41,7 +41,7 @@
             this.headerPanel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headerPanel.Location = new System.Drawing.Point(0, 0);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(804, 40);
+            this.headerPanel.Size = new System.Drawing.Size(1025, 40);
             this.headerPanel.TabIndex = 0;
             // 
             // leftMenuPanel
@@ -52,16 +52,16 @@
             this.leftMenuPanel.ForeColor = System.Drawing.Color.White;
             this.leftMenuPanel.Location = new System.Drawing.Point(0, 40);
             this.leftMenuPanel.Name = "leftMenuPanel";
-            this.leftMenuPanel.Size = new System.Drawing.Size(114, 438);
+            this.leftMenuPanel.Size = new System.Drawing.Size(114, 572);
             this.leftMenuPanel.TabIndex = 0;
             // 
             // footerPanel
             // 
             this.footerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(43)))));
             this.footerPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.footerPanel.Location = new System.Drawing.Point(114, 457);
+            this.footerPanel.Location = new System.Drawing.Point(114, 591);
             this.footerPanel.Name = "footerPanel";
-            this.footerPanel.Size = new System.Drawing.Size(690, 21);
+            this.footerPanel.Size = new System.Drawing.Size(911, 21);
             this.footerPanel.TabIndex = 0;
             // 
             // masterLayoutPanel
@@ -70,23 +70,21 @@
             this.masterLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.masterLayoutPanel.Location = new System.Drawing.Point(114, 40);
             this.masterLayoutPanel.Name = "masterLayoutPanel";
-            this.masterLayoutPanel.Size = new System.Drawing.Size(690, 417);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(911, 551);
             this.masterLayoutPanel.TabIndex = 0;
             // 
             // MasterLayoutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 478);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(1025, 612);
             this.Controls.Add(this.masterLayoutPanel);
             this.Controls.Add(this.footerPanel);
             this.Controls.Add(this.leftMenuPanel);
             this.Controls.Add(this.headerPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MasterLayoutForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
