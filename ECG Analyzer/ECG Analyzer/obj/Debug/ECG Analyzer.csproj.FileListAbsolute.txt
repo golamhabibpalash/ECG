@@ -1,14 +1,3 @@
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe.config
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.pdb
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csprojAssemblyReference.cache
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayoutForm.resources
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Properties.Resources.resources
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.GenerateResource.cache
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.CoreCompileInputs.cache
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.exe
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.pdb
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MDI.resources
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe.config
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.pdb
@@ -22,9 +11,20 @@ C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\EC
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.exe
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.pdb
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Login.resources
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Login.resources
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Settings.resources
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.HomeScreen.resources
-D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DataAnalysis.resources
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DataAnalysis.resources
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.HomeScreen.resources
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe.config
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.pdb
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DataAnalysis.resources
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.HomeScreen.resources
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Login.resources
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayoutForm.resources
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MDI.resources
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Properties.Resources.resources
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Settings.resources
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.GenerateResource.cache
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.CoreCompileInputs.cache
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.exe
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.pdb
+D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csprojAssemblyReference.cache

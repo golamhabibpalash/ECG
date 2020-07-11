@@ -38,7 +38,7 @@
             // 
             // headerPanel
             // 
-            this.headerPanel.Size = new System.Drawing.Size(800, 40);
+            this.headerPanel.Size = new System.Drawing.Size(1041, 40);
             // 
             // leftMenuPanel
             // 
@@ -47,17 +47,17 @@
             this.leftMenuPanel.Controls.Add(this.label3);
             this.leftMenuPanel.Controls.Add(this.label4);
             this.leftMenuPanel.Controls.Add(this.userNameTBox);
-            this.leftMenuPanel.Size = new System.Drawing.Size(213, 410);
+            this.leftMenuPanel.Size = new System.Drawing.Size(213, 601);
             // 
             // footerPanel
             // 
-            this.footerPanel.Location = new System.Drawing.Point(213, 440);
-            this.footerPanel.Size = new System.Drawing.Size(587, 10);
+            this.footerPanel.Location = new System.Drawing.Point(213, 631);
+            this.footerPanel.Size = new System.Drawing.Size(828, 10);
             // 
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.Location = new System.Drawing.Point(213, 40);
-            this.masterLayoutPanel.Size = new System.Drawing.Size(587, 400);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(828, 591);
             // 
             // enterBtn
             // 
@@ -119,9 +119,12 @@
             this.AcceptButton = this.enterBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1041, 641);
+            this.ControlBox = false;
+            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Login";
             this.Text = "Login";
+            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.leftMenuPanel.ResumeLayout(false);
             this.leftMenuPanel.PerformLayout();
             this.ResumeLayout(false);

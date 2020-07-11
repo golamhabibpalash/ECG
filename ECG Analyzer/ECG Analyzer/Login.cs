@@ -17,10 +17,11 @@ namespace ECG_Analyzer
             InitializeComponent();
         }
         MainClass mClass = new MainClass();
+
         private void enterBtn_Click(object sender, EventArgs e)
         {
             HomeScreen hs = new HomeScreen();
-            mClass.showWindow(hs,this,MDI.ActiveForm);
+            mClass.showWindow(hs, this, MDI.ActiveForm);
         }
     }
 }

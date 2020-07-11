@@ -61,14 +61,14 @@ namespace ECG_Analyzer
             dataTBox.AppendText(time+"\t\t"+in_data+"\n");
 
             //Progressbar Code
-            int data_value = Convert.ToInt32(in_data);
-            progressBar.Value = data_value;
+            //int data_value = Convert.ToInt32(in_data);
+            //progressBar.Value = data_value;
         }
 
         private void stopBtn_Click(object sender, EventArgs e)
         {
             try
-            {
+            {                
                 myPort.Close();
             }
             catch (Exception exception)
@@ -83,7 +83,7 @@ namespace ECG_Analyzer
             try
             {
 
-                string pathfile = @"C:\Users\golam\Desktop\Data\";
+                string pathfile = @"C:\Users\GH Palash\Desktop\Data\";
                 string filename = "light_data.txt";
                 File.WriteAllText(pathfile+filename,dataTBox.Text);
                 MessageBox.Show("Data has been Saved to " + pathfile, "Save file");
