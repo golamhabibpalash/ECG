@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.startBtn = new System.Windows.Forms.Button();
+            this.stopBtn = new System.Windows.Forms.Button();
+            this.saveDataBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.totalTimeTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.boudCBox = new System.Windows.Forms.ComboBox();
+            this.portCBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,9 +54,10 @@
             this.SData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label5 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dataTBox = new System.Windows.Forms.TextBox();
             this.headerPanel.SuspendLayout();
             this.leftMenuPanel.SuspendLayout();
             this.masterLayoutPanel.SuspendLayout();
@@ -74,13 +75,14 @@
             // 
             // leftMenuPanel
             // 
+            this.leftMenuPanel.Controls.Add(this.dataTBox);
             this.leftMenuPanel.Controls.Add(this.label5);
-            this.leftMenuPanel.Controls.Add(this.progressBar1);
+            this.leftMenuPanel.Controls.Add(this.progressBar);
             this.leftMenuPanel.Controls.Add(this.panel2);
             this.leftMenuPanel.Controls.Add(this.panel1);
-            this.leftMenuPanel.Controls.Add(this.button3);
-            this.leftMenuPanel.Controls.Add(this.button2);
-            this.leftMenuPanel.Controls.Add(this.button1);
+            this.leftMenuPanel.Controls.Add(this.saveDataBtn);
+            this.leftMenuPanel.Controls.Add(this.stopBtn);
+            this.leftMenuPanel.Controls.Add(this.startBtn);
             this.leftMenuPanel.Size = new System.Drawing.Size(153, 575);
             // 
             // footerPanel
@@ -96,62 +98,65 @@
             this.masterLayoutPanel.Location = new System.Drawing.Point(153, 40);
             this.masterLayoutPanel.Size = new System.Drawing.Size(863, 554);
             // 
-            // button1
+            // startBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 32);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 35);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = false;
+            this.startBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
+            this.startBtn.FlatAppearance.BorderSize = 0;
+            this.startBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startBtn.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startBtn.Location = new System.Drawing.Point(3, 32);
+            this.startBtn.Name = "startBtn";
+            this.startBtn.Size = new System.Drawing.Size(145, 35);
+            this.startBtn.TabIndex = 0;
+            this.startBtn.Text = "Start";
+            this.startBtn.UseVisualStyleBackColor = false;
+            this.startBtn.Click += new System.EventHandler(this.startBtn_Click);
             // 
-            // button2
+            // stopBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(3, 73);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 35);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Stop";
-            this.button2.UseVisualStyleBackColor = false;
+            this.stopBtn.BackColor = System.Drawing.Color.Red;
+            this.stopBtn.FlatAppearance.BorderSize = 0;
+            this.stopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.stopBtn.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stopBtn.Location = new System.Drawing.Point(3, 73);
+            this.stopBtn.Name = "stopBtn";
+            this.stopBtn.Size = new System.Drawing.Size(145, 35);
+            this.stopBtn.TabIndex = 0;
+            this.stopBtn.Text = "Stop";
+            this.stopBtn.UseVisualStyleBackColor = false;
+            this.stopBtn.Click += new System.EventHandler(this.stopBtn_Click);
             // 
-            // button3
+            // saveDataBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.Green;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(3, 114);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(145, 35);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Show";
-            this.button3.UseVisualStyleBackColor = false;
+            this.saveDataBtn.BackColor = System.Drawing.Color.Green;
+            this.saveDataBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.saveDataBtn.FlatAppearance.BorderSize = 0;
+            this.saveDataBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveDataBtn.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveDataBtn.Location = new System.Drawing.Point(3, 114);
+            this.saveDataBtn.Name = "saveDataBtn";
+            this.saveDataBtn.Size = new System.Drawing.Size(145, 35);
+            this.saveDataBtn.TabIndex = 0;
+            this.saveDataBtn.Text = "Save Data";
+            this.saveDataBtn.UseVisualStyleBackColor = false;
+            this.saveDataBtn.Click += new System.EventHandler(this.saveDataBtn_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.totalTimeTextBox);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(4, 155);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(143, 36);
             this.panel1.TabIndex = 1;
             // 
-            // textBox1
+            // totalTimeTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(48, 23);
-            this.textBox1.TabIndex = 1;
+            this.totalTimeTextBox.Location = new System.Drawing.Point(92, 6);
+            this.totalTimeTextBox.Name = "totalTimeTextBox";
+            this.totalTimeTextBox.Size = new System.Drawing.Size(48, 23);
+            this.totalTimeTextBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -167,8 +172,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.boudCBox);
+            this.panel2.Controls.Add(this.portCBox);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
@@ -177,34 +182,34 @@
             this.panel2.Size = new System.Drawing.Size(144, 67);
             this.panel2.TabIndex = 2;
             // 
-            // comboBox2
+            // boudCBox
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.boudCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.boudCBox.FormattingEnabled = true;
+            this.boudCBox.Items.AddRange(new object[] {
             "123456",
             "123456",
             "123456",
             "123456",
             "123456"});
-            this.comboBox2.Location = new System.Drawing.Point(48, 32);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(89, 23);
-            this.comboBox2.TabIndex = 2;
+            this.boudCBox.Location = new System.Drawing.Point(48, 32);
+            this.boudCBox.Name = "boudCBox";
+            this.boudCBox.Size = new System.Drawing.Size(89, 23);
+            this.boudCBox.TabIndex = 2;
             // 
-            // comboBox1
+            // portCBox
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.portCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.portCBox.FormattingEnabled = true;
+            this.portCBox.Items.AddRange(new object[] {
             "COM3",
             "COM4",
             "COM5",
             "COM6"});
-            this.comboBox1.Location = new System.Drawing.Point(48, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(89, 23);
-            this.comboBox1.TabIndex = 2;
+            this.portCBox.Location = new System.Drawing.Point(48, 5);
+            this.portCBox.Name = "portCBox";
+            this.portCBox.Size = new System.Drawing.Size(89, 23);
+            this.portCBox.TabIndex = 2;
             // 
             // label4
             // 
@@ -248,14 +253,14 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Cycle,
@@ -274,8 +279,8 @@
             // Cycle
             // 
             this.Cycle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Cycle.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Cycle.DefaultCellStyle = dataGridViewCellStyle6;
             this.Cycle.HeaderText = "Cycle";
             this.Cycle.Name = "Cycle";
             this.Cycle.Width = 58;
@@ -315,12 +320,31 @@
             this.panel3.Size = new System.Drawing.Size(863, 209);
             this.panel3.TabIndex = 1;
             // 
-            // progressBar1
+            // chart1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(4, 198);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(143, 23);
-            this.progressBar1.TabIndex = 3;
+            this.chart1.BackColor = System.Drawing.Color.Silver;
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
+            this.chart1.Location = new System.Drawing.Point(0, 0);
+            this.chart1.Name = "chart1";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
+            this.chart1.Size = new System.Drawing.Size(863, 209);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(4, 198);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(143, 23);
+            this.progressBar.TabIndex = 3;
             // 
             // label5
             // 
@@ -332,24 +356,13 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Progress Bar";
             // 
-            // chart1
+            // dataTBox
             // 
-            this.chart1.BackColor = System.Drawing.Color.Silver;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(863, 209);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
+            this.dataTBox.Location = new System.Drawing.Point(4, 345);
+            this.dataTBox.Multiline = true;
+            this.dataTBox.Name = "dataTBox";
+            this.dataTBox.Size = new System.Drawing.Size(143, 193);
+            this.dataTBox.TabIndex = 5;
             // 
             // DataAnalysis
             // 
@@ -375,16 +388,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button startBtn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox totalTimeTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button saveDataBtn;
+        private System.Windows.Forms.Button stopBtn;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox boudCBox;
+        private System.Windows.Forms.ComboBox portCBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel6;
@@ -397,7 +410,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SData;
         private System.Windows.Forms.DataGridViewTextBoxColumn TData;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.TextBox dataTBox;
     }
 }
