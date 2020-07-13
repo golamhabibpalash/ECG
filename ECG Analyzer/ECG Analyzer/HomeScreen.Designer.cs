@@ -207,8 +207,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 492);
             this.ControlBox = false;
+            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "HomeScreen";
             this.Text = "Home Screen";
+            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.masterLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);

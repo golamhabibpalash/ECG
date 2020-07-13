@@ -25,19 +25,18 @@ namespace ECG_Analyzer
             
 
             if (File.Exists(mPath.path+"\\connect"))
-            {
-                
+            {                
                 Login obj = new Login();
                 obj.MdiParent = this;
-                obj.WindowState = FormWindowState.Maximized;
                 obj.Show();
+                obj.WindowState = FormWindowState.Maximized;
             }
             else
             {
                 Settings obj = new Settings();
                 obj.MdiParent = this;
-                obj.WindowState = FormWindowState.Maximized;
                 obj.Show();
+                obj.WindowState = FormWindowState.Maximized;
             }
             
         }

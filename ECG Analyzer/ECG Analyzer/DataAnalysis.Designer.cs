@@ -369,8 +369,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 615);
+            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "DataAnalysis";
             this.Text = "DataAnalysis";
+            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.headerPanel.ResumeLayout(false);
             this.leftMenuPanel.ResumeLayout(false);
             this.leftMenuPanel.PerformLayout();

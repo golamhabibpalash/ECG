@@ -14,9 +14,9 @@ namespace ECG_Analyzer
         public void showWindow(Form openWin, Form closeWin, Form MDI)
         {
             closeWin.Close();
-            openWin.WindowState = FormWindowState.Maximized;
             openWin.MdiParent = MDI;
             openWin.Show();
+            openWin.WindowState = FormWindowState.Maximized;
         }
 
     }
