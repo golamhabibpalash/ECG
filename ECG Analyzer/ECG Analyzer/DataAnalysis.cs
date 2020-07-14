@@ -12,7 +12,7 @@ using System.IO;
 
 namespace ECG_Analyzer
 {
-    public partial class DataAnalysis : MasterLayoutForm
+    public partial class DataAnalysis : MasterLayout2
     {
         private SerialPort myPort;
         private DateTime dateTime;

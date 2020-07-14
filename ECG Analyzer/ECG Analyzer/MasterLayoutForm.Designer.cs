@@ -29,20 +29,34 @@
         private void InitializeComponent()
         {
             this.headerPanel = new System.Windows.Forms.Panel();
+            this.pageTitleLabel = new System.Windows.Forms.Label();
             this.leftMenuPanel = new System.Windows.Forms.Panel();
             this.footerPanel = new System.Windows.Forms.Panel();
             this.masterLayoutPanel = new System.Windows.Forms.Panel();
+            this.headerPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // headerPanel
             // 
             this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
+            this.headerPanel.Controls.Add(this.pageTitleLabel);
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerPanel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headerPanel.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.headerPanel.ForeColor = System.Drawing.Color.White;
             this.headerPanel.Location = new System.Drawing.Point(0, 0);
             this.headerPanel.Name = "headerPanel";
             this.headerPanel.Size = new System.Drawing.Size(1025, 40);
             this.headerPanel.TabIndex = 0;
+            // 
+            // pageTitleLabel
+            // 
+            this.pageTitleLabel.AutoSize = true;
+            this.pageTitleLabel.Location = new System.Drawing.Point(110, 9);
+            this.pageTitleLabel.Name = "pageTitleLabel";
+            this.pageTitleLabel.Size = new System.Drawing.Size(218, 24);
+            this.pageTitleLabel.TabIndex = 0;
+            this.pageTitleLabel.Text = "This is the Page Title";
+            this.pageTitleLabel.Click += new System.EventHandler(this.pageTitleLabel_Click);
             // 
             // leftMenuPanel
             // 
@@ -78,14 +92,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1025, 612);
+            this.ControlBox = false;
             this.Controls.Add(this.masterLayoutPanel);
             this.Controls.Add(this.footerPanel);
             this.Controls.Add(this.leftMenuPanel);
             this.Controls.Add(this.headerPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MasterLayoutForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.headerPanel.ResumeLayout(false);
+            this.headerPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -96,6 +112,7 @@
         public System.Windows.Forms.Panel leftMenuPanel;
         public System.Windows.Forms.Panel footerPanel;
         public System.Windows.Forms.Panel masterLayoutPanel;
+        public System.Windows.Forms.Label pageTitleLabel;
     }
 }
 

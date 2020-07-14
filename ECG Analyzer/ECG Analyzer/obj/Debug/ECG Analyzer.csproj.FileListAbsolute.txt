@@ -27,3 +27,19 @@ C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\EC
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.CoreCompileInputs.cache
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.exe
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.pdb
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe.config
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.pdb
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csprojAssemblyReference.cache
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DataAnalysis.resources
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.HomeScreen.resources
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Login.resources
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayoutForm.resources
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MDI.resources
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Properties.Resources.resources
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Settings.resources
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.GenerateResource.cache
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.CoreCompileInputs.cache
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.exe
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.pdb
+F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayout2.resources
