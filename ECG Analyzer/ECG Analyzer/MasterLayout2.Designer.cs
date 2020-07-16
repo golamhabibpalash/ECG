@@ -36,7 +36,6 @@
             // 
             this.headerPanel.Controls.Add(this.backBtn);
             this.headerPanel.Size = new System.Drawing.Size(800, 40);
-            this.headerPanel.Controls.SetChildIndex(this.pageTitleLabel, 0);
             this.headerPanel.Controls.SetChildIndex(this.backBtn, 0);
             // 
             // leftMenuPanel

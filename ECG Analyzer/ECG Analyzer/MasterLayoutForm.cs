@@ -19,7 +19,7 @@ namespace ECG_Analyzer
 
         public void pageTitleLabel_Click(object sender, EventArgs e)
         {
-            pageTitleLabel.Text = Form.ActiveForm.Name;
+
         }
     }
 }

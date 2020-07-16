@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ECG_Analyzer
 {
-    public partial class Login : MasterLayoutForm
+    public partial class Login : Form
     {
         public Login()
         {
@@ -22,6 +22,11 @@ namespace ECG_Analyzer
         {
             HomeScreen hs = new HomeScreen();
             mClass.showWindow(hs, this, MDI.ActiveForm);
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

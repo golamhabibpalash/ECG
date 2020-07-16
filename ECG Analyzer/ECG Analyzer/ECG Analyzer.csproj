@@ -138,5 +138,11 @@
   <ItemGroup>
     <None Include="image\back-96.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="image\ecg signal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\heat beat logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
