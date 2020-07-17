@@ -144,5 +144,26 @@
   <ItemGroup>
     <None Include="image\heat beat logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="image\user-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\patient-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\dataAnalysis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\dataAnalysis-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\doctor-male-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\settings 128.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

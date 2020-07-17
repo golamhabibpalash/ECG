@@ -32,12 +32,12 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.settingBtn = new System.Windows.Forms.Button();
+            this.doctorBtn = new System.Windows.Forms.Button();
             this.dataAnalysisBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.userBtn = new System.Windows.Forms.Button();
             this.masterLayoutPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -49,6 +49,7 @@
             // leftMenuPanel
             // 
             this.leftMenuPanel.Size = new System.Drawing.Size(114, 452);
+            this.leftMenuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.leftMenuPanel_Paint);
             // 
             // footerPanel
             // 
@@ -71,11 +72,11 @@
             this.tableLayoutPanel1.Controls.Add(this.button8, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.button7, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.button6, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.settingBtn, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.doctorBtn, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.dataAnalysisBtn, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.userBtn, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 26);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -87,9 +88,11 @@
             // 
             // button8
             // 
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button8.FlatAppearance.BorderSize = 2;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Location = new System.Drawing.Point(696, 205);
             this.button8.Name = "button8";
@@ -100,9 +103,11 @@
             // 
             // button7
             // 
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button7.FlatAppearance.BorderSize = 2;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(465, 205);
             this.button7.Name = "button7";
@@ -113,9 +118,11 @@
             // 
             // button6
             // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button6.FlatAppearance.BorderSize = 2;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(234, 205);
             this.button6.Name = "button6";
@@ -124,72 +131,6 @@
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.FlatAppearance.BorderSize = 2;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(3, 205);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(225, 197);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.FlatAppearance.BorderSize = 2;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(696, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(227, 196);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // dataAnalysisBtn
-            // 
-            this.dataAnalysisBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataAnalysisBtn.FlatAppearance.BorderSize = 2;
-            this.dataAnalysisBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dataAnalysisBtn.ForeColor = System.Drawing.Color.White;
-            this.dataAnalysisBtn.Location = new System.Drawing.Point(465, 3);
-            this.dataAnalysisBtn.Name = "dataAnalysisBtn";
-            this.dataAnalysisBtn.Size = new System.Drawing.Size(225, 196);
-            this.dataAnalysisBtn.TabIndex = 2;
-            this.dataAnalysisBtn.Text = "Data Analysis";
-            this.dataAnalysisBtn.UseVisualStyleBackColor = true;
-            this.dataAnalysisBtn.Click += new System.EventHandler(this.dataAnalysisBtn_Click);
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(234, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(225, 196);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Patients";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 196);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Users";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -197,6 +138,92 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(926, 26);
             this.panel1.TabIndex = 1;
+            // 
+            // settingBtn
+            // 
+            this.settingBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.settingBtn.FlatAppearance.BorderSize = 2;
+            this.settingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingBtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingBtn.ForeColor = System.Drawing.Color.White;
+            this.settingBtn.Image = global::ECG_Analyzer.Properties.Resources.settings_128;
+            this.settingBtn.Location = new System.Drawing.Point(3, 205);
+            this.settingBtn.Name = "settingBtn";
+            this.settingBtn.Size = new System.Drawing.Size(225, 197);
+            this.settingBtn.TabIndex = 4;
+            this.settingBtn.Text = "Settings";
+            this.settingBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.settingBtn.UseVisualStyleBackColor = true;
+            // 
+            // doctorBtn
+            // 
+            this.doctorBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.doctorBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.doctorBtn.FlatAppearance.BorderSize = 2;
+            this.doctorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.doctorBtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doctorBtn.ForeColor = System.Drawing.Color.White;
+            this.doctorBtn.Image = global::ECG_Analyzer.Properties.Resources.doctor_male_96;
+            this.doctorBtn.Location = new System.Drawing.Point(696, 3);
+            this.doctorBtn.Name = "doctorBtn";
+            this.doctorBtn.Size = new System.Drawing.Size(227, 196);
+            this.doctorBtn.TabIndex = 3;
+            this.doctorBtn.Text = "Doctor";
+            this.doctorBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.doctorBtn.UseVisualStyleBackColor = true;
+            // 
+            // dataAnalysisBtn
+            // 
+            this.dataAnalysisBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dataAnalysisBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataAnalysisBtn.FlatAppearance.BorderSize = 2;
+            this.dataAnalysisBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dataAnalysisBtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataAnalysisBtn.ForeColor = System.Drawing.Color.White;
+            this.dataAnalysisBtn.Image = global::ECG_Analyzer.Properties.Resources.dataAnalysis_128;
+            this.dataAnalysisBtn.Location = new System.Drawing.Point(465, 3);
+            this.dataAnalysisBtn.Name = "dataAnalysisBtn";
+            this.dataAnalysisBtn.Size = new System.Drawing.Size(225, 196);
+            this.dataAnalysisBtn.TabIndex = 2;
+            this.dataAnalysisBtn.Text = "Data Analysis";
+            this.dataAnalysisBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.dataAnalysisBtn.UseVisualStyleBackColor = true;
+            this.dataAnalysisBtn.Click += new System.EventHandler(this.dataAnalysisBtn_Click);
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::ECG_Analyzer.Properties.Resources.patient_80;
+            this.button2.Location = new System.Drawing.Point(234, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(225, 196);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Patients";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // userBtn
+            // 
+            this.userBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.userBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userBtn.FlatAppearance.BorderSize = 2;
+            this.userBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.userBtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userBtn.ForeColor = System.Drawing.Color.White;
+            this.userBtn.Image = global::ECG_Analyzer.Properties.Resources.user_80;
+            this.userBtn.Location = new System.Drawing.Point(3, 3);
+            this.userBtn.Name = "userBtn";
+            this.userBtn.Size = new System.Drawing.Size(225, 196);
+            this.userBtn.TabIndex = 0;
+            this.userBtn.Text = "Users";
+            this.userBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.userBtn.UseVisualStyleBackColor = true;
             // 
             // HomeScreen
             // 
@@ -218,12 +245,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button userBtn;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button settingBtn;
+        private System.Windows.Forms.Button doctorBtn;
         private System.Windows.Forms.Button dataAnalysisBtn;
     }
 }

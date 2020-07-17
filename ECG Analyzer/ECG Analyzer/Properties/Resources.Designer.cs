@@ -73,6 +73,36 @@ namespace ECG_Analyzer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dataAnalysis {
+            get {
+                object obj = ResourceManager.GetObject("dataAnalysis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dataAnalysis_128 {
+            get {
+                object obj = ResourceManager.GetObject("dataAnalysis-128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap doctor_male_96 {
+            get {
+                object obj = ResourceManager.GetObject("doctor-male-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ecg_signal {
             get {
                 object obj = ResourceManager.GetObject("ecg signal", resourceCulture);
@@ -86,6 +116,46 @@ namespace ECG_Analyzer.Properties {
         internal static System.Drawing.Bitmap heat_beat_logo {
             get {
                 object obj = ResourceManager.GetObject("heat beat logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap patient {
+            get {
+                object obj = ResourceManager.GetObject("patient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap patient_80 {
+            get {
+                object obj = ResourceManager.GetObject("patient-80", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_128 {
+            get {
+                object obj = ResourceManager.GetObject("settings 128", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_80 {
+            get {
+                object obj = ResourceManager.GetObject("user-80", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

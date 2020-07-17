@@ -25,5 +25,9 @@ namespace ECG_Analyzer
             mc.showWindow(da, this, MDI.ActiveForm);
         }
 
+        private void leftMenuPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
