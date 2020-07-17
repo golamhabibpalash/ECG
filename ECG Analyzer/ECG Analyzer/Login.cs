@@ -18,15 +18,13 @@ namespace ECG_Analyzer
         }
         MainClass mClass = new MainClass();
 
-        private void enterBtn_Click(object sender, EventArgs e)
+
+
+        private void loginBtn_Click(object sender, EventArgs e)
         {
+            
             HomeScreen hs = new HomeScreen();
             mClass.showWindow(hs, this, MDI.ActiveForm);
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

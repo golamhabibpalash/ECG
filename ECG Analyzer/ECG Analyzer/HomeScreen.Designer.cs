@@ -34,7 +34,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.dataAnalysisBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -73,7 +73,7 @@
             this.tableLayoutPanel1.Controls.Add(this.button6, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.button5, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.button4, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dataAnalysisBtn, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -150,19 +150,19 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // dataAnalysisBtn
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.FlatAppearance.BorderSize = 2;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(465, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(225, 196);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Data Analysis";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.dataAnalysisBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataAnalysisBtn.FlatAppearance.BorderSize = 2;
+            this.dataAnalysisBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dataAnalysisBtn.ForeColor = System.Drawing.Color.White;
+            this.dataAnalysisBtn.Location = new System.Drawing.Point(465, 3);
+            this.dataAnalysisBtn.Name = "dataAnalysisBtn";
+            this.dataAnalysisBtn.Size = new System.Drawing.Size(225, 196);
+            this.dataAnalysisBtn.TabIndex = 2;
+            this.dataAnalysisBtn.Text = "Data Analysis";
+            this.dataAnalysisBtn.UseVisualStyleBackColor = true;
+            this.dataAnalysisBtn.Click += new System.EventHandler(this.dataAnalysisBtn_Click);
             // 
             // button2
             // 
@@ -224,6 +224,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button dataAnalysisBtn;
     }
 }

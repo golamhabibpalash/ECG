@@ -18,10 +18,12 @@ namespace ECG_Analyzer
         }
 
         MainClass mc = new MainClass();
-        private void button3_Click(object sender, EventArgs e)
+
+        private void dataAnalysisBtn_Click(object sender, EventArgs e)
         {
             DataAnalysis da = new DataAnalysis();
             mc.showWindow(da, this, MDI.ActiveForm);
         }
+
     }
 }

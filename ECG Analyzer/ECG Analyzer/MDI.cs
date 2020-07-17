@@ -40,5 +40,15 @@ namespace ECG_Analyzer
             }
             
         }
+        
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
