@@ -35,6 +35,20 @@
             // 
             this.backBtn.FlatAppearance.BorderSize = 0;
             // 
+            // leftMenuPanel
+            // 
+            this.leftMenuPanel.Size = new System.Drawing.Size(150, 410);
+            // 
+            // footerPanel
+            // 
+            this.footerPanel.Location = new System.Drawing.Point(150, 429);
+            this.footerPanel.Size = new System.Drawing.Size(650, 21);
+            // 
+            // masterLayoutPanel
+            // 
+            this.masterLayoutPanel.Location = new System.Drawing.Point(150, 40);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(650, 389);
+            // 
             // PatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -42,8 +56,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "PatientForm";
             this.Text = "PatientForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.headerPanel.ResumeLayout(false);
+            this.headerPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }

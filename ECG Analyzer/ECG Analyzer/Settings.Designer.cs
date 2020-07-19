@@ -255,10 +255,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "Settings";
             this.Text = "Setting";
-            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.leftMenuPanel.ResumeLayout(false);
             this.leftMenuPanel.PerformLayout();
             this.ResumeLayout(false);

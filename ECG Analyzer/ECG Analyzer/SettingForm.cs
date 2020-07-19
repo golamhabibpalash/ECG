@@ -16,5 +16,11 @@ namespace ECG_Analyzer
         {
             InitializeComponent();
         }
+        MainClass mc=new MainClass();
+        private void DatabaseSettingBtn_Click(object sender, EventArgs e)
+        {
+            Settings settings=new Settings();
+            mc.showWindow(settings,this,MDI.ActiveForm);
+        }
     }
 }

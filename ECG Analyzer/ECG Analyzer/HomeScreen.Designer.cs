@@ -48,19 +48,20 @@
             // 
             // leftMenuPanel
             // 
-            this.leftMenuPanel.Size = new System.Drawing.Size(114, 452);
+            this.leftMenuPanel.Size = new System.Drawing.Size(150, 452);
             this.leftMenuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.leftMenuPanel_Paint);
             // 
             // footerPanel
             // 
-            this.footerPanel.Location = new System.Drawing.Point(114, 471);
-            this.footerPanel.Size = new System.Drawing.Size(926, 21);
+            this.footerPanel.Location = new System.Drawing.Point(150, 471);
+            this.footerPanel.Size = new System.Drawing.Size(890, 21);
             // 
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.Controls.Add(this.tableLayoutPanel1);
             this.masterLayoutPanel.Controls.Add(this.panel1);
-            this.masterLayoutPanel.Size = new System.Drawing.Size(926, 431);
+            this.masterLayoutPanel.Location = new System.Drawing.Point(150, 40);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(890, 431);
             // 
             // tableLayoutPanel1
             // 
@@ -83,7 +84,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(926, 405);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(890, 405);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // button8
@@ -94,9 +95,9 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(696, 205);
+            this.button8.Location = new System.Drawing.Point(669, 205);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(227, 197);
+            this.button8.Size = new System.Drawing.Size(218, 197);
             this.button8.TabIndex = 7;
             this.button8.Text = "button8";
             this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -111,9 +112,9 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(465, 205);
+            this.button7.Location = new System.Drawing.Point(447, 205);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(225, 197);
+            this.button7.Size = new System.Drawing.Size(216, 197);
             this.button7.TabIndex = 6;
             this.button7.Text = "button7";
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -128,9 +129,9 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(234, 205);
+            this.button6.Location = new System.Drawing.Point(225, 205);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(225, 197);
+            this.button6.Size = new System.Drawing.Size(216, 197);
             this.button6.TabIndex = 5;
             this.button6.Text = "button6";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -148,7 +149,7 @@
             this.settingBtn.Image = global::ECG_Analyzer.Properties.Resources.settings_128;
             this.settingBtn.Location = new System.Drawing.Point(3, 205);
             this.settingBtn.Name = "settingBtn";
-            this.settingBtn.Size = new System.Drawing.Size(225, 197);
+            this.settingBtn.Size = new System.Drawing.Size(216, 197);
             this.settingBtn.TabIndex = 4;
             this.settingBtn.Text = "Settings";
             this.settingBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -165,9 +166,9 @@
             this.doctorBtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doctorBtn.ForeColor = System.Drawing.Color.White;
             this.doctorBtn.Image = global::ECG_Analyzer.Properties.Resources.doctor_male_96;
-            this.doctorBtn.Location = new System.Drawing.Point(696, 3);
+            this.doctorBtn.Location = new System.Drawing.Point(669, 3);
             this.doctorBtn.Name = "doctorBtn";
-            this.doctorBtn.Size = new System.Drawing.Size(227, 196);
+            this.doctorBtn.Size = new System.Drawing.Size(218, 196);
             this.doctorBtn.TabIndex = 3;
             this.doctorBtn.Text = "Doctor";
             this.doctorBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -184,9 +185,9 @@
             this.dataAnalysisBtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataAnalysisBtn.ForeColor = System.Drawing.Color.White;
             this.dataAnalysisBtn.Image = global::ECG_Analyzer.Properties.Resources.dataAnalysis_128;
-            this.dataAnalysisBtn.Location = new System.Drawing.Point(465, 3);
+            this.dataAnalysisBtn.Location = new System.Drawing.Point(447, 3);
             this.dataAnalysisBtn.Name = "dataAnalysisBtn";
-            this.dataAnalysisBtn.Size = new System.Drawing.Size(225, 196);
+            this.dataAnalysisBtn.Size = new System.Drawing.Size(216, 196);
             this.dataAnalysisBtn.TabIndex = 2;
             this.dataAnalysisBtn.Text = "Data Analysis";
             this.dataAnalysisBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -203,9 +204,9 @@
             this.patientsBtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.patientsBtn.ForeColor = System.Drawing.Color.White;
             this.patientsBtn.Image = global::ECG_Analyzer.Properties.Resources.patient_80;
-            this.patientsBtn.Location = new System.Drawing.Point(234, 3);
+            this.patientsBtn.Location = new System.Drawing.Point(225, 3);
             this.patientsBtn.Name = "patientsBtn";
-            this.patientsBtn.Size = new System.Drawing.Size(225, 196);
+            this.patientsBtn.Size = new System.Drawing.Size(216, 196);
             this.patientsBtn.TabIndex = 1;
             this.patientsBtn.Text = "Patients";
             this.patientsBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -224,7 +225,7 @@
             this.userBtn.Image = global::ECG_Analyzer.Properties.Resources.user_80;
             this.userBtn.Location = new System.Drawing.Point(3, 3);
             this.userBtn.Name = "userBtn";
-            this.userBtn.Size = new System.Drawing.Size(225, 196);
+            this.userBtn.Size = new System.Drawing.Size(216, 196);
             this.userBtn.TabIndex = 0;
             this.userBtn.Text = "Users";
             this.userBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -237,7 +238,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(926, 26);
+            this.panel1.Size = new System.Drawing.Size(890, 26);
             this.panel1.TabIndex = 1;
             // 
             // HomeScreen
@@ -245,10 +246,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 492);
-            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "HomeScreen";
             this.Text = "Home Screen";
-            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.Load += new System.EventHandler(this.HomeScreen_Load);
             this.masterLayoutPanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

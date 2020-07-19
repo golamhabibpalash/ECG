@@ -29,14 +29,17 @@
         private void InitializeComponent()
         {
             this.headerPanel = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.leftMenuPanel = new System.Windows.Forms.Panel();
             this.footerPanel = new System.Windows.Forms.Panel();
             this.masterLayoutPanel = new System.Windows.Forms.Panel();
+            this.headerPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // headerPanel
             // 
             this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
+            this.headerPanel.Controls.Add(this.label1);
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerPanel.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headerPanel.ForeColor = System.Drawing.Color.White;
@@ -44,6 +47,16 @@
             this.headerPanel.Name = "headerPanel";
             this.headerPanel.Size = new System.Drawing.Size(1025, 40);
             this.headerPanel.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(110, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(477, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Community Clinic Managemen System (CCMS)";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // leftMenuPanel
             // 
@@ -53,16 +66,16 @@
             this.leftMenuPanel.ForeColor = System.Drawing.Color.White;
             this.leftMenuPanel.Location = new System.Drawing.Point(0, 40);
             this.leftMenuPanel.Name = "leftMenuPanel";
-            this.leftMenuPanel.Size = new System.Drawing.Size(114, 572);
+            this.leftMenuPanel.Size = new System.Drawing.Size(150, 572);
             this.leftMenuPanel.TabIndex = 0;
             // 
             // footerPanel
             // 
             this.footerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(43)))));
             this.footerPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.footerPanel.Location = new System.Drawing.Point(114, 591);
+            this.footerPanel.Location = new System.Drawing.Point(150, 591);
             this.footerPanel.Name = "footerPanel";
-            this.footerPanel.Size = new System.Drawing.Size(911, 21);
+            this.footerPanel.Size = new System.Drawing.Size(875, 21);
             this.footerPanel.TabIndex = 0;
             // 
             // masterLayoutPanel
@@ -70,9 +83,9 @@
             this.masterLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
             this.masterLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.masterLayoutPanel.ForeColor = System.Drawing.Color.White;
-            this.masterLayoutPanel.Location = new System.Drawing.Point(114, 40);
+            this.masterLayoutPanel.Location = new System.Drawing.Point(150, 40);
             this.masterLayoutPanel.Name = "masterLayoutPanel";
-            this.masterLayoutPanel.Size = new System.Drawing.Size(911, 551);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(875, 551);
             this.masterLayoutPanel.TabIndex = 0;
             // 
             // MasterLayoutForm
@@ -87,6 +100,8 @@
             this.Controls.Add(this.headerPanel);
             this.Name = "MasterLayoutForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.headerPanel.ResumeLayout(false);
+            this.headerPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -97,6 +112,7 @@
         public System.Windows.Forms.Panel leftMenuPanel;
         public System.Windows.Forms.Panel footerPanel;
         public System.Windows.Forms.Panel masterLayoutPanel;
+        private System.Windows.Forms.Label label1;
     }
 }
 

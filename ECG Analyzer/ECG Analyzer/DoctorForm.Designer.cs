@@ -38,10 +38,21 @@
             // 
             this.backBtn.FlatAppearance.BorderSize = 0;
             // 
+            // leftMenuPanel
+            // 
+            this.leftMenuPanel.Size = new System.Drawing.Size(150, 410);
+            // 
+            // footerPanel
+            // 
+            this.footerPanel.Location = new System.Drawing.Point(150, 429);
+            this.footerPanel.Size = new System.Drawing.Size(650, 21);
+            // 
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.Controls.Add(this.button1);
             this.masterLayoutPanel.Controls.Add(this.label1);
+            this.masterLayoutPanel.Location = new System.Drawing.Point(150, 40);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(650, 389);
             // 
             // label1
             // 
@@ -69,8 +80,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "DoctorForm";
             this.Text = "DoctorForm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.headerPanel.ResumeLayout(false);
+            this.headerPanel.PerformLayout();
             this.masterLayoutPanel.ResumeLayout(false);
             this.masterLayoutPanel.PerformLayout();
             this.ResumeLayout(false);

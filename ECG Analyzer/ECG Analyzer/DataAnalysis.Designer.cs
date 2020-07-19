@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.startBtn = new System.Windows.Forms.Button();
             this.stopBtn = new System.Windows.Forms.Button();
             this.saveDataBtn = new System.Windows.Forms.Button();
@@ -51,7 +51,8 @@
             this.dataTBox = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.hRateTBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.headerPanel.SuspendLayout();
             this.leftMenuPanel.SuspendLayout();
             this.masterLayoutPanel.SuspendLayout();
@@ -75,8 +76,9 @@
             // 
             // leftMenuPanel
             // 
-            this.leftMenuPanel.Controls.Add(this.textBox1);
+            this.leftMenuPanel.Controls.Add(this.hRateTBox);
             this.leftMenuPanel.Controls.Add(this.dataTBox);
+            this.leftMenuPanel.Controls.Add(this.label6);
             this.leftMenuPanel.Controls.Add(this.label5);
             this.leftMenuPanel.Controls.Add(this.progressBar);
             this.leftMenuPanel.Controls.Add(this.panel2);
@@ -84,12 +86,12 @@
             this.leftMenuPanel.Controls.Add(this.saveDataBtn);
             this.leftMenuPanel.Controls.Add(this.stopBtn);
             this.leftMenuPanel.Controls.Add(this.startBtn);
-            this.leftMenuPanel.Size = new System.Drawing.Size(153, 575);
+            this.leftMenuPanel.Size = new System.Drawing.Size(150, 575);
             // 
             // footerPanel
             // 
-            this.footerPanel.Location = new System.Drawing.Point(153, 594);
-            this.footerPanel.Size = new System.Drawing.Size(863, 21);
+            this.footerPanel.Location = new System.Drawing.Point(150, 594);
+            this.footerPanel.Size = new System.Drawing.Size(866, 21);
             // 
             // masterLayoutPanel
             // 
@@ -97,15 +99,15 @@
             this.masterLayoutPanel.Controls.Add(this.dataGridView);
             this.masterLayoutPanel.Controls.Add(this.panel3);
             this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
-            this.masterLayoutPanel.Location = new System.Drawing.Point(153, 40);
-            this.masterLayoutPanel.Size = new System.Drawing.Size(863, 554);
+            this.masterLayoutPanel.Location = new System.Drawing.Point(150, 40);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(866, 554);
             // 
             // startBtn
             // 
             this.startBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
             this.startBtn.FlatAppearance.BorderSize = 0;
             this.startBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.startBtn.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startBtn.Location = new System.Drawing.Point(3, 18);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(145, 35);
@@ -119,7 +121,7 @@
             this.stopBtn.BackColor = System.Drawing.Color.Red;
             this.stopBtn.FlatAppearance.BorderSize = 0;
             this.stopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.stopBtn.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stopBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stopBtn.Location = new System.Drawing.Point(3, 59);
             this.stopBtn.Name = "stopBtn";
             this.stopBtn.Size = new System.Drawing.Size(145, 35);
@@ -134,7 +136,7 @@
             this.saveDataBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.saveDataBtn.FlatAppearance.BorderSize = 0;
             this.saveDataBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveDataBtn.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveDataBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveDataBtn.Location = new System.Drawing.Point(3, 100);
             this.saveDataBtn.Name = "saveDataBtn";
             this.saveDataBtn.Size = new System.Drawing.Size(145, 35);
@@ -147,7 +149,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.Controls.Add(this.totalTimeTextBox);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(4, 141);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(143, 36);
@@ -258,25 +259,25 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 345);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(863, 209);
+            this.panel3.Size = new System.Drawing.Size(866, 209);
             this.panel3.TabIndex = 1;
             // 
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Silver;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(863, 209);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(866, 209);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -291,7 +292,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(23, 207);
+            this.label5.Location = new System.Drawing.Point(23, 210);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 19);
             this.label5.TabIndex = 4;
@@ -312,7 +313,7 @@
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(863, 345);
+            this.dataGridView.Size = new System.Drawing.Size(866, 345);
             this.dataGridView.TabIndex = 2;
             // 
             // panel4
@@ -320,15 +321,25 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(863, 10);
+            this.panel4.Size = new System.Drawing.Size(866, 10);
             this.panel4.TabIndex = 3;
             // 
-            // textBox1
+            // hRateTBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 240);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 6;
+            this.hRateTBox.Location = new System.Drawing.Point(96, 236);
+            this.hRateTBox.Name = "hRateTBox";
+            this.hRateTBox.Size = new System.Drawing.Size(51, 23);
+            this.hRateTBox.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(12, 237);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 19);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Heart Rate";
             // 
             // DataAnalysis
             // 
@@ -337,8 +348,8 @@
             this.ClientSize = new System.Drawing.Size(1016, 615);
             this.Name = "DataAnalysis";
             this.Text = "DataAnalysis";
-            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.headerPanel.ResumeLayout(false);
+            this.headerPanel.PerformLayout();
             this.leftMenuPanel.ResumeLayout(false);
             this.leftMenuPanel.PerformLayout();
             this.masterLayoutPanel.ResumeLayout(false);
@@ -375,6 +386,7 @@
         private System.Windows.Forms.TextBox dataTBox;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dataGridView;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox hRateTBox;
+        private System.Windows.Forms.Label label6;
     }
 }
