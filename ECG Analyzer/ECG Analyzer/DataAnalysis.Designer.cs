@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.startBtn = new System.Windows.Forms.Button();
             this.stopBtn = new System.Windows.Forms.Button();
             this.saveDataBtn = new System.Windows.Forms.Button();
@@ -46,35 +44,38 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Cycle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PData = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.QData = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RData = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SData = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.label5 = new System.Windows.Forms.Label();
             this.dataTBox = new System.Windows.Forms.TextBox();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.headerPanel.SuspendLayout();
             this.leftMenuPanel.SuspendLayout();
             this.masterLayoutPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // backBtn
+            // 
+            this.backBtn.FlatAppearance.BorderSize = 0;
             // 
             // headerPanel
             // 
             this.headerPanel.Controls.Add(this.panel6);
             this.headerPanel.Size = new System.Drawing.Size(1016, 40);
+            this.headerPanel.Controls.SetChildIndex(this.panel6, 0);
+            this.headerPanel.Controls.SetChildIndex(this.backBtn, 0);
             // 
             // leftMenuPanel
             // 
+            this.leftMenuPanel.Controls.Add(this.textBox1);
             this.leftMenuPanel.Controls.Add(this.dataTBox);
             this.leftMenuPanel.Controls.Add(this.label5);
             this.leftMenuPanel.Controls.Add(this.progressBar);
@@ -92,8 +93,9 @@
             // 
             // masterLayoutPanel
             // 
+            this.masterLayoutPanel.Controls.Add(this.panel4);
+            this.masterLayoutPanel.Controls.Add(this.dataGridView);
             this.masterLayoutPanel.Controls.Add(this.panel3);
-            this.masterLayoutPanel.Controls.Add(this.dataGridView1);
             this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
             this.masterLayoutPanel.Location = new System.Drawing.Point(153, 40);
             this.masterLayoutPanel.Size = new System.Drawing.Size(863, 554);
@@ -104,7 +106,7 @@
             this.startBtn.FlatAppearance.BorderSize = 0;
             this.startBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBtn.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startBtn.Location = new System.Drawing.Point(3, 32);
+            this.startBtn.Location = new System.Drawing.Point(3, 18);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(145, 35);
             this.startBtn.TabIndex = 0;
@@ -118,7 +120,7 @@
             this.stopBtn.FlatAppearance.BorderSize = 0;
             this.stopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stopBtn.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopBtn.Location = new System.Drawing.Point(3, 73);
+            this.stopBtn.Location = new System.Drawing.Point(3, 59);
             this.stopBtn.Name = "stopBtn";
             this.stopBtn.Size = new System.Drawing.Size(145, 35);
             this.stopBtn.TabIndex = 0;
@@ -133,7 +135,7 @@
             this.saveDataBtn.FlatAppearance.BorderSize = 0;
             this.saveDataBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveDataBtn.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveDataBtn.Location = new System.Drawing.Point(3, 114);
+            this.saveDataBtn.Location = new System.Drawing.Point(3, 100);
             this.saveDataBtn.Name = "saveDataBtn";
             this.saveDataBtn.Size = new System.Drawing.Size(145, 35);
             this.saveDataBtn.TabIndex = 0;
@@ -146,7 +148,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panel1.Controls.Add(this.totalTimeTextBox);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(4, 155);
+            this.panel1.Location = new System.Drawing.Point(4, 141);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(143, 36);
             this.panel1.TabIndex = 1;
@@ -249,67 +251,6 @@
             this.panel6.Size = new System.Drawing.Size(507, 548);
             this.panel6.TabIndex = 4;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Cycle,
-            this.PData,
-            this.QData,
-            this.RData,
-            this.SData,
-            this.TData});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(863, 554);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Cycle
-            // 
-            this.Cycle.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Cycle.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Cycle.HeaderText = "Cycle";
-            this.Cycle.Name = "Cycle";
-            this.Cycle.Width = 58;
-            // 
-            // PData
-            // 
-            this.PData.HeaderText = "P";
-            this.PData.Name = "PData";
-            // 
-            // QData
-            // 
-            this.QData.HeaderText = "Q";
-            this.QData.Name = "QData";
-            // 
-            // RData
-            // 
-            this.RData.HeaderText = "R";
-            this.RData.Name = "RData";
-            // 
-            // SData
-            // 
-            this.SData.HeaderText = "S";
-            this.SData.Name = "SData";
-            // 
-            // TData
-            // 
-            this.TData.HeaderText = "T";
-            this.TData.Name = "TData";
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
@@ -323,25 +264,25 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Silver;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(863, 209);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(4, 198);
+            this.progressBar.Location = new System.Drawing.Point(4, 184);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(143, 23);
             this.progressBar.TabIndex = 3;
@@ -350,7 +291,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(23, 221);
+            this.label5.Location = new System.Drawing.Point(23, 207);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(96, 19);
             this.label5.TabIndex = 4;
@@ -364,12 +305,36 @@
             this.dataTBox.Size = new System.Drawing.Size(143, 193);
             this.dataTBox.TabIndex = 5;
             // 
+            // dataGridView
+            // 
+            this.dataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(863, 345);
+            this.dataGridView.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(863, 10);
+            this.panel4.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(136, 240);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 6;
+            // 
             // DataAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 615);
-            this.Location = new System.Drawing.Point(0, 0);
             this.Name = "DataAnalysis";
             this.Text = "DataAnalysis";
             this.WindowState = System.Windows.Forms.FormWindowState.Normal;
@@ -381,9 +346,9 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -403,17 +368,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cycle;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn QData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SData;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TData;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.TextBox dataTBox;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

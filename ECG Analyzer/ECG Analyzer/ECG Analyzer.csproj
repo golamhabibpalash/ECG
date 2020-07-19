@@ -201,5 +201,8 @@
   <ItemGroup>
     <None Include="image\settings 128.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataAnalysis\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
