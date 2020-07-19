@@ -36,7 +36,6 @@
             // 
             this.headerPanel.Controls.Add(this.backBtn);
             this.headerPanel.Size = new System.Drawing.Size(800, 40);
-            this.headerPanel.Controls.SetChildIndex(this.backBtn, 0);
             // 
             // leftMenuPanel
             // 
@@ -74,13 +73,12 @@
             this.Text = "MasterLayout2";
             this.Load += new System.EventHandler(this.MasterLayout2_Load);
             this.headerPanel.ResumeLayout(false);
-            this.headerPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button backBtn;
+        public System.Windows.Forms.Button backBtn;
     }
 }

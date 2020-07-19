@@ -29,5 +29,36 @@ namespace ECG_Analyzer
         {
 
         }
+
+        private void userBtn_Click(object sender, EventArgs e)
+        {
+            UserForm uf = new UserForm();
+            mc.showWindow(uf, this, MDI.ActiveForm);
+        }
+
+
+
+        private void doctorBtn_Click(object sender, EventArgs e)
+        {
+            DoctorForm uf = new DoctorForm();
+            mc.showWindow(uf, this, MDI.ActiveForm);
+        }
+
+        private void settingBtn_Click(object sender, EventArgs e)
+        {
+            SettingForm uf = new SettingForm();
+            mc.showWindow(uf, this, MDI.ActiveForm);
+        }
+
+        private void patientsBtn_Click(object sender, EventArgs e)
+        {
+            PatientForm uf = new PatientForm();
+            mc.showWindow(uf, this, MDI.ActiveForm);
+        }
+
+        private void HomeScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

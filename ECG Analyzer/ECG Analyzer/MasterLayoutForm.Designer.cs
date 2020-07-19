@@ -69,6 +69,7 @@
             // 
             this.masterLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
             this.masterLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.masterLayoutPanel.ForeColor = System.Drawing.Color.White;
             this.masterLayoutPanel.Location = new System.Drawing.Point(114, 40);
             this.masterLayoutPanel.Name = "masterLayoutPanel";
             this.masterLayoutPanel.Size = new System.Drawing.Size(911, 551);
