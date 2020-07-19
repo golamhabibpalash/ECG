@@ -42,7 +42,6 @@ F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj
 F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.exe
 F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.pdb
 F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayout2.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csprojAssemblyReference.cache
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayout2.resources
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayout2.resources
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.UserForm.resources

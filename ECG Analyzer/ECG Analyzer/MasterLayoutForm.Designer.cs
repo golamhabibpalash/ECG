@@ -87,7 +87,6 @@
             this.Controls.Add(this.headerPanel);
             this.Name = "MasterLayoutForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
