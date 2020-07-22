@@ -103,6 +103,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RDataFind.cs" />
     <Compile Include="SettingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,7 +212,10 @@
     <None Include="image\settings 128.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DataAnalysis\" />
+    <ProjectReference Include="..\ECG_All_Classes\ECG_All_Classes.csproj">
+      <Project>{6159f24f-67d2-43cc-a6bc-79dbce0f168c}</Project>
+      <Name>ECG_All_Classes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
