@@ -16,7 +16,7 @@ namespace ECG_Analyzer
     {
         private SerialPort myPort;
         private DateTime dateTime;
-        private string in_data;
+        public string in_data;
 
         public DataAnalysis()
         {
