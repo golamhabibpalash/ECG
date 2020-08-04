@@ -217,5 +217,17 @@
       <Name>ECG_All_Classes</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="image\test_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\roleIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\roleIcon men.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\statistics.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

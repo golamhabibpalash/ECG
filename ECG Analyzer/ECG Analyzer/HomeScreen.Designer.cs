@@ -30,14 +30,14 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.roleBtn = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.settingBtn = new System.Windows.Forms.Button();
             this.doctorBtn = new System.Windows.Forms.Button();
             this.dataAnalysisBtn = new System.Windows.Forms.Button();
             this.patientsBtn = new System.Windows.Forms.Button();
             this.userBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.masterLayoutPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +60,6 @@
             // 
             this.masterLayoutPanel.Controls.Add(this.tableLayoutPanel1);
             this.masterLayoutPanel.Controls.Add(this.panel1);
-            this.masterLayoutPanel.Location = new System.Drawing.Point(150, 40);
             this.masterLayoutPanel.Size = new System.Drawing.Size(890, 431);
             // 
             // tableLayoutPanel1
@@ -71,7 +70,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.button8, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button7, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.roleBtn, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.button6, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.settingBtn, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.doctorBtn, 3, 0);
@@ -95,31 +94,41 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Image = global::ECG_Analyzer.Properties.Resources.statistics;
             this.button8.Location = new System.Drawing.Point(669, 205);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(218, 197);
             this.button8.TabIndex = 7;
-            this.button8.Text = "button8";
+            this.button8.Text = "Statistics";
             this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // panel1
             // 
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.FlatAppearance.BorderSize = 2;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(447, 205);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(216, 197);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button7.UseVisualStyleBackColor = true;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(890, 26);
+            this.panel1.TabIndex = 1;
+            // 
+            // roleBtn
+            // 
+            this.roleBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roleBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roleBtn.FlatAppearance.BorderSize = 2;
+            this.roleBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roleBtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roleBtn.ForeColor = System.Drawing.Color.White;
+            this.roleBtn.Image = global::ECG_Analyzer.Properties.Resources.roleIcon_men;
+            this.roleBtn.Location = new System.Drawing.Point(447, 205);
+            this.roleBtn.Name = "roleBtn";
+            this.roleBtn.Size = new System.Drawing.Size(216, 197);
+            this.roleBtn.TabIndex = 6;
+            this.roleBtn.Text = "Role";
+            this.roleBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.roleBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.roleBtn.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -129,11 +138,12 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = global::ECG_Analyzer.Properties.Resources.test_red;
             this.button6.Location = new System.Drawing.Point(225, 205);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(216, 197);
             this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
+            this.button6.Text = "Test";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button6.UseVisualStyleBackColor = true;
@@ -233,14 +243,6 @@
             this.userBtn.UseVisualStyleBackColor = true;
             this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(890, 26);
-            this.panel1.TabIndex = 1;
-            // 
             // HomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,7 +264,7 @@
         private System.Windows.Forms.Button patientsBtn;
         private System.Windows.Forms.Button userBtn;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button roleBtn;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button settingBtn;
         private System.Windows.Forms.Button doctorBtn;
