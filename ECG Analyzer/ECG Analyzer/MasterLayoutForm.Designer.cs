@@ -38,7 +38,7 @@
             // 
             // headerPanel
             // 
-            this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
+            this.headerPanel.BackColor = System.Drawing.Color.DarkBlue;
             this.headerPanel.Controls.Add(this.label1);
             this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerPanel.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -62,7 +62,7 @@
             // 
             // leftMenuPanel
             // 
-            this.leftMenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(43)))));
+            this.leftMenuPanel.BackColor = System.Drawing.Color.Silver;
             this.leftMenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftMenuPanel.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.leftMenuPanel.ForeColor = System.Drawing.Color.White;

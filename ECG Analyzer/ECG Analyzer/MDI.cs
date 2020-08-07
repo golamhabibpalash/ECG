@@ -22,14 +22,15 @@ namespace ECG_Analyzer
 
         private void MDI_Load(object sender, EventArgs e)
         {
-            
 
+           
             if (File.Exists(mPath.path+"\\connect"))
             {                
                 Login obj = new Login();
                 obj.MdiParent = this;
                 obj.Show();
                 obj.WindowState = FormWindowState.Maximized;
+                
             }
             else
             {
@@ -37,6 +38,7 @@ namespace ECG_Analyzer
                 obj.MdiParent = this;
                 obj.Show();
                 obj.WindowState = FormWindowState.Maximized;
+                
             }
             
         }

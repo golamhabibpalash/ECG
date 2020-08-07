@@ -12,9 +12,11 @@ namespace ECG_Analyzer
 {
     public partial class HomeScreen : MasterLayoutForm
     {
+        MDI mdi = new MDI();
         public HomeScreen()
         {
-            InitializeComponent();
+            InitializeComponent();            
+            
         }
 
         MainClass mc = new MainClass();
@@ -58,7 +60,7 @@ namespace ECG_Analyzer
 
         private void HomeScreen_Load(object sender, EventArgs e)
         {
-
+            mdi.MainMenuStrip.Enabled = true;
         }
     }
 }

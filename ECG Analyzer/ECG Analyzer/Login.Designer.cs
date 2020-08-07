@@ -211,6 +211,8 @@
             // 
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel4.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel4.LinkColor = System.Drawing.Color.Black;
             this.linkLabel4.Location = new System.Drawing.Point(214, 79);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(20, 13);
@@ -222,6 +224,8 @@
             // 
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+            this.linkLabel3.LinkColor = System.Drawing.Color.Black;
             this.linkLabel3.Location = new System.Drawing.Point(188, 79);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(20, 13);
@@ -308,7 +312,7 @@
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(7, 205);
+            this.textBox1.Location = new System.Drawing.Point(6, 198);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(250, 24);
             this.textBox1.TabIndex = 1;
@@ -316,7 +320,7 @@
             // emailTBox
             // 
             this.emailTBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.emailTBox.Location = new System.Drawing.Point(7, 153);
+            this.emailTBox.Location = new System.Drawing.Point(7, 151);
             this.emailTBox.Name = "emailTBox";
             this.emailTBox.Size = new System.Drawing.Size(250, 24);
             this.emailTBox.TabIndex = 0;
@@ -336,7 +340,7 @@
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 183);
+            this.label2.Location = new System.Drawing.Point(4, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 17);
             this.label2.TabIndex = 0;
@@ -374,6 +378,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

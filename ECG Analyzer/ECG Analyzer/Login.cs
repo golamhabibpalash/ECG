@@ -26,5 +26,11 @@ namespace ECG_Analyzer
             HomeScreen hs = new HomeScreen();
             mClass.showWindow(hs, this, MDI.ActiveForm);
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            MDI mdi = new MDI();
+            mdi.MainMenuStrip.Enabled = false;
+        }
     }
 }

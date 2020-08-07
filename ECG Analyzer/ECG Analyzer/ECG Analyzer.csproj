@@ -232,5 +232,14 @@
   <ItemGroup>
     <None Include="image\dashboard.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="image\billing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\logs.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
