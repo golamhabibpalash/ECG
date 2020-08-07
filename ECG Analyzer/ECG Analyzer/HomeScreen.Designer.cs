@@ -29,21 +29,6 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.adminstratorPanel = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.roleBtn = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -52,6 +37,21 @@
             this.dataAnalysisBtn = new System.Windows.Forms.Button();
             this.patientsBtn = new System.Windows.Forms.Button();
             this.userBtn = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.adminstratorPanel = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.leftMenuPanel.SuspendLayout();
             this.masterLayoutPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -60,6 +60,7 @@
             // 
             // headerPanel
             // 
+            this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.headerPanel.Size = new System.Drawing.Size(1082, 40);
             // 
             // leftMenuPanel
@@ -76,8 +77,11 @@
             // 
             // masterLayoutPanel
             // 
+            this.masterLayoutPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.masterLayoutPanel.Controls.Add(this.tableLayoutPanel1);
             this.masterLayoutPanel.Controls.Add(this.panel1);
+            this.masterLayoutPanel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
             this.masterLayoutPanel.Location = new System.Drawing.Point(184, 40);
             this.masterLayoutPanel.Size = new System.Drawing.Size(898, 491);
             // 
@@ -116,42 +120,146 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(898, 481);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // panel1
+            // button8
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(898, 10);
-            this.panel1.TabIndex = 1;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button8.FlatAppearance.BorderSize = 2;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.Black;
+            this.button8.Image = global::ECG_Analyzer.Properties.Resources.statistics;
+            this.button8.Location = new System.Drawing.Point(540, 123);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(173, 114);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "Statistics";
+            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button8.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // roleBtn
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(184, 10);
-            this.panel2.TabIndex = 0;
+            this.roleBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.roleBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.roleBtn.FlatAppearance.BorderSize = 2;
+            this.roleBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.roleBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roleBtn.ForeColor = System.Drawing.Color.Black;
+            this.roleBtn.Image = global::ECG_Analyzer.Properties.Resources.roleIcon_men;
+            this.roleBtn.Location = new System.Drawing.Point(361, 123);
+            this.roleBtn.Name = "roleBtn";
+            this.roleBtn.Size = new System.Drawing.Size(173, 114);
+            this.roleBtn.TabIndex = 6;
+            this.roleBtn.Text = "Role";
+            this.roleBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.roleBtn.UseVisualStyleBackColor = true;
             // 
-            // panel3
+            // button6
             // 
-            this.panel3.Controls.Add(this.adminstratorPanel);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 10);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(184, 502);
-            this.panel3.TabIndex = 0;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button6.FlatAppearance.BorderSize = 2;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.Black;
+            this.button6.Image = global::ECG_Analyzer.Properties.Resources.test_red;
+            this.button6.Location = new System.Drawing.Point(182, 123);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(173, 114);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Test";
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button6.UseVisualStyleBackColor = true;
             // 
-            // adminstratorPanel
+            // settingBtn
             // 
-            this.adminstratorPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.adminstratorPanel.Location = new System.Drawing.Point(3, 6);
-            this.adminstratorPanel.Name = "adminstratorPanel";
-            this.adminstratorPanel.Size = new System.Drawing.Size(175, 118);
-            this.adminstratorPanel.TabIndex = 1;
+            this.settingBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.settingBtn.FlatAppearance.BorderSize = 2;
+            this.settingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.settingBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingBtn.ForeColor = System.Drawing.Color.Black;
+            this.settingBtn.Image = global::ECG_Analyzer.Properties.Resources.settings_128;
+            this.settingBtn.Location = new System.Drawing.Point(3, 123);
+            this.settingBtn.Name = "settingBtn";
+            this.settingBtn.Size = new System.Drawing.Size(173, 114);
+            this.settingBtn.TabIndex = 4;
+            this.settingBtn.Text = "Settings";
+            this.settingBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.settingBtn.UseVisualStyleBackColor = true;
+            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
+            // 
+            // doctorBtn
+            // 
+            this.doctorBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.doctorBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.doctorBtn.FlatAppearance.BorderSize = 2;
+            this.doctorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.doctorBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doctorBtn.ForeColor = System.Drawing.Color.Black;
+            this.doctorBtn.Image = global::ECG_Analyzer.Properties.Resources.doctor_male_96;
+            this.doctorBtn.Location = new System.Drawing.Point(540, 3);
+            this.doctorBtn.Name = "doctorBtn";
+            this.doctorBtn.Size = new System.Drawing.Size(173, 114);
+            this.doctorBtn.TabIndex = 3;
+            this.doctorBtn.Text = "Doctor";
+            this.doctorBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.doctorBtn.UseVisualStyleBackColor = true;
+            this.doctorBtn.Click += new System.EventHandler(this.doctorBtn_Click);
+            // 
+            // dataAnalysisBtn
+            // 
+            this.dataAnalysisBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dataAnalysisBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataAnalysisBtn.FlatAppearance.BorderSize = 2;
+            this.dataAnalysisBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dataAnalysisBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataAnalysisBtn.ForeColor = System.Drawing.Color.Black;
+            this.dataAnalysisBtn.Image = global::ECG_Analyzer.Properties.Resources.dataAnalysis_128;
+            this.dataAnalysisBtn.Location = new System.Drawing.Point(361, 3);
+            this.dataAnalysisBtn.Name = "dataAnalysisBtn";
+            this.dataAnalysisBtn.Size = new System.Drawing.Size(173, 114);
+            this.dataAnalysisBtn.TabIndex = 2;
+            this.dataAnalysisBtn.Text = "Data Analysis";
+            this.dataAnalysisBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.dataAnalysisBtn.UseVisualStyleBackColor = true;
+            this.dataAnalysisBtn.Click += new System.EventHandler(this.dataAnalysisBtn_Click);
+            // 
+            // patientsBtn
+            // 
+            this.patientsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.patientsBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patientsBtn.FlatAppearance.BorderSize = 2;
+            this.patientsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.patientsBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientsBtn.ForeColor = System.Drawing.Color.Black;
+            this.patientsBtn.Image = global::ECG_Analyzer.Properties.Resources.patient_80;
+            this.patientsBtn.Location = new System.Drawing.Point(182, 3);
+            this.patientsBtn.Name = "patientsBtn";
+            this.patientsBtn.Size = new System.Drawing.Size(173, 114);
+            this.patientsBtn.TabIndex = 1;
+            this.patientsBtn.Text = "Patients";
+            this.patientsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.patientsBtn.UseVisualStyleBackColor = true;
+            this.patientsBtn.Click += new System.EventHandler(this.patientsBtn_Click);
+            // 
+            // userBtn
+            // 
+            this.userBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.userBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.userBtn.FlatAppearance.BorderSize = 2;
+            this.userBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.userBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userBtn.ForeColor = System.Drawing.Color.Black;
+            this.userBtn.Image = global::ECG_Analyzer.Properties.Resources.user_80;
+            this.userBtn.Location = new System.Drawing.Point(3, 3);
+            this.userBtn.Name = "userBtn";
+            this.userBtn.Size = new System.Drawing.Size(173, 114);
+            this.userBtn.TabIndex = 0;
+            this.userBtn.Text = "Users";
+            this.userBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.userBtn.UseVisualStyleBackColor = true;
+            this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
             // 
             // button9
             // 
@@ -160,7 +268,7 @@
             this.button9.FlatAppearance.BorderSize = 2;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.ForeColor = System.Drawing.Color.Black;
             this.button9.Location = new System.Drawing.Point(719, 3);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(176, 114);
@@ -175,13 +283,28 @@
             this.button12.FlatAppearance.BorderSize = 2;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
+            this.button12.ForeColor = System.Drawing.Color.Black;
             this.button12.Location = new System.Drawing.Point(719, 123);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(176, 114);
             this.button12.TabIndex = 10;
             this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button13.FlatAppearance.BorderSize = 2;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button13.ForeColor = System.Drawing.Color.White;
+            this.button13.Location = new System.Drawing.Point(3, 243);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(173, 114);
+            this.button13.TabIndex = 10;
+            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button13.UseVisualStyleBackColor = true;
             // 
             // button14
             // 
@@ -243,26 +366,50 @@
             this.button17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button17.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // panel1
             // 
-            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button13.FlatAppearance.BorderSize = 2;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.ForeColor = System.Drawing.Color.White;
-            this.button13.Location = new System.Drawing.Point(3, 243);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(173, 114);
-            this.button13.TabIndex = 10;
-            this.button13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button13.UseVisualStyleBackColor = true;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(898, 10);
+            this.panel1.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(184, 10);
+            this.panel2.TabIndex = 0;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.adminstratorPanel);
+            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(0, 10);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(184, 502);
+            this.panel3.TabIndex = 0;
+            // 
+            // adminstratorPanel
+            // 
+            this.adminstratorPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.adminstratorPanel.Location = new System.Drawing.Point(3, 6);
+            this.adminstratorPanel.Name = "adminstratorPanel";
+            this.adminstratorPanel.Size = new System.Drawing.Size(175, 118);
+            this.adminstratorPanel.TabIndex = 1;
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Image = global::ECG_Analyzer.Properties.Resources.logs;
@@ -278,7 +425,9 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Image = global::ECG_Analyzer.Properties.Resources.login;
@@ -294,7 +443,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Image = global::ECG_Analyzer.Properties.Resources.billing;
@@ -310,7 +461,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = global::ECG_Analyzer.Properties.Resources.dashboard;
@@ -322,147 +475,6 @@
             this.button1.Text = "  Dashboard";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.FlatAppearance.BorderSize = 2;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = global::ECG_Analyzer.Properties.Resources.statistics;
-            this.button8.Location = new System.Drawing.Point(540, 123);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(173, 114);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Statistics";
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // roleBtn
-            // 
-            this.roleBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.roleBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.roleBtn.FlatAppearance.BorderSize = 2;
-            this.roleBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.roleBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roleBtn.ForeColor = System.Drawing.Color.White;
-            this.roleBtn.Image = global::ECG_Analyzer.Properties.Resources.roleIcon_men;
-            this.roleBtn.Location = new System.Drawing.Point(361, 123);
-            this.roleBtn.Name = "roleBtn";
-            this.roleBtn.Size = new System.Drawing.Size(173, 114);
-            this.roleBtn.TabIndex = 6;
-            this.roleBtn.Text = "Role";
-            this.roleBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.roleBtn.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.FlatAppearance.BorderSize = 2;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = global::ECG_Analyzer.Properties.Resources.test_red;
-            this.button6.Location = new System.Drawing.Point(182, 123);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(173, 114);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Test";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // settingBtn
-            // 
-            this.settingBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.settingBtn.FlatAppearance.BorderSize = 2;
-            this.settingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.settingBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingBtn.ForeColor = System.Drawing.Color.White;
-            this.settingBtn.Image = global::ECG_Analyzer.Properties.Resources.settings_128;
-            this.settingBtn.Location = new System.Drawing.Point(3, 123);
-            this.settingBtn.Name = "settingBtn";
-            this.settingBtn.Size = new System.Drawing.Size(173, 114);
-            this.settingBtn.TabIndex = 4;
-            this.settingBtn.Text = "Settings";
-            this.settingBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.settingBtn.UseVisualStyleBackColor = true;
-            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
-            // 
-            // doctorBtn
-            // 
-            this.doctorBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.doctorBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.doctorBtn.FlatAppearance.BorderSize = 2;
-            this.doctorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.doctorBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.doctorBtn.ForeColor = System.Drawing.Color.White;
-            this.doctorBtn.Image = global::ECG_Analyzer.Properties.Resources.doctor_male_96;
-            this.doctorBtn.Location = new System.Drawing.Point(540, 3);
-            this.doctorBtn.Name = "doctorBtn";
-            this.doctorBtn.Size = new System.Drawing.Size(173, 114);
-            this.doctorBtn.TabIndex = 3;
-            this.doctorBtn.Text = "Doctor";
-            this.doctorBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.doctorBtn.UseVisualStyleBackColor = true;
-            this.doctorBtn.Click += new System.EventHandler(this.doctorBtn_Click);
-            // 
-            // dataAnalysisBtn
-            // 
-            this.dataAnalysisBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dataAnalysisBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataAnalysisBtn.FlatAppearance.BorderSize = 2;
-            this.dataAnalysisBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dataAnalysisBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataAnalysisBtn.ForeColor = System.Drawing.Color.White;
-            this.dataAnalysisBtn.Image = global::ECG_Analyzer.Properties.Resources.dataAnalysis_128;
-            this.dataAnalysisBtn.Location = new System.Drawing.Point(361, 3);
-            this.dataAnalysisBtn.Name = "dataAnalysisBtn";
-            this.dataAnalysisBtn.Size = new System.Drawing.Size(173, 114);
-            this.dataAnalysisBtn.TabIndex = 2;
-            this.dataAnalysisBtn.Text = "Data Analysis";
-            this.dataAnalysisBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.dataAnalysisBtn.UseVisualStyleBackColor = true;
-            this.dataAnalysisBtn.Click += new System.EventHandler(this.dataAnalysisBtn_Click);
-            // 
-            // patientsBtn
-            // 
-            this.patientsBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.patientsBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.patientsBtn.FlatAppearance.BorderSize = 2;
-            this.patientsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.patientsBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.patientsBtn.ForeColor = System.Drawing.Color.White;
-            this.patientsBtn.Image = global::ECG_Analyzer.Properties.Resources.patient_80;
-            this.patientsBtn.Location = new System.Drawing.Point(182, 3);
-            this.patientsBtn.Name = "patientsBtn";
-            this.patientsBtn.Size = new System.Drawing.Size(173, 114);
-            this.patientsBtn.TabIndex = 1;
-            this.patientsBtn.Text = "Patients";
-            this.patientsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.patientsBtn.UseVisualStyleBackColor = true;
-            this.patientsBtn.Click += new System.EventHandler(this.patientsBtn_Click);
-            // 
-            // userBtn
-            // 
-            this.userBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.userBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userBtn.FlatAppearance.BorderSize = 2;
-            this.userBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.userBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userBtn.ForeColor = System.Drawing.Color.White;
-            this.userBtn.Image = global::ECG_Analyzer.Properties.Resources.user_80;
-            this.userBtn.Location = new System.Drawing.Point(3, 3);
-            this.userBtn.Name = "userBtn";
-            this.userBtn.Size = new System.Drawing.Size(173, 114);
-            this.userBtn.TabIndex = 0;
-            this.userBtn.Text = "Users";
-            this.userBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.userBtn.UseVisualStyleBackColor = true;
-            this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
             // 
             // HomeScreen
             // 
