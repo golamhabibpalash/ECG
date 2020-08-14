@@ -50,7 +50,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dataTBox = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.hRateTBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.headerPanel.SuspendLayout();
@@ -88,19 +87,17 @@
             this.leftMenuPanel.Controls.Add(this.startBtn);
             this.leftMenuPanel.Size = new System.Drawing.Size(150, 575);
             // 
+            // masterLayoutPanel
+            // 
+            this.masterLayoutPanel.Controls.Add(this.dataGridView);
+            this.masterLayoutPanel.Controls.Add(this.panel3);
+            this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
+            this.masterLayoutPanel.Size = new System.Drawing.Size(866, 554);
+            // 
             // footerPanel
             // 
             this.footerPanel.Location = new System.Drawing.Point(150, 594);
             this.footerPanel.Size = new System.Drawing.Size(866, 21);
-            // 
-            // masterLayoutPanel
-            // 
-            this.masterLayoutPanel.Controls.Add(this.panel4);
-            this.masterLayoutPanel.Controls.Add(this.dataGridView);
-            this.masterLayoutPanel.Controls.Add(this.panel3);
-            this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
-            this.masterLayoutPanel.Location = new System.Drawing.Point(150, 40);
-            this.masterLayoutPanel.Size = new System.Drawing.Size(866, 554);
             // 
             // startBtn
             // 
@@ -199,20 +196,17 @@
             this.boudCBox.Name = "boudCBox";
             this.boudCBox.Size = new System.Drawing.Size(89, 23);
             this.boudCBox.TabIndex = 2;
+            this.boudCBox.SelectedIndexChanged += new System.EventHandler(this.boudCBox_SelectedIndexChanged);
             // 
             // portCBox
             // 
             this.portCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.portCBox.FormattingEnabled = true;
-            this.portCBox.Items.AddRange(new object[] {
-            "COM3",
-            "COM4",
-            "COM5",
-            "COM6"});
             this.portCBox.Location = new System.Drawing.Point(48, 5);
             this.portCBox.Name = "portCBox";
             this.portCBox.Size = new System.Drawing.Size(89, 23);
             this.portCBox.TabIndex = 2;
+            this.portCBox.SelectedIndexChanged += new System.EventHandler(this.portCBox_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -308,6 +302,7 @@
             // 
             // dataGridView
             // 
+            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -315,14 +310,6 @@
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.Size = new System.Drawing.Size(866, 345);
             this.dataGridView.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(866, 10);
-            this.panel4.TabIndex = 3;
             // 
             // hRateTBox
             // 
@@ -348,8 +335,8 @@
             this.ClientSize = new System.Drawing.Size(1016, 615);
             this.Name = "DataAnalysis";
             this.Text = "DataAnalysis";
+            this.Load += new System.EventHandler(this.DataAnalysis_Load);
             this.headerPanel.ResumeLayout(false);
-            this.headerPanel.PerformLayout();
             this.leftMenuPanel.ResumeLayout(false);
             this.leftMenuPanel.PerformLayout();
             this.masterLayoutPanel.ResumeLayout(false);
@@ -384,7 +371,6 @@
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.TextBox dataTBox;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.TextBox hRateTBox;
         private System.Windows.Forms.Label label6;

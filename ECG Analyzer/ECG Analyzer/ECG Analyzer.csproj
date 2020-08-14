@@ -95,6 +95,11 @@
     <Compile Include="MDI.Designer.cs">
       <DependentUpon>MDI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\PData.cs" />
+    <Compile Include="Models\QData.cs" />
+    <Compile Include="Models\RData.cs" />
+    <Compile Include="Models\SData.cs" />
+    <Compile Include="Models\TData.cs" />
     <Compile Include="PatientForm.cs">
       <SubType>Form</SubType>
     </Compile>
