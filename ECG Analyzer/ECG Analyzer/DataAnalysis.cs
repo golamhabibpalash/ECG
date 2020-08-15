@@ -29,19 +29,6 @@ namespace ECG_Analyzer
                 portCBox.Items.Add(comport);
             }
 
-
-
-            dataGridView.Enabled = false;
-            if (portCBox.SelectedIndex==-1 || boudCBox.SelectedIndex==-1)
-            {
-                portBoutSelected = false;
-            }
-            else
-            {
-                portBoutSelected = true;
-            }
-            
-            
         }
         private void startBtn_Click(object sender, EventArgs e)
         {
@@ -69,8 +56,6 @@ namespace ECG_Analyzer
 
         private void myport_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            
-
             this.Invoke(new EventHandler(displadata_event));
 
             in_data = myPort.ReadLine();

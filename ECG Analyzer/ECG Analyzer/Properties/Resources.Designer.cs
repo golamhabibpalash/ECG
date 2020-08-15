@@ -93,6 +93,16 @@ namespace ECG_Analyzer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Data {
+            get {
+                object obj = ResourceManager.GetObject("Data", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dataAnalysis {
             get {
                 object obj = ResourceManager.GetObject("dataAnalysis", resourceCulture);

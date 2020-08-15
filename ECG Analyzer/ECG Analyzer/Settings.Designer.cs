@@ -69,15 +69,15 @@
             this.leftMenuPanel.Controls.Add(this.passwordErrorLabel);
             this.leftMenuPanel.Size = new System.Drawing.Size(215, 410);
             // 
-            // footerPanel
-            // 
-            this.footerPanel.Location = new System.Drawing.Point(215, 429);
-            this.footerPanel.Size = new System.Drawing.Size(585, 21);
-            // 
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.Location = new System.Drawing.Point(215, 40);
             this.masterLayoutPanel.Size = new System.Drawing.Size(585, 389);
+            // 
+            // footerPanel
+            // 
+            this.footerPanel.Location = new System.Drawing.Point(215, 429);
+            this.footerPanel.Size = new System.Drawing.Size(585, 21);
             // 
             // saveBtn
             // 
@@ -194,7 +194,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(60, 69);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 24);

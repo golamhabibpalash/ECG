@@ -70,11 +70,6 @@
             this.leftMenuPanel.Size = new System.Drawing.Size(184, 512);
             this.leftMenuPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.leftMenuPanel_Paint);
             // 
-            // footerPanel
-            // 
-            this.footerPanel.Location = new System.Drawing.Point(184, 531);
-            this.footerPanel.Size = new System.Drawing.Size(898, 21);
-            // 
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -84,6 +79,11 @@
             this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
             this.masterLayoutPanel.Location = new System.Drawing.Point(184, 40);
             this.masterLayoutPanel.Size = new System.Drawing.Size(898, 491);
+            // 
+            // footerPanel
+            // 
+            this.footerPanel.Location = new System.Drawing.Point(184, 531);
+            this.footerPanel.Size = new System.Drawing.Size(898, 21);
             // 
             // tableLayoutPanel1
             // 
@@ -269,10 +269,12 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.Black;
+            this.button9.Image = global::ECG_Analyzer.Properties.Resources.Data;
             this.button9.Location = new System.Drawing.Point(719, 3);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(176, 114);
             this.button9.TabIndex = 10;
+            this.button9.Text = "DATA";
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button9.UseVisualStyleBackColor = true;
             // 
@@ -411,7 +413,7 @@
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::ECG_Analyzer.Properties.Resources.logs;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(3, 244);
@@ -429,7 +431,7 @@
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::ECG_Analyzer.Properties.Resources.login;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(3, 206);
@@ -447,7 +449,7 @@
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::ECG_Analyzer.Properties.Resources.billing;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(3, 168);
@@ -465,7 +467,7 @@
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::ECG_Analyzer.Properties.Resources.dashboard;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(3, 130);

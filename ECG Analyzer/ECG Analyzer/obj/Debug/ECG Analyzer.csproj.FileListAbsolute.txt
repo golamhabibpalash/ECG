@@ -55,3 +55,4 @@ C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\EC
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csprojAssemblyReference.cache
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csprojAssemblyReference.cache
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Controls.Personalization.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Controls.Personalization.resources

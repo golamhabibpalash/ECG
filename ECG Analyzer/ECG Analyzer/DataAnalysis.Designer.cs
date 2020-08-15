@@ -37,7 +37,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.totalTimeTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.portBoudPanel = new System.Windows.Forms.Panel();
             this.boudCBox = new System.Windows.Forms.ComboBox();
             this.portCBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,14 +52,16 @@
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.hRateTBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.controlPanel = new System.Windows.Forms.Panel();
             this.headerPanel.SuspendLayout();
             this.leftMenuPanel.SuspendLayout();
             this.masterLayoutPanel.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.portBoudPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            this.controlPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // backBtn
@@ -75,16 +77,14 @@
             // 
             // leftMenuPanel
             // 
+            this.leftMenuPanel.Controls.Add(this.controlPanel);
             this.leftMenuPanel.Controls.Add(this.hRateTBox);
             this.leftMenuPanel.Controls.Add(this.dataTBox);
             this.leftMenuPanel.Controls.Add(this.label6);
             this.leftMenuPanel.Controls.Add(this.label5);
             this.leftMenuPanel.Controls.Add(this.progressBar);
-            this.leftMenuPanel.Controls.Add(this.panel2);
+            this.leftMenuPanel.Controls.Add(this.portBoudPanel);
             this.leftMenuPanel.Controls.Add(this.panel1);
-            this.leftMenuPanel.Controls.Add(this.saveDataBtn);
-            this.leftMenuPanel.Controls.Add(this.stopBtn);
-            this.leftMenuPanel.Controls.Add(this.startBtn);
             this.leftMenuPanel.Size = new System.Drawing.Size(150, 575);
             // 
             // masterLayoutPanel
@@ -105,7 +105,7 @@
             this.startBtn.FlatAppearance.BorderSize = 0;
             this.startBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startBtn.Location = new System.Drawing.Point(3, 18);
+            this.startBtn.Location = new System.Drawing.Point(3, 9);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(145, 35);
             this.startBtn.TabIndex = 0;
@@ -119,7 +119,7 @@
             this.stopBtn.FlatAppearance.BorderSize = 0;
             this.stopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stopBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopBtn.Location = new System.Drawing.Point(3, 59);
+            this.stopBtn.Location = new System.Drawing.Point(4, 50);
             this.stopBtn.Name = "stopBtn";
             this.stopBtn.Size = new System.Drawing.Size(145, 35);
             this.stopBtn.TabIndex = 0;
@@ -134,7 +134,7 @@
             this.saveDataBtn.FlatAppearance.BorderSize = 0;
             this.saveDataBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveDataBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveDataBtn.Location = new System.Drawing.Point(3, 100);
+            this.saveDataBtn.Location = new System.Drawing.Point(3, 91);
             this.saveDataBtn.Name = "saveDataBtn";
             this.saveDataBtn.Size = new System.Drawing.Size(145, 35);
             this.saveDataBtn.TabIndex = 0;
@@ -155,7 +155,7 @@
             // 
             this.totalTimeTextBox.Location = new System.Drawing.Point(92, 6);
             this.totalTimeTextBox.Name = "totalTimeTextBox";
-            this.totalTimeTextBox.Size = new System.Drawing.Size(48, 23);
+            this.totalTimeTextBox.Size = new System.Drawing.Size(48, 22);
             this.totalTimeTextBox.TabIndex = 1;
             // 
             // label1
@@ -169,18 +169,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Total Time";
             // 
-            // panel2
+            // portBoudPanel
             // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Controls.Add(this.boudCBox);
-            this.panel2.Controls.Add(this.portCBox);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(3, 265);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(144, 67);
-            this.panel2.TabIndex = 2;
+            this.portBoudPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.portBoudPanel.Controls.Add(this.boudCBox);
+            this.portBoudPanel.Controls.Add(this.portCBox);
+            this.portBoudPanel.Controls.Add(this.label4);
+            this.portBoudPanel.Controls.Add(this.label3);
+            this.portBoudPanel.Controls.Add(this.label2);
+            this.portBoudPanel.Location = new System.Drawing.Point(3, 265);
+            this.portBoudPanel.Name = "portBoudPanel";
+            this.portBoudPanel.Size = new System.Drawing.Size(144, 67);
+            this.portBoudPanel.TabIndex = 2;
             // 
             // boudCBox
             // 
@@ -194,7 +194,7 @@
             "115200"});
             this.boudCBox.Location = new System.Drawing.Point(48, 32);
             this.boudCBox.Name = "boudCBox";
-            this.boudCBox.Size = new System.Drawing.Size(89, 23);
+            this.boudCBox.Size = new System.Drawing.Size(89, 22);
             this.boudCBox.TabIndex = 2;
             this.boudCBox.SelectedIndexChanged += new System.EventHandler(this.boudCBox_SelectedIndexChanged);
             // 
@@ -204,7 +204,7 @@
             this.portCBox.FormattingEnabled = true;
             this.portCBox.Location = new System.Drawing.Point(48, 5);
             this.portCBox.Name = "portCBox";
-            this.portCBox.Size = new System.Drawing.Size(89, 23);
+            this.portCBox.Size = new System.Drawing.Size(89, 22);
             this.portCBox.TabIndex = 2;
             this.portCBox.SelectedIndexChanged += new System.EventHandler(this.portCBox_SelectedIndexChanged);
             // 
@@ -235,7 +235,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(4, 4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 15);
+            this.label2.Size = new System.Drawing.Size(38, 14);
             this.label2.TabIndex = 0;
             this.label2.Text = "label2";
             // 
@@ -294,7 +294,7 @@
             // 
             // dataTBox
             // 
-            this.dataTBox.Location = new System.Drawing.Point(4, 345);
+            this.dataTBox.Location = new System.Drawing.Point(4, 338);
             this.dataTBox.Multiline = true;
             this.dataTBox.Name = "dataTBox";
             this.dataTBox.Size = new System.Drawing.Size(143, 193);
@@ -315,7 +315,7 @@
             // 
             this.hRateTBox.Location = new System.Drawing.Point(96, 236);
             this.hRateTBox.Name = "hRateTBox";
-            this.hRateTBox.Size = new System.Drawing.Size(51, 23);
+            this.hRateTBox.Size = new System.Drawing.Size(51, 22);
             this.hRateTBox.TabIndex = 6;
             // 
             // label6
@@ -327,6 +327,16 @@
             this.label6.Size = new System.Drawing.Size(82, 19);
             this.label6.TabIndex = 4;
             this.label6.Text = "Heart Rate";
+            // 
+            // controlPanel
+            // 
+            this.controlPanel.Controls.Add(this.saveDataBtn);
+            this.controlPanel.Controls.Add(this.stopBtn);
+            this.controlPanel.Controls.Add(this.startBtn);
+            this.controlPanel.Location = new System.Drawing.Point(0, 6);
+            this.controlPanel.Name = "controlPanel";
+            this.controlPanel.Size = new System.Drawing.Size(150, 129);
+            this.controlPanel.TabIndex = 7;
             // 
             // DataAnalysis
             // 
@@ -342,11 +352,12 @@
             this.masterLayoutPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.portBoudPanel.ResumeLayout(false);
+            this.portBoudPanel.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            this.controlPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -359,7 +370,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button saveDataBtn;
         private System.Windows.Forms.Button stopBtn;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel portBoudPanel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox boudCBox;
         private System.Windows.Forms.ComboBox portCBox;
@@ -374,5 +385,6 @@
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.TextBox hRateTBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel controlPanel;
     }
 }
