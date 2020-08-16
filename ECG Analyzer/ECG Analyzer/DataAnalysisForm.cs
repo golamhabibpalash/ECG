@@ -168,11 +168,12 @@ namespace ECG_Analyzer
 
                     SqlConnection con = new SqlConnection(@"server=GH-PALASH\SQLEXPRESS;database=ccmsDB;Integrated Security=True");
                     string dataInsertQuery ="INSERT INTO PQRST"+
-                        "(patientId,Cycle,DayCount,PData,QData,RData,SData,TData) values(@patientId,@Cycle,@DayCount,@PData,@QData,@RData,@SData,@TData)";
+                        "(patientId,TestDate,Cycle,DayCount,PData,QData,RData,SData,TData) values(@patientId,@Cycle,@DayCount,@PData,@QData,@RData,@SData,@TData)";
 
                     SqlCommand cmd = new SqlCommand(dataInsertQuery, con);
 
                     cmd.Parameters.AddWithValue("@patientId", patientIdTBox.Text);
+                    cmd.Parameters.AddWithValue("@TestDate", DateTime.Today);
                     cmd.Parameters.AddWithValue("@Cycle", ++cycleCount);
                     cmd.Parameters.AddWithValue("@DayCount", dayCountTBox.Text);
                     cmd.Parameters.AddWithValue("@PData", pData[0]);

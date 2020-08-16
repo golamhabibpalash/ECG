@@ -37,7 +37,7 @@
             this.dataAnalysisBtn = new System.Windows.Forms.Button();
             this.patientsBtn = new System.Windows.Forms.Button();
             this.userBtn = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.dataBtn = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
@@ -60,7 +60,6 @@
             // 
             // headerPanel
             // 
-            this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.headerPanel.Size = new System.Drawing.Size(1082, 40);
             // 
             // leftMenuPanel
@@ -101,7 +100,7 @@
             this.tableLayoutPanel1.Controls.Add(this.dataAnalysisBtn, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.patientsBtn, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.userBtn, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button9, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.dataBtn, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.button12, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.button13, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.button14, 1, 2);
@@ -261,22 +260,23 @@
             this.userBtn.UseVisualStyleBackColor = true;
             this.userBtn.Click += new System.EventHandler(this.userBtn_Click);
             // 
-            // button9
+            // dataBtn
             // 
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button9.FlatAppearance.BorderSize = 2;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.Black;
-            this.button9.Image = global::ECG_Analyzer.Properties.Resources.Data;
-            this.button9.Location = new System.Drawing.Point(719, 3);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(176, 114);
-            this.button9.TabIndex = 10;
-            this.button9.Text = "DATA";
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button9.UseVisualStyleBackColor = true;
+            this.dataBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dataBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataBtn.FlatAppearance.BorderSize = 2;
+            this.dataBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dataBtn.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataBtn.ForeColor = System.Drawing.Color.Black;
+            this.dataBtn.Image = global::ECG_Analyzer.Properties.Resources.Data;
+            this.dataBtn.Location = new System.Drawing.Point(719, 3);
+            this.dataBtn.Name = "dataBtn";
+            this.dataBtn.Size = new System.Drawing.Size(176, 114);
+            this.dataBtn.TabIndex = 10;
+            this.dataBtn.Text = "DATA";
+            this.dataBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.dataBtn.UseVisualStyleBackColor = true;
+            this.dataBtn.Click += new System.EventHandler(this.dataBtn_Click);
             // 
             // button12
             // 
@@ -512,7 +512,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button dataBtn;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;

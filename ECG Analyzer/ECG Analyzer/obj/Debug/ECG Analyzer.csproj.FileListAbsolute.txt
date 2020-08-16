@@ -12,19 +12,6 @@ D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.Gen
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.CoreCompileInputs.cache
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.exe
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.pdb
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe.config
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.pdb
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.HomeScreen.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Login.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayoutForm.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MDI.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Properties.Resources.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Settings.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.GenerateResource.cache
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.CoreCompileInputs.cache
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.exe
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.pdb
 F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe.config
 F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe
 F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.pdb
@@ -41,18 +28,32 @@ F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj
 F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.exe
 F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.pdb
 F:\GH Palash\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayout2.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayout2.resources
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayout2.resources
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.UserForm.resources
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DoctorForm.resources
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.SettingForm.resources
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.PatientForm.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DoctorForm.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.PatientForm.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.SettingForm.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.UserForm.resources
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csprojAssemblyReference.cache
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csprojAssemblyReference.cache
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Controls.Personalization.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe.config
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.pdb
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csprojAssemblyReference.cache
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Controls.Personalization.resources
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DataAnalysisForm.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DoctorForm.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.HomeScreen.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Login.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayout2.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MasterLayoutForm.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.MDI.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.PatientForm.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Properties.Resources.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.SettingForm.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Settings.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.UserForm.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.GenerateResource.cache
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.CoreCompileInputs.cache
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.exe
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.pdb
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DataForm.resources

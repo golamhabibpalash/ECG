@@ -4,3 +4,8 @@ D:\GHPLS\Project\ECG\ECG Analyzer\ECG_All_Classes\obj\Debug\ECG_All_Classes.cspr
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG_All_Classes\obj\Debug\ECG_All_Classes.csproj.CoreCompileInputs.cache
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG_All_Classes\obj\Debug\ECG_All_Classes.dll
 D:\GHPLS\Project\ECG\ECG Analyzer\ECG_All_Classes\obj\Debug\ECG_All_Classes.pdb
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG_All_Classes\bin\Debug\ECG_All_Classes.dll
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG_All_Classes\bin\Debug\ECG_All_Classes.pdb
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG_All_Classes\obj\Debug\ECG_All_Classes.csproj.CoreCompileInputs.cache
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG_All_Classes\obj\Debug\ECG_All_Classes.dll
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG_All_Classes\obj\Debug\ECG_All_Classes.pdb

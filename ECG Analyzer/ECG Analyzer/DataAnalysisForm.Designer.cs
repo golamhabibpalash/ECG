@@ -45,16 +45,21 @@
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.hRateTBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.controlPanel = new System.Windows.Forms.Panel();
             this.patientIdTBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.dayCountTBox = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.headerPanel.SuspendLayout();
             this.leftMenuPanel.SuspendLayout();
             this.masterLayoutPanel.SuspendLayout();
             this.portBoudPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.controlPanel.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // backBtn
@@ -70,37 +75,35 @@
             // 
             // leftMenuPanel
             // 
-            this.leftMenuPanel.Controls.Add(this.dayCountTBox);
-            this.leftMenuPanel.Controls.Add(this.patientIdTBox);
-            this.leftMenuPanel.Controls.Add(this.controlPanel);
+            this.leftMenuPanel.Controls.Add(this.panel2);
+            this.leftMenuPanel.Controls.Add(this.panel1);
+            this.leftMenuPanel.Controls.Add(this.flowLayoutPanel1);
             this.leftMenuPanel.Controls.Add(this.hRateTBox);
             this.leftMenuPanel.Controls.Add(this.dataTBox);
-            this.leftMenuPanel.Controls.Add(this.label7);
             this.leftMenuPanel.Controls.Add(this.label6);
-            this.leftMenuPanel.Controls.Add(this.label5);
             this.leftMenuPanel.Controls.Add(this.portBoudPanel);
-            this.leftMenuPanel.Size = new System.Drawing.Size(150, 575);
+            this.leftMenuPanel.Size = new System.Drawing.Size(200, 575);
             // 
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.Controls.Add(this.dataGridView);
             this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
-            this.masterLayoutPanel.Size = new System.Drawing.Size(866, 554);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(816, 554);
             // 
             // footerPanel
             // 
-            this.footerPanel.Location = new System.Drawing.Point(150, 594);
-            this.footerPanel.Size = new System.Drawing.Size(866, 21);
+            this.footerPanel.Location = new System.Drawing.Point(200, 594);
+            this.footerPanel.Size = new System.Drawing.Size(816, 21);
             // 
             // startBtn
             // 
-            this.startBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
+            this.startBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.startBtn.FlatAppearance.BorderSize = 0;
             this.startBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startBtn.Location = new System.Drawing.Point(3, 9);
+            this.startBtn.Location = new System.Drawing.Point(8, 8);
             this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(145, 35);
+            this.startBtn.Size = new System.Drawing.Size(186, 35);
             this.startBtn.TabIndex = 0;
             this.startBtn.Text = "Start";
             this.startBtn.UseVisualStyleBackColor = false;
@@ -112,9 +115,9 @@
             this.stopBtn.FlatAppearance.BorderSize = 0;
             this.stopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stopBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopBtn.Location = new System.Drawing.Point(4, 50);
+            this.stopBtn.Location = new System.Drawing.Point(8, 49);
             this.stopBtn.Name = "stopBtn";
-            this.stopBtn.Size = new System.Drawing.Size(145, 35);
+            this.stopBtn.Size = new System.Drawing.Size(186, 35);
             this.stopBtn.TabIndex = 0;
             this.stopBtn.Text = "Stop";
             this.stopBtn.UseVisualStyleBackColor = false;
@@ -127,9 +130,9 @@
             this.saveDataBtn.FlatAppearance.BorderSize = 0;
             this.saveDataBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveDataBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveDataBtn.Location = new System.Drawing.Point(3, 91);
+            this.saveDataBtn.Location = new System.Drawing.Point(8, 90);
             this.saveDataBtn.Name = "saveDataBtn";
-            this.saveDataBtn.Size = new System.Drawing.Size(145, 35);
+            this.saveDataBtn.Size = new System.Drawing.Size(186, 35);
             this.saveDataBtn.TabIndex = 0;
             this.saveDataBtn.Text = "Save Data";
             this.saveDataBtn.UseVisualStyleBackColor = false;
@@ -154,9 +157,9 @@
             this.portBoudPanel.Controls.Add(this.label4);
             this.portBoudPanel.Controls.Add(this.label3);
             this.portBoudPanel.Controls.Add(this.label2);
-            this.portBoudPanel.Location = new System.Drawing.Point(3, 265);
+            this.portBoudPanel.Location = new System.Drawing.Point(3, 235);
             this.portBoudPanel.Name = "portBoudPanel";
-            this.portBoudPanel.Size = new System.Drawing.Size(144, 67);
+            this.portBoudPanel.Size = new System.Drawing.Size(189, 67);
             this.portBoudPanel.TabIndex = 2;
             // 
             // boudCBox
@@ -171,7 +174,7 @@
             "115200"});
             this.boudCBox.Location = new System.Drawing.Point(48, 32);
             this.boudCBox.Name = "boudCBox";
-            this.boudCBox.Size = new System.Drawing.Size(89, 22);
+            this.boudCBox.Size = new System.Drawing.Size(138, 22);
             this.boudCBox.TabIndex = 2;
             // 
             // portCBox
@@ -180,7 +183,7 @@
             this.portCBox.FormattingEnabled = true;
             this.portCBox.Location = new System.Drawing.Point(48, 5);
             this.portCBox.Name = "portCBox";
-            this.portCBox.Size = new System.Drawing.Size(89, 22);
+            this.portCBox.Size = new System.Drawing.Size(138, 22);
             this.portCBox.TabIndex = 2;
             // 
             // label4
@@ -225,7 +228,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 141);
+            this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(74, 19);
             this.label5.TabIndex = 4;
@@ -233,10 +236,10 @@
             // 
             // dataTBox
             // 
-            this.dataTBox.Location = new System.Drawing.Point(4, 338);
+            this.dataTBox.Location = new System.Drawing.Point(8, 308);
             this.dataTBox.Multiline = true;
             this.dataTBox.Name = "dataTBox";
-            this.dataTBox.Size = new System.Drawing.Size(143, 193);
+            this.dataTBox.Size = new System.Drawing.Size(184, 246);
             this.dataTBox.TabIndex = 5;
             // 
             // dataGridView
@@ -256,48 +259,39 @@
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.Size = new System.Drawing.Size(866, 554);
+            this.dataGridView.Size = new System.Drawing.Size(816, 554);
             this.dataGridView.TabIndex = 2;
             // 
             // hRateTBox
             // 
-            this.hRateTBox.Location = new System.Drawing.Point(96, 236);
+            this.hRateTBox.Location = new System.Drawing.Point(96, 206);
             this.hRateTBox.Name = "hRateTBox";
-            this.hRateTBox.Size = new System.Drawing.Size(51, 22);
+            this.hRateTBox.Size = new System.Drawing.Size(96, 22);
             this.hRateTBox.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 237);
+            this.label6.Location = new System.Drawing.Point(12, 207);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 19);
             this.label6.TabIndex = 4;
             this.label6.Text = "Heart Rate";
             // 
-            // controlPanel
-            // 
-            this.controlPanel.Controls.Add(this.saveDataBtn);
-            this.controlPanel.Controls.Add(this.stopBtn);
-            this.controlPanel.Controls.Add(this.startBtn);
-            this.controlPanel.Location = new System.Drawing.Point(0, 6);
-            this.controlPanel.Name = "controlPanel";
-            this.controlPanel.Size = new System.Drawing.Size(150, 129);
-            this.controlPanel.TabIndex = 7;
-            // 
             // patientIdTBox
             // 
-            this.patientIdTBox.Location = new System.Drawing.Point(83, 141);
+            this.patientIdTBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.patientIdTBox.Location = new System.Drawing.Point(98, 32);
             this.patientIdTBox.Name = "patientIdTBox";
-            this.patientIdTBox.Size = new System.Drawing.Size(61, 22);
+            this.patientIdTBox.Size = new System.Drawing.Size(89, 22);
             this.patientIdTBox.TabIndex = 8;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 169);
+            this.label7.Location = new System.Drawing.Point(3, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 19);
             this.label7.TabIndex = 4;
@@ -305,10 +299,60 @@
             // 
             // dayCountTBox
             // 
-            this.dayCountTBox.Location = new System.Drawing.Point(83, 169);
+            this.dayCountTBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dayCountTBox.Location = new System.Drawing.Point(98, 3);
             this.dayCountTBox.Name = "dayCountTBox";
-            this.dayCountTBox.Size = new System.Drawing.Size(61, 22);
+            this.dayCountTBox.Size = new System.Drawing.Size(89, 22);
             this.dayCountTBox.TabIndex = 8;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.startBtn);
+            this.flowLayoutPanel1.Controls.Add(this.stopBtn);
+            this.flowLayoutPanel1.Controls.Add(this.saveDataBtn);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 132);
+            this.flowLayoutPanel1.TabIndex = 9;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.dayCountTBox, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.patientIdTBox, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label7, 0, 1);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(5, 5);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(190, 59);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tableLayoutPanel2);
+            this.panel1.Location = new System.Drawing.Point(0, 133);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
+            this.panel1.Name = "panel1";
+            this.panel1.Padding = new System.Windows.Forms.Padding(5);
+            this.panel1.Size = new System.Drawing.Size(200, 69);
+            this.panel1.TabIndex = 10;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(47)))), ((int)(((byte)(43)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 554);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 21);
+            this.panel2.TabIndex = 11;
             // 
             // DataAnalysisForm
             // 
@@ -325,7 +369,10 @@
             this.portBoudPanel.ResumeLayout(false);
             this.portBoudPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            this.controlPanel.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -348,9 +395,12 @@
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.TextBox hRateTBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel controlPanel;
         private System.Windows.Forms.TextBox patientIdTBox;
         private System.Windows.Forms.TextBox dayCountTBox;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Panel panel2;
     }
 }

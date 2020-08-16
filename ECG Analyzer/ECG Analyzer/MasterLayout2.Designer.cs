@@ -40,16 +40,17 @@
             // 
             // leftMenuPanel
             // 
-            this.leftMenuPanel.Size = new System.Drawing.Size(150, 410);
-            // 
-            // footerPanel
-            // 
-            this.footerPanel.Location = new System.Drawing.Point(150, 429);
-            this.footerPanel.Size = new System.Drawing.Size(650, 21);
+            this.leftMenuPanel.Size = new System.Drawing.Size(200, 410);
             // 
             // masterLayoutPanel
             // 
-            this.masterLayoutPanel.Size = new System.Drawing.Size(650, 389);
+            this.masterLayoutPanel.Location = new System.Drawing.Point(200, 40);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(600, 389);
+            // 
+            // footerPanel
+            // 
+            this.footerPanel.Location = new System.Drawing.Point(200, 429);
+            this.footerPanel.Size = new System.Drawing.Size(600, 21);
             // 
             // backBtn
             // 
@@ -73,7 +74,6 @@
             this.Text = "MasterLayout2";
             this.Load += new System.EventHandler(this.MasterLayout2_Load);
             this.headerPanel.ResumeLayout(false);
-            this.headerPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }

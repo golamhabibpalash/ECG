@@ -62,5 +62,11 @@ namespace ECG_Analyzer
         {
             mdi.MainMenuStrip.Enabled = true;
         }
+
+        private void dataBtn_Click(object sender, EventArgs e)
+        {
+            DataForm uf = new DataForm();
+            mc.showWindow(uf, this, MDI.ActiveForm);
+        }
     }
 }

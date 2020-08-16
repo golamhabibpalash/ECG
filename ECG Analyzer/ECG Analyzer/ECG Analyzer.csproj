@@ -58,6 +58,12 @@
     <Compile Include="DataAnalysisForm.Designer.cs">
       <DependentUpon>DataAnalysisForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForm.Designer.cs">
+      <DependentUpon>DataForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DoctorForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataAnalysisForm.resx">
       <DependentUpon>DataAnalysisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForm.resx">
+      <DependentUpon>DataForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoctorForm.resx">
       <DependentUpon>DoctorForm.cs</DependentUpon>
