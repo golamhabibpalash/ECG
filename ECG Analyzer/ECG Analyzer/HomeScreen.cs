@@ -23,7 +23,7 @@ namespace ECG_Analyzer
 
         private void dataAnalysisBtn_Click(object sender, EventArgs e)
         {
-            DataAnalysis da = new DataAnalysis();
+            DataAnalysisForm da = new DataAnalysisForm();
             mc.showWindow(da, this, MDI.ActiveForm);
         }
 

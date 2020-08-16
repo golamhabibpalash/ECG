@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ECG_Analyzer.Models;
+using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO.Ports;
@@ -6,19 +8,37 @@ using System.Windows.Forms;
 
 namespace ECG_Analyzer
 {
-    public partial class DataAnalysis : MasterLayout2
+    public partial class DataAnalysisForm : MasterLayout2
     {
+        public DataAnalysisForm()
+        {
+            InitializeComponent();
+        }
+
+        //Initial Variable Calling
         private SerialPort myPort;
         private DateTime dateTime;
         public string in_data;
         public int rowData;
         public bool startButtonClick = false;
-        bool portBoutSelected = false;
 
-        public DataAnalysis()
-        {
-            InitializeComponent();
-        }
+        List<int> PData = new List<int>();
+        List<int> QData = new List<int>();
+        List<int> RData = new List<int>();
+        List<int> SData = new List<int>();
+        List<int> TData = new List<int>();
+        List<int> PatientId = new List<int>();
+        List<int> DayCount = new List<int>();
+        List<int> Cycle = new List<int>();
+        List<int> AverageRowData = new List<int>();
+
+        
+
+
+        //Create Object for Other Class
+
+
+
         private void DataAnalysis_Load(object sender, EventArgs e)
         {
             //Code for Find Auto Port Name in Port List
@@ -29,10 +49,11 @@ namespace ECG_Analyzer
                 portCBox.Items.Add(comport);
             }
 
+            saveDataBtn.Enabled = false;
+
         }
         private void startBtn_Click(object sender, EventArgs e)
-        {
-            
+        {            
                 myPort = new SerialPort();
                 myPort.BaudRate = Convert.ToInt32(boudCBox.Text);
                 myPort.PortName = portCBox.Text;
@@ -46,6 +67,7 @@ namespace ECG_Analyzer
                     dataTBox.Text = "";
                     startButtonClick = true;
                     dataGridView.Enabled = false;
+                saveDataBtn.Enabled = false;
                 }
                 catch (Exception ex)
                 {
@@ -57,9 +79,19 @@ namespace ECG_Analyzer
         private void myport_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             this.Invoke(new EventHandler(displadata_event));
-
             in_data = myPort.ReadLine();
-            rowData = Convert.ToInt32(in_data);
+            if (!string.IsNullOrEmpty(in_data))
+            {
+                rowData = Convert.ToInt32(in_data.Trim());
+                PData.Add(rowData);
+                QData.Add(rowData);
+                RData.Add(rowData);
+                SData.Add(rowData);
+                TData.Add(rowData);
+                
+            }
+            
+                       
         }
 
         private void displadata_event(object sender, EventArgs e)
@@ -80,12 +112,13 @@ namespace ECG_Analyzer
                 try
                 {
                     dataGridView.Enabled = true;
+                    saveDataBtn.Enabled = true;
                     myPort.Close();
-                    SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM pqrstTable", "server=.;database=ccmsDB;Trusted_Connection=True");
-                    DataSet ds = new DataSet();
-                    da.Fill(ds, "pqrstTable");
-                    dataGridView.DataSource = ds.Tables["pqrstTable"].DefaultView;
 
+                    SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM pqrst", "server = GH-PALASH\\SQLEXPRESS; database = ccmsDB; Integrated Security=true;");
+                    DataSet ds = new DataSet();
+                    da.Fill(ds, "pqrst");
+                    dataGridView.DataSource = ds.Tables["pqrst"].DefaultView;
                 }
                 catch (Exception exception)
                 {
@@ -106,21 +139,35 @@ namespace ECG_Analyzer
             {
                 try
                 {
-                    //string pathfile = @"C:\Users\GH Palash\Desktop\Data\";
-                    //string filename = "light_data.txt";
-                    //File.WriteAllText(pathfile+filename,dataTBox.Text);
-                    //MessageBox.Show("Data has been Saved to " + pathfile, "Save file");
 
-                    String str = "server=.;database=ccmsDB;Trusted_Connection=True";
-                    //String query = "select * from pqrstTable";
-                    String insertQuery = "INSERT INTO pqrstTable VALUES('" + rowData + "', '" + rowData + "', '" + rowData + "','" + rowData + "','" + rowData + "')";
-                    SqlConnection con = new SqlConnection(str);
-                    SqlCommand cmd = new SqlCommand(insertQuery, con);
+
+
+
+                    SqlConnection con = new SqlConnection(@"server=GH-PALASH\SQLEXPRESS;database=ccmsDB;Integrated Security=True");
+                    string dataInsertQuery ="INSERT INTO PQRST"+
+                        "(patientId,Cycle,DayCount,PData,QData,RData,SData,TData) values(@patientId,@Cycle,@DayCount,@PData,@QData,@RData,@SData,@TData)";
+
+                    SqlCommand cmd = new SqlCommand(dataInsertQuery, con);
+
+                    cmd.Parameters.AddWithValue("@patientId", 1);
+                    cmd.Parameters.AddWithValue("@Cycle", 1);
+                    cmd.Parameters.AddWithValue("@DayCount", 1);
+                    cmd.Parameters.AddWithValue("@PData", 61);
+                    cmd.Parameters.AddWithValue("@QData", 49);
+                    cmd.Parameters.AddWithValue("@RData", 76);
+                    cmd.Parameters.AddWithValue("@SData", 45);
+                    cmd.Parameters.AddWithValue("@TData", 62);
                     con.Open();
-                    //DataSet ds = new DataSet();
-                    MessageBox.Show("connect with sql server");
+                    int i = cmd.ExecuteNonQuery();
 
                     con.Close();
+
+                    if (i != 0)
+                    {
+                        MessageBox.Show(i + "Data Saved");
+                    }
+
+                    
                 }
                 catch (Exception exception3)
                 {
@@ -133,16 +180,6 @@ namespace ECG_Analyzer
             }
             
             
-        }
-
-        private void portCBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void boudCBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

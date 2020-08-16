@@ -1,6 +1,6 @@
 ﻿namespace ECG_Analyzer
 {
-    partial class DataAnalysis
+    partial class DataAnalysisForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.startBtn = new System.Windows.Forms.Button();
             this.stopBtn = new System.Windows.Forms.Button();
             this.saveDataBtn = new System.Windows.Forms.Button();
@@ -44,8 +42,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.label5 = new System.Windows.Forms.Label();
             this.dataTBox = new System.Windows.Forms.TextBox();
@@ -58,8 +54,6 @@
             this.masterLayoutPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.portBoudPanel.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.controlPanel.SuspendLayout();
             this.SuspendLayout();
@@ -90,7 +84,6 @@
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.Controls.Add(this.dataGridView);
-            this.masterLayoutPanel.Controls.Add(this.panel3);
             this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
             this.masterLayoutPanel.Size = new System.Drawing.Size(866, 554);
             // 
@@ -196,7 +189,6 @@
             this.boudCBox.Name = "boudCBox";
             this.boudCBox.Size = new System.Drawing.Size(89, 22);
             this.boudCBox.TabIndex = 2;
-            this.boudCBox.SelectedIndexChanged += new System.EventHandler(this.boudCBox_SelectedIndexChanged);
             // 
             // portCBox
             // 
@@ -206,7 +198,6 @@
             this.portCBox.Name = "portCBox";
             this.portCBox.Size = new System.Drawing.Size(89, 22);
             this.portCBox.TabIndex = 2;
-            this.portCBox.SelectedIndexChanged += new System.EventHandler(this.portCBox_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -246,35 +237,6 @@
             this.panel6.Size = new System.Drawing.Size(507, 548);
             this.panel6.TabIndex = 4;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.chart1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 345);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(866, 209);
-            this.panel3.TabIndex = 1;
-            // 
-            // chart1
-            // 
-            this.chart1.BackColor = System.Drawing.Color.Silver;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(866, 209);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
-            // 
             // progressBar
             // 
             this.progressBar.Location = new System.Drawing.Point(4, 184);
@@ -305,10 +267,19 @@
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(866, 345);
+            this.dataGridView.RowHeadersVisible = false;
+            this.dataGridView.Size = new System.Drawing.Size(866, 554);
             this.dataGridView.TabIndex = 2;
             // 
             // hRateTBox
@@ -338,12 +309,12 @@
             this.controlPanel.Size = new System.Drawing.Size(150, 129);
             this.controlPanel.TabIndex = 7;
             // 
-            // DataAnalysis
+            // DataAnalysisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1016, 615);
-            this.Name = "DataAnalysis";
+            this.Name = "DataAnalysisForm";
             this.Text = "DataAnalysis";
             this.Load += new System.EventHandler(this.DataAnalysis_Load);
             this.headerPanel.ResumeLayout(false);
@@ -354,8 +325,6 @@
             this.panel1.PerformLayout();
             this.portBoudPanel.ResumeLayout(false);
             this.portBoudPanel.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.controlPanel.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -377,10 +346,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ProgressBar progressBar;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.TextBox dataTBox;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.TextBox hRateTBox;
