@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.IO.Ports;
+using System.Linq;
 using System.Windows.Forms;
+
 
 namespace ECG_Analyzer
 {
@@ -20,19 +22,21 @@ namespace ECG_Analyzer
         private DateTime dateTime;
         public string in_data;
         public int rowData;
+        public int averageData=50;
         public bool startButtonClick = false;
 
-        List<int> PData = new List<int>();
-        List<int> QData = new List<int>();
-        List<int> RData = new List<int>();
-        List<int> SData = new List<int>();
-        List<int> TData = new List<int>();
-        List<int> PatientId = new List<int>();
-        List<int> DayCount = new List<int>();
-        List<int> Cycle = new List<int>();
-        List<int> AverageRowData = new List<int>();
+        readonly List<int> pData = new List<int>();
+        readonly List<int> qData = new List<int>();
+        readonly List<int> rData = new List<int>();
+        readonly List<int> sData = new List<int>();
+        List<int> tData = new List<int>();
+        List<int> patientId = new List<int>();
+        List<int> dayCount = new List<int>();
+        List<int> cycle = new List<int>();
+        List<int> averageRowData = new List<int>();
+        List<int> rowDataList = new List<int>();
 
-        
+
 
 
         //Create Object for Other Class
@@ -83,16 +87,38 @@ namespace ECG_Analyzer
             if (!string.IsNullOrEmpty(in_data))
             {
                 rowData = Convert.ToInt32(in_data.Trim());
-                PData.Add(rowData);
-                QData.Add(rowData);
-                RData.Add(rowData);
-                SData.Add(rowData);
-                TData.Add(rowData);
+                rowDataList.Add(rowData);
+                averageData=getAverage(rowDataList);
+                if (rowData>averageData)
+                {
+                    if (rowData > (1.2 * averageData))
+                    {
+                        rData.Add(rowData);
+                    }
+                    else
+                    {
+                        pData.Add(rowData);
+                    }
+                }
+                else
+                {
+                    if (rowData < (1.2 * averageData))
+                    {
+                        qData.Add(rowData);
+                    }
+                    else
+                    {
+                        sData.Add(rowData);
+                    }
+                }
+
                 
             }
             
                        
         }
+
+
 
         private void displadata_event(object sender, EventArgs e)
         {
@@ -132,7 +158,7 @@ namespace ECG_Analyzer
                 startBtn.Focus();
             }
         }
-
+        int cycleCount = 0;
         private void saveDataBtn_Click(object sender, EventArgs e)
         {
             if (dataGridView.Enabled==true)
@@ -140,32 +166,29 @@ namespace ECG_Analyzer
                 try
                 {
 
-
-
-
                     SqlConnection con = new SqlConnection(@"server=GH-PALASH\SQLEXPRESS;database=ccmsDB;Integrated Security=True");
                     string dataInsertQuery ="INSERT INTO PQRST"+
                         "(patientId,Cycle,DayCount,PData,QData,RData,SData,TData) values(@patientId,@Cycle,@DayCount,@PData,@QData,@RData,@SData,@TData)";
 
                     SqlCommand cmd = new SqlCommand(dataInsertQuery, con);
 
-                    cmd.Parameters.AddWithValue("@patientId", 1);
-                    cmd.Parameters.AddWithValue("@Cycle", 1);
-                    cmd.Parameters.AddWithValue("@DayCount", 1);
-                    cmd.Parameters.AddWithValue("@PData", 61);
-                    cmd.Parameters.AddWithValue("@QData", 49);
-                    cmd.Parameters.AddWithValue("@RData", 76);
-                    cmd.Parameters.AddWithValue("@SData", 45);
-                    cmd.Parameters.AddWithValue("@TData", 62);
+                    cmd.Parameters.AddWithValue("@patientId", patientIdTBox.Text);
+                    cmd.Parameters.AddWithValue("@Cycle", ++cycleCount);
+                    cmd.Parameters.AddWithValue("@DayCount", dayCountTBox.Text);
+                    cmd.Parameters.AddWithValue("@PData", pData[0]);
+                    cmd.Parameters.AddWithValue("@QData", qData[0]);
+                    cmd.Parameters.AddWithValue("@RData", rData[0]);
+                    cmd.Parameters.AddWithValue("@SData", sData[0]);
+                    cmd.Parameters.AddWithValue("@TData", tData[0]);
                     con.Open();
                     int i = cmd.ExecuteNonQuery();
 
                     con.Close();
 
-                    if (i != 0)
-                    {
-                        MessageBox.Show(i + "Data Saved");
-                    }
+                    //if (i != 0)
+                    //{
+                    //    MessageBox.Show(i + "Data Saved");
+                    //}
 
                     
                 }
@@ -181,5 +204,13 @@ namespace ECG_Analyzer
             
             
         }
+        
+        public int getAverage(List<int> T)
+        {
+            double a = T.Average();
+            int av = Convert.ToInt32(a);
+            return av;
+        }
+
     }
 }

@@ -32,8 +32,6 @@
             this.startBtn = new System.Windows.Forms.Button();
             this.stopBtn = new System.Windows.Forms.Button();
             this.saveDataBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.totalTimeTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.portBoudPanel = new System.Windows.Forms.Panel();
             this.boudCBox = new System.Windows.Forms.ComboBox();
@@ -42,17 +40,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.progressBar = new System.Windows.Forms.ProgressBar();
             this.label5 = new System.Windows.Forms.Label();
             this.dataTBox = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.hRateTBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.controlPanel = new System.Windows.Forms.Panel();
+            this.patientIdTBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dayCountTBox = new System.Windows.Forms.TextBox();
             this.headerPanel.SuspendLayout();
             this.leftMenuPanel.SuspendLayout();
             this.masterLayoutPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.portBoudPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.controlPanel.SuspendLayout();
@@ -71,14 +70,15 @@
             // 
             // leftMenuPanel
             // 
+            this.leftMenuPanel.Controls.Add(this.dayCountTBox);
+            this.leftMenuPanel.Controls.Add(this.patientIdTBox);
             this.leftMenuPanel.Controls.Add(this.controlPanel);
             this.leftMenuPanel.Controls.Add(this.hRateTBox);
             this.leftMenuPanel.Controls.Add(this.dataTBox);
+            this.leftMenuPanel.Controls.Add(this.label7);
             this.leftMenuPanel.Controls.Add(this.label6);
             this.leftMenuPanel.Controls.Add(this.label5);
-            this.leftMenuPanel.Controls.Add(this.progressBar);
             this.leftMenuPanel.Controls.Add(this.portBoudPanel);
-            this.leftMenuPanel.Controls.Add(this.panel1);
             this.leftMenuPanel.Size = new System.Drawing.Size(150, 575);
             // 
             // masterLayoutPanel
@@ -134,22 +134,6 @@
             this.saveDataBtn.Text = "Save Data";
             this.saveDataBtn.UseVisualStyleBackColor = false;
             this.saveDataBtn.Click += new System.EventHandler(this.saveDataBtn_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Controls.Add(this.totalTimeTextBox);
-            this.panel1.Location = new System.Drawing.Point(4, 141);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(143, 36);
-            this.panel1.TabIndex = 1;
-            // 
-            // totalTimeTextBox
-            // 
-            this.totalTimeTextBox.Location = new System.Drawing.Point(92, 6);
-            this.totalTimeTextBox.Name = "totalTimeTextBox";
-            this.totalTimeTextBox.Size = new System.Drawing.Size(48, 22);
-            this.totalTimeTextBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -237,22 +221,15 @@
             this.panel6.Size = new System.Drawing.Size(507, 548);
             this.panel6.TabIndex = 4;
             // 
-            // progressBar
-            // 
-            this.progressBar.Location = new System.Drawing.Point(4, 184);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(143, 23);
-            this.progressBar.TabIndex = 3;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(23, 210);
+            this.label5.Location = new System.Drawing.Point(3, 141);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 19);
+            this.label5.Size = new System.Drawing.Size(74, 19);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Progress Bar";
+            this.label5.Text = "Patient ID";
             // 
             // dataTBox
             // 
@@ -309,6 +286,30 @@
             this.controlPanel.Size = new System.Drawing.Size(150, 129);
             this.controlPanel.TabIndex = 7;
             // 
+            // patientIdTBox
+            // 
+            this.patientIdTBox.Location = new System.Drawing.Point(83, 141);
+            this.patientIdTBox.Name = "patientIdTBox";
+            this.patientIdTBox.Size = new System.Drawing.Size(61, 22);
+            this.patientIdTBox.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Light", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(3, 169);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 19);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Test Count";
+            // 
+            // dayCountTBox
+            // 
+            this.dayCountTBox.Location = new System.Drawing.Point(83, 169);
+            this.dayCountTBox.Name = "dayCountTBox";
+            this.dayCountTBox.Size = new System.Drawing.Size(61, 22);
+            this.dayCountTBox.TabIndex = 8;
+            // 
             // DataAnalysisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,8 +322,6 @@
             this.leftMenuPanel.ResumeLayout(false);
             this.leftMenuPanel.PerformLayout();
             this.masterLayoutPanel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.portBoudPanel.ResumeLayout(false);
             this.portBoudPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
@@ -334,8 +333,6 @@
         #endregion
 
         private System.Windows.Forms.Button startBtn;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox totalTimeTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button saveDataBtn;
         private System.Windows.Forms.Button stopBtn;
@@ -347,11 +344,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.TextBox dataTBox;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.TextBox hRateTBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel controlPanel;
+        private System.Windows.Forms.TextBox patientIdTBox;
+        private System.Windows.Forms.TextBox dayCountTBox;
+        private System.Windows.Forms.Label label7;
     }
 }

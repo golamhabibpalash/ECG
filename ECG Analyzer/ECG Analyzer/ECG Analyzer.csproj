@@ -95,7 +95,7 @@
     <Compile Include="MDI.Designer.cs">
       <DependentUpon>MDI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\MyData.cs" />
+    <Compile Include="Models\MyAllModels.cs" />
     <Compile Include="Models\PData.cs" />
     <Compile Include="Models\QData.cs" />
     <Compile Include="Models\RData.cs" />
