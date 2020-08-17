@@ -41,12 +41,7 @@
             // leftMenuPanel
             // 
             this.leftMenuPanel.Size = new System.Drawing.Size(150, 410);
-            // 
-            // footerPanel
-            // 
-            this.footerPanel.Location = new System.Drawing.Point(150, 429);
-            this.footerPanel.Size = new System.Drawing.Size(650, 21);
-            // 
+            //
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.Controls.Add(this.button1);

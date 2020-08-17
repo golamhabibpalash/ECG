@@ -38,9 +38,9 @@ D:\GHPLS\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Controls.P
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe.config
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.exe
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\bin\Debug\ECG Analyzer.pdb
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csprojAssemblyReference.cache
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Controls.Personalization.resources
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DataAnalysisForm.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DataForm.resources
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DoctorForm.resources
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.HomeScreen.resources
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.Login.resources
@@ -56,4 +56,4 @@ C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\EC
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csproj.CoreCompileInputs.cache
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.exe
 C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.pdb
-C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG_Analyzer.DataForm.resources
+C:\Users\golam\Google Drive\EUB\12th Semester (Spring - 2019)\Project\Project\ECG\ECG Analyzer\ECG Analyzer\obj\Debug\ECG Analyzer.csprojAssemblyReference.cache

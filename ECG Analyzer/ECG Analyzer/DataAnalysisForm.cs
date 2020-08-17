@@ -25,12 +25,11 @@ namespace ECG_Analyzer
         public int averageData=50;
         public bool startButtonClick = false;
 
-        readonly List<int> pData = new List<int>();
-        readonly List<int> qData = new List<int>();
-        readonly List<int> rData = new List<int>();
-        readonly List<int> sData = new List<int>();
+        List<int> pData = new List<int>();
+        List<int> qData = new List<int>();
+        List<int> rData = new List<int>();
+        List<int> sData = new List<int>();
         List<int> tData = new List<int>();
-        List<int> patientId = new List<int>();
         List<int> dayCount = new List<int>();
         List<int> cycle = new List<int>();
         List<int> averageRowData = new List<int>();
@@ -57,27 +56,41 @@ namespace ECG_Analyzer
 
         }
         private void startBtn_Click(object sender, EventArgs e)
-        {            
-                myPort = new SerialPort();
-                myPort.BaudRate = Convert.ToInt32(boudCBox.Text);
-                myPort.PortName = portCBox.Text;
-                myPort.Parity = Parity.None;
-                myPort.DataBits = 8;
-                myPort.StopBits = StopBits.One;
-                myPort.DataReceived += myport_DataReceived;
-                try
+        {
+     
+                if (portCBox.Text == "") { portErrorLabel.Visible = true; } else { portErrorLabel.Visible = false; }
+                if (boudCBox.Text == "") { boudeErrorLabel.Visible = true; } else { boudeErrorLabel.Visible = false; }
+                if (patientIdTBox.Text == "") { patientIdErrorLabel.Visible = true; } else { patientIdErrorLabel.Visible = false; }
+                if (dayCountTBox.Text == "") { dayCountTBoxErrorLabel.Visible = true; } else { dayCountTBoxErrorLabel.Visible = false; }
+                if (portErrorLabel.Visible || boudeErrorLabel.Visible ||patientIdErrorLabel.Visible || dayCountTBoxErrorLabel.Visible)
                 {
-                    myPort.Open();
-                    dataTBox.Text = "";
-                    startButtonClick = true;
-                    dataGridView.Enabled = false;
-                saveDataBtn.Enabled = false;
+                    MessageBox.Show("Fields with * are Mandetory", "Error");
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message, "Error");
-                    throw;
-                }           
+                    myPort = new SerialPort();
+                    myPort.BaudRate = Convert.ToInt32(boudCBox.Text);
+                    myPort.PortName = portCBox.Text;
+                    myPort.Parity = Parity.None;
+                    myPort.DataBits = 8;
+                    myPort.StopBits = StopBits.One;
+                    myPort.DataReceived += myport_DataReceived;
+                    try
+                    {
+                        myPort.Open();
+                        dataTBox.Text = "";
+                        startButtonClick = true;
+                        dataGridView.Enabled = false;
+                        saveDataBtn.Enabled = false;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Error");
+                        throw;
+                    }
+                }
+                
+                        
         }
 
         private void myport_DataReceived(object sender, SerialDataReceivedEventArgs e)
@@ -124,7 +137,7 @@ namespace ECG_Analyzer
         {
             dateTime = DateTime.Now;
             string time = dateTime.Hour + ":" + dateTime.Minute + ":" + dateTime.Second;
-            dataTBox.AppendText(time+"\t\t"+in_data+"\n");
+            dataTBox.AppendText(time+"\t\t  "+in_data+"\n");
 
             //Progressbar Code
             //int data_value = Convert.ToInt32(in_data);
@@ -168,7 +181,7 @@ namespace ECG_Analyzer
 
                     SqlConnection con = new SqlConnection(@"server=GH-PALASH\SQLEXPRESS;database=ccmsDB;Integrated Security=True");
                     string dataInsertQuery ="INSERT INTO PQRST"+
-                        "(patientId,TestDate,Cycle,DayCount,PData,QData,RData,SData,TData) values(@patientId,@Cycle,@DayCount,@PData,@QData,@RData,@SData,@TData)";
+                        "(patientId,TestDate,Cycle,DayCount,PData,QData,RData,SData,TData) values(@patientId,@TestDate,@Cycle,@DayCount,@PData,@QData,@RData,@SData,@TData)";
 
                     SqlCommand cmd = new SqlCommand(dataInsertQuery, con);
 
@@ -176,11 +189,11 @@ namespace ECG_Analyzer
                     cmd.Parameters.AddWithValue("@TestDate", DateTime.Today);
                     cmd.Parameters.AddWithValue("@Cycle", ++cycleCount);
                     cmd.Parameters.AddWithValue("@DayCount", dayCountTBox.Text);
-                    cmd.Parameters.AddWithValue("@PData", pData[0]);
-                    cmd.Parameters.AddWithValue("@QData", qData[0]);
-                    cmd.Parameters.AddWithValue("@RData", rData[0]);
-                    cmd.Parameters.AddWithValue("@SData", sData[0]);
-                    cmd.Parameters.AddWithValue("@TData", tData[0]);
+                    cmd.Parameters.AddWithValue("@PData", 45);
+                    cmd.Parameters.AddWithValue("@QData", 52);
+                    cmd.Parameters.AddWithValue("@RData", 60);
+                    cmd.Parameters.AddWithValue("@SData", 72);
+                    cmd.Parameters.AddWithValue("@TData", 42);
                     con.Open();
                     int i = cmd.ExecuteNonQuery();
 
@@ -213,5 +226,24 @@ namespace ECG_Analyzer
             return av;
         }
 
+        private void portCBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (portCBox.Text == "") { portErrorLabel.Visible = true; } else { portErrorLabel.Visible = false; }
+        }
+
+        private void boudCBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (boudCBox.Text == "") { boudeErrorLabel.Visible = true; } else { boudeErrorLabel.Visible = false; }
+        }
+
+        private void patientIdTBox_TextChanged(object sender, EventArgs e)
+        {
+            if (patientIdTBox.Text == "") { patientIdErrorLabel.Visible = true; } else { patientIdErrorLabel.Visible = false; }
+        }
+
+        private void dayCountTBox_TextChanged(object sender, EventArgs e)
+        {
+            if (dayCountTBox.Text == "") { dayCountTBoxErrorLabel.Visible = true; } else { dayCountTBoxErrorLabel.Visible = false; }
+        }
     }
 }

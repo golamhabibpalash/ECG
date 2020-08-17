@@ -68,5 +68,6 @@ namespace ECG_Analyzer
             DataForm uf = new DataForm();
             mc.showWindow(uf, this, MDI.ActiveForm);
         }
+
     }
 }

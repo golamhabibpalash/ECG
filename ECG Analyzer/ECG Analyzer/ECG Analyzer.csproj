@@ -227,12 +227,6 @@
     <None Include="image\settings 128.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ECG_All_Classes\ECG_All_Classes.csproj">
-      <Project>{6159f24f-67d2-43cc-a6bc-79dbce0f168c}</Project>
-      <Name>ECG_All_Classes</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="image\test_red.png" />
   </ItemGroup>
   <ItemGroup>
@@ -258,6 +252,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="image\Data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\laptop-user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

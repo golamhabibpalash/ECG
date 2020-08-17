@@ -45,12 +45,7 @@
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.Location = new System.Drawing.Point(200, 40);
-            this.masterLayoutPanel.Size = new System.Drawing.Size(600, 389);
-            // 
-            // footerPanel
-            // 
-            this.footerPanel.Location = new System.Drawing.Point(200, 429);
-            this.footerPanel.Size = new System.Drawing.Size(600, 21);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(600, 410);
             // 
             // backBtn
             // 

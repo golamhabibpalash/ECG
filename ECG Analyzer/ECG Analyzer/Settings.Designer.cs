@@ -74,11 +74,6 @@
             this.masterLayoutPanel.Location = new System.Drawing.Point(215, 40);
             this.masterLayoutPanel.Size = new System.Drawing.Size(585, 389);
             // 
-            // footerPanel
-            // 
-            this.footerPanel.Location = new System.Drawing.Point(215, 429);
-            this.footerPanel.Size = new System.Drawing.Size(585, 21);
-            // 
             // saveBtn
             // 
             this.saveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));

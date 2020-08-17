@@ -33,11 +33,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.patientIdTBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.dayTestCount = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.headerPanel.SuspendLayout();
             this.leftMenuPanel.SuspendLayout();
             this.masterLayoutPanel.SuspendLayout();
@@ -110,10 +110,18 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Date";
             // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker.Location = new System.Drawing.Point(3, 59);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(188, 22);
+            this.dateTimePicker.TabIndex = 3;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 82);
+            this.label4.Location = new System.Drawing.Point(3, 84);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 14);
             this.label4.TabIndex = 1;
@@ -121,7 +129,7 @@
             // 
             // dayTestCount
             // 
-            this.dayTestCount.Location = new System.Drawing.Point(3, 99);
+            this.dayTestCount.Location = new System.Drawing.Point(3, 101);
             this.dayTestCount.Name = "dayTestCount";
             this.dayTestCount.Size = new System.Drawing.Size(188, 22);
             this.dayTestCount.TabIndex = 0;
@@ -132,7 +140,7 @@
             this.searchBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.searchBtn.Font = new System.Drawing.Font("Tahoma", 9F);
             this.searchBtn.ForeColor = System.Drawing.Color.Transparent;
-            this.searchBtn.Location = new System.Drawing.Point(3, 127);
+            this.searchBtn.Location = new System.Drawing.Point(3, 129);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(188, 33);
             this.searchBtn.TabIndex = 2;
@@ -156,13 +164,6 @@
             this.dataGridView.RowHeadersVisible = false;
             this.dataGridView.Size = new System.Drawing.Size(600, 389);
             this.dataGridView.TabIndex = 0;
-            // 
-            // dateTimePicker
-            // 
-            this.dateTimePicker.Location = new System.Drawing.Point(3, 59);
-            this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker.TabIndex = 3;
             // 
             // DataForm
             // 
