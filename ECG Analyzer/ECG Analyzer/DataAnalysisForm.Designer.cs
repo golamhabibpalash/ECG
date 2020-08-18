@@ -40,6 +40,16 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.dataTBox = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PatientId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TestDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Day_Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DayCycle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.P_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Q_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.R_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.S_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.T_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dayCountTBox = new System.Windows.Forms.TextBox();
             this.patientIdTBox = new System.Windows.Forms.TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -53,16 +63,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.IsoElectricLineTexBox = new System.Windows.Forms.TextBox();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PatientId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TestDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Day_Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DayCycle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.P_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Q_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.R_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.S_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.T_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.headerPanel.SuspendLayout();
             this.leftMenuPanel.SuspendLayout();
             this.masterLayoutPanel.SuspendLayout();
@@ -262,6 +262,68 @@
             this.dataGridView.Size = new System.Drawing.Size(816, 575);
             this.dataGridView.TabIndex = 2;
             // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 41;
+            // 
+            // PatientId
+            // 
+            this.PatientId.HeaderText = "Patient ID";
+            this.PatientId.Name = "PatientId";
+            this.PatientId.ReadOnly = true;
+            // 
+            // TestDate
+            // 
+            this.TestDate.HeaderText = "Test Date";
+            this.TestDate.Name = "TestDate";
+            this.TestDate.ReadOnly = true;
+            // 
+            // Day_Count
+            // 
+            this.Day_Count.HeaderText = "Day Count";
+            this.Day_Count.Name = "Day_Count";
+            this.Day_Count.ReadOnly = true;
+            // 
+            // DayCycle
+            // 
+            this.DayCycle.HeaderText = "Cycle";
+            this.DayCycle.Name = "DayCycle";
+            this.DayCycle.ReadOnly = true;
+            // 
+            // P_Data
+            // 
+            this.P_Data.HeaderText = "P";
+            this.P_Data.Name = "P_Data";
+            this.P_Data.ReadOnly = true;
+            // 
+            // Q_Data
+            // 
+            this.Q_Data.HeaderText = "Q";
+            this.Q_Data.Name = "Q_Data";
+            this.Q_Data.ReadOnly = true;
+            // 
+            // R_Data
+            // 
+            this.R_Data.HeaderText = "R";
+            this.R_Data.Name = "R_Data";
+            this.R_Data.ReadOnly = true;
+            // 
+            // S_Data
+            // 
+            this.S_Data.HeaderText = "S";
+            this.S_Data.Name = "S_Data";
+            this.S_Data.ReadOnly = true;
+            // 
+            // T_Data
+            // 
+            this.T_Data.HeaderText = "T";
+            this.T_Data.Name = "T_Data";
+            this.T_Data.ReadOnly = true;
+            // 
             // dayCountTBox
             // 
             this.dayCountTBox.Location = new System.Drawing.Point(9, 284);
@@ -400,68 +462,6 @@
             this.IsoElectricLineTexBox.Size = new System.Drawing.Size(816, 23);
             this.IsoElectricLineTexBox.TabIndex = 0;
             this.IsoElectricLineTexBox.TextChanged += new System.EventHandler(this.IsoElectricLineTexBox_TextChanged);
-            // 
-            // Id
-            // 
-            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            this.Id.Width = 41;
-            // 
-            // PatientId
-            // 
-            this.PatientId.HeaderText = "Patient ID";
-            this.PatientId.Name = "PatientId";
-            this.PatientId.ReadOnly = true;
-            // 
-            // TestDate
-            // 
-            this.TestDate.HeaderText = "Test Date";
-            this.TestDate.Name = "TestDate";
-            this.TestDate.ReadOnly = true;
-            // 
-            // Day_Count
-            // 
-            this.Day_Count.HeaderText = "Day Count";
-            this.Day_Count.Name = "Day_Count";
-            this.Day_Count.ReadOnly = true;
-            // 
-            // DayCycle
-            // 
-            this.DayCycle.HeaderText = "Cycle";
-            this.DayCycle.Name = "DayCycle";
-            this.DayCycle.ReadOnly = true;
-            // 
-            // P_Data
-            // 
-            this.P_Data.HeaderText = "P";
-            this.P_Data.Name = "P_Data";
-            this.P_Data.ReadOnly = true;
-            // 
-            // Q_Data
-            // 
-            this.Q_Data.HeaderText = "Q";
-            this.Q_Data.Name = "Q_Data";
-            this.Q_Data.ReadOnly = true;
-            // 
-            // R_Data
-            // 
-            this.R_Data.HeaderText = "R";
-            this.R_Data.Name = "R_Data";
-            this.R_Data.ReadOnly = true;
-            // 
-            // S_Data
-            // 
-            this.S_Data.HeaderText = "S";
-            this.S_Data.Name = "S_Data";
-            this.S_Data.ReadOnly = true;
-            // 
-            // T_Data
-            // 
-            this.T_Data.HeaderText = "T";
-            this.T_Data.Name = "T_Data";
-            this.T_Data.ReadOnly = true;
             // 
             // DataAnalysisForm
             // 

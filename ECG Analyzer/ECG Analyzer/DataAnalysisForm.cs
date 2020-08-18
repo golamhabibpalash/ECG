@@ -25,14 +25,15 @@ namespace ECG_Analyzer
         public int rowData;
         public int averageData=50;
         public bool startButtonClick = false;
+        int cycleCount = 0;
+        int sl = 0;
 
+        //List of Data
         List<int> pData = new List<int>();
         List<int> qData = new List<int>();
         List<int> rData = new List<int>();
         List<int> sData = new List<int>();
         List<int> tData = new List<int>();
-        List<int> dayCount = new List<int>();
-        List<int> cycle = new List<int>();
         List<int> averageRowData = new List<int>();
         List<int> rowDataList = new List<int>();
 
@@ -121,15 +122,9 @@ namespace ECG_Analyzer
                 {
                     MessageBox.Show(ex.Message, "Error");
                     throw;
-                }
-                
-
+                }              
             }                                       
         }
-
-       
-
-
 
         private void displadata_event(object sender, EventArgs e)
         {
@@ -139,19 +134,19 @@ namespace ECG_Analyzer
 
             IsoElectricLineTexBox.Text = "Iso-Electric Line is: " + averageData;
 
-            int sl = 1;
+            
             //Code for DataGrid View
             int n = dataGridView.Rows.Add();
             dataGridView.Rows[n].Cells[0].Value = ++sl;
             dataGridView.Rows[n].Cells[1].Value = patientIdTBox.Text;
-            dataGridView.Rows[n].Cells[2].Value = dateTime.Date;
+            dataGridView.Rows[n].Cells[2].Value = dateTime.Date.ToString("yyyy-MM-dd");
             dataGridView.Rows[n].Cells[3].Value = dayCountTBox.Text;
-            dataGridView.Rows[n].Cells[4].Value = ++sl;
-            dataGridView.Rows[n].Cells[5].Value = rowData;
-            dataGridView.Rows[n].Cells[6].Value = rowData;
-            dataGridView.Rows[n].Cells[7].Value = rowData;
-            dataGridView.Rows[n].Cells[8].Value = rowData;
-            dataGridView.Rows[n].Cells[9].Value = rowData;
+            dataGridView.Rows[n].Cells[4].Value = ++cycleCount;
+            dataGridView.Rows[n].Cells[5].Value = Convert.ToInt32(rowData*1.1);
+            dataGridView.Rows[n].Cells[6].Value = Convert.ToInt32(rowData *0.8);
+            dataGridView.Rows[n].Cells[7].Value = Convert.ToInt32(rowData *2.0);
+            dataGridView.Rows[n].Cells[8].Value = Convert.ToInt32(rowData *0.7);
+            dataGridView.Rows[n].Cells[9].Value = Convert.ToInt32(rowData *1.0);
 
         }
 
@@ -181,8 +176,8 @@ namespace ECG_Analyzer
                 MessageBox.Show("Please Click Start Button First");
                 startBtn.Focus();
             }
-        }
-        int cycleCount = 0;
+        }        
+        
         private void saveDataBtn_Click(object sender, EventArgs e)
         {
             if (dataGridView.Enabled==true)
@@ -191,7 +186,7 @@ namespace ECG_Analyzer
                 SqlConnection sqlconn = new SqlConnection(mainConn);
                 foreach (DataGridViewRow dr in dataGridView.Rows)
                 {
-                    string sqlInsertQuery= "INSERT INTO PQRST" +
+                    string sqlInsertQuery= "INSERT INTO pqrst" +
                         "(patientId,TestDate,Cycle,DayCount,PData,QData,RData,SData,TData) values"
                     + "(@patientId,@TestDate,@Cycle,@DayCount,@PData,@QData,@RData,@SData,@TData)";
                     SqlCommand cmd = new SqlCommand(sqlInsertQuery, sqlconn);
@@ -207,9 +202,9 @@ namespace ECG_Analyzer
                     cmd.Parameters.AddWithValue("@TData", dr.Cells["T_Data"].Value ?? DBNull.Value);
                     sqlconn.Open();
                     cmd.ExecuteNonQuery();
-                    sqlconn.Close();
-                    MessageBox.Show("Rows Inserted Successfully");
+                    sqlconn.Close();                    
                 }
+                MessageBox.Show("Rows Inserted Successfully");
 
                 //try
                 //{
@@ -240,7 +235,7 @@ namespace ECG_Analyzer
                 //    //    MessageBox.Show(i + "Data Saved");
                 //    //}
 
-                    
+
                 //}
                 //catch (Exception exception3)
                 //{

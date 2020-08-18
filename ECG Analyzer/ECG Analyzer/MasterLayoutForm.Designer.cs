@@ -73,7 +73,7 @@
             this.ccmsLabel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.ccmsLabel.Size = new System.Drawing.Size(787, 24);
             this.ccmsLabel.TabIndex = 0;
-            this.ccmsLabel.Text = "Community Clinic Managemen System (CCMS)";
+            this.ccmsLabel.Text = "Community Clinic Management System (CCMS)";
             this.ccmsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // leftMenuPanel

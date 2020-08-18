@@ -1,12 +1,14 @@
-create table pqrstData
+Create Database 
+create table pqrst
 (
 Id int not null primary key identity,
+PatientId int,
+
 PData int,
 QData int,
 RData int,
 SData int,
-TData int,
-PatientId int
+TData int
 )
 
 create table PDataTable
