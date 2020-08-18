@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.startBtn = new System.Windows.Forms.Button();
             this.stopBtn = new System.Windows.Forms.Button();
             this.saveDataBtn = new System.Windows.Forms.Button();
@@ -51,11 +51,24 @@
             this.dayCountTBoxErrorLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.IsoElectricLineTexBox = new System.Windows.Forms.TextBox();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PatientId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TestDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Day_Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DayCycle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.P_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Q_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.R_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.S_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.T_Data = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.headerPanel.SuspendLayout();
             this.leftMenuPanel.SuspendLayout();
             this.masterLayoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // backBtn
@@ -88,18 +101,14 @@
             this.leftMenuPanel.Controls.Add(this.boudeErrorLabel);
             this.leftMenuPanel.Controls.Add(this.portErrorLabel);
             this.leftMenuPanel.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.leftMenuPanel.Size = new System.Drawing.Size(200, 554);
+            this.leftMenuPanel.Size = new System.Drawing.Size(200, 575);
             // 
             // masterLayoutPanel
             // 
+            this.masterLayoutPanel.Controls.Add(this.panel2);
             this.masterLayoutPanel.Controls.Add(this.dataGridView);
             this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
-            this.masterLayoutPanel.Size = new System.Drawing.Size(1016, 554);
-            this.masterLayoutPanel.Controls.SetChildIndex(this.dataGridView, 0);
-            //this.masterLayoutPanel.Controls.SetChildIndex(this.leftMenuPanel, 0);
-            // 
-            // footerPanel
-            // 
+            this.masterLayoutPanel.Size = new System.Drawing.Size(816, 575);
             // 
             // startBtn
             // 
@@ -107,9 +116,9 @@
             this.startBtn.FlatAppearance.BorderSize = 0;
             this.startBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startBtn.Location = new System.Drawing.Point(8, 8);
+            this.startBtn.Location = new System.Drawing.Point(5, 5);
             this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(186, 35);
+            this.startBtn.Size = new System.Drawing.Size(182, 35);
             this.startBtn.TabIndex = 0;
             this.startBtn.Text = "Start";
             this.startBtn.UseVisualStyleBackColor = false;
@@ -121,9 +130,9 @@
             this.stopBtn.FlatAppearance.BorderSize = 0;
             this.stopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stopBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopBtn.Location = new System.Drawing.Point(8, 49);
+            this.stopBtn.Location = new System.Drawing.Point(5, 46);
             this.stopBtn.Name = "stopBtn";
-            this.stopBtn.Size = new System.Drawing.Size(186, 35);
+            this.stopBtn.Size = new System.Drawing.Size(182, 35);
             this.stopBtn.TabIndex = 0;
             this.stopBtn.Text = "Stop";
             this.stopBtn.UseVisualStyleBackColor = false;
@@ -136,9 +145,9 @@
             this.saveDataBtn.FlatAppearance.BorderSize = 0;
             this.saveDataBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveDataBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveDataBtn.Location = new System.Drawing.Point(8, 90);
+            this.saveDataBtn.Location = new System.Drawing.Point(5, 87);
             this.saveDataBtn.Name = "saveDataBtn";
-            this.saveDataBtn.Size = new System.Drawing.Size(186, 35);
+            this.saveDataBtn.Size = new System.Drawing.Size(182, 35);
             this.saveDataBtn.TabIndex = 0;
             this.saveDataBtn.Text = "Save Data";
             this.saveDataBtn.UseVisualStyleBackColor = false;
@@ -221,22 +230,36 @@
             // 
             // dataGridView
             // 
+            this.dataGridView.AllowUserToAddRows = false;
+            this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.PatientId,
+            this.TestDate,
+            this.Day_Count,
+            this.DayCycle,
+            this.P_Data,
+            this.Q_Data,
+            this.R_Data,
+            this.S_Data,
+            this.T_Data});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
             this.dataGridView.Name = "dataGridView";
+            this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.Size = new System.Drawing.Size(1016, 554);
+            this.dataGridView.Size = new System.Drawing.Size(816, 575);
             this.dataGridView.TabIndex = 2;
             // 
             // dayCountTBox
@@ -263,7 +286,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(190, 132);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
@@ -359,6 +382,87 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "Data";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.IsoElectricLineTexBox);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 550);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(816, 25);
+            this.panel2.TabIndex = 3;
+            // 
+            // IsoElectricLineTexBox
+            // 
+            this.IsoElectricLineTexBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.IsoElectricLineTexBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IsoElectricLineTexBox.Location = new System.Drawing.Point(0, 0);
+            this.IsoElectricLineTexBox.Name = "IsoElectricLineTexBox";
+            this.IsoElectricLineTexBox.Size = new System.Drawing.Size(816, 23);
+            this.IsoElectricLineTexBox.TabIndex = 0;
+            this.IsoElectricLineTexBox.TextChanged += new System.EventHandler(this.IsoElectricLineTexBox_TextChanged);
+            // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            this.Id.Width = 41;
+            // 
+            // PatientId
+            // 
+            this.PatientId.HeaderText = "Patient ID";
+            this.PatientId.Name = "PatientId";
+            this.PatientId.ReadOnly = true;
+            // 
+            // TestDate
+            // 
+            this.TestDate.HeaderText = "Test Date";
+            this.TestDate.Name = "TestDate";
+            this.TestDate.ReadOnly = true;
+            // 
+            // Day_Count
+            // 
+            this.Day_Count.HeaderText = "Day Count";
+            this.Day_Count.Name = "Day_Count";
+            this.Day_Count.ReadOnly = true;
+            // 
+            // DayCycle
+            // 
+            this.DayCycle.HeaderText = "Cycle";
+            this.DayCycle.Name = "DayCycle";
+            this.DayCycle.ReadOnly = true;
+            // 
+            // P_Data
+            // 
+            this.P_Data.HeaderText = "P";
+            this.P_Data.Name = "P_Data";
+            this.P_Data.ReadOnly = true;
+            // 
+            // Q_Data
+            // 
+            this.Q_Data.HeaderText = "Q";
+            this.Q_Data.Name = "Q_Data";
+            this.Q_Data.ReadOnly = true;
+            // 
+            // R_Data
+            // 
+            this.R_Data.HeaderText = "R";
+            this.R_Data.Name = "R_Data";
+            this.R_Data.ReadOnly = true;
+            // 
+            // S_Data
+            // 
+            this.S_Data.HeaderText = "S";
+            this.S_Data.Name = "S_Data";
+            this.S_Data.ReadOnly = true;
+            // 
+            // T_Data
+            // 
+            this.T_Data.HeaderText = "T";
+            this.T_Data.Name = "T_Data";
+            this.T_Data.ReadOnly = true;
+            // 
             // DataAnalysisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -373,6 +477,8 @@
             this.masterLayoutPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -401,5 +507,17 @@
         private System.Windows.Forms.Label portErrorLabel;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox IsoElectricLineTexBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PatientId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TestDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Day_Count;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DayCycle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn P_Data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Q_Data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn R_Data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn S_Data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn T_Data;
     }
 }

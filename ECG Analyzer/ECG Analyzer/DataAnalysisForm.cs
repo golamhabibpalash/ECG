@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.IO.Ports;
 using System.Linq;
 using System.Windows.Forms;
+using System.Configuration;
 
 
 namespace ECG_Analyzer
@@ -35,11 +36,7 @@ namespace ECG_Analyzer
         List<int> averageRowData = new List<int>();
         List<int> rowDataList = new List<int>();
 
-
-
-
-        //Create Object for Other Class
-
+   
 
 
         private void DataAnalysis_Load(object sender, EventArgs e)
@@ -53,46 +50,10 @@ namespace ECG_Analyzer
             }
 
             saveDataBtn.Enabled = false;
+            stopBtn.Enabled = false;
+            
 
         }
-        private void startBtn_Click(object sender, EventArgs e)
-        {
-     
-                if (portCBox.Text == "") { portErrorLabel.Visible = true; } else { portErrorLabel.Visible = false; }
-                if (boudCBox.Text == "") { boudeErrorLabel.Visible = true; } else { boudeErrorLabel.Visible = false; }
-                if (patientIdTBox.Text == "") { patientIdErrorLabel.Visible = true; } else { patientIdErrorLabel.Visible = false; }
-                if (dayCountTBox.Text == "") { dayCountTBoxErrorLabel.Visible = true; } else { dayCountTBoxErrorLabel.Visible = false; }
-                if (portErrorLabel.Visible || boudeErrorLabel.Visible ||patientIdErrorLabel.Visible || dayCountTBoxErrorLabel.Visible)
-                {
-                    MessageBox.Show("Fields with * are Mandetory", "Error");
-                }
-                else
-                {
-                    myPort = new SerialPort();
-                    myPort.BaudRate = Convert.ToInt32(boudCBox.Text);
-                    myPort.PortName = portCBox.Text;
-                    myPort.Parity = Parity.None;
-                    myPort.DataBits = 8;
-                    myPort.StopBits = StopBits.One;
-                    myPort.DataReceived += myport_DataReceived;
-                    try
-                    {
-                        myPort.Open();
-                        dataTBox.Text = "";
-                        startButtonClick = true;
-                        dataGridView.Enabled = false;
-                        saveDataBtn.Enabled = false;
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message, "Error");
-                        throw;
-                    }
-                }
-                
-                        
-        }
-
         private void myport_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
             this.Invoke(new EventHandler(displadata_event));
@@ -101,8 +62,9 @@ namespace ECG_Analyzer
             {
                 rowData = Convert.ToInt32(in_data.Trim());
                 rowDataList.Add(rowData);
-                averageData=getAverage(rowDataList);
-                if (rowData>averageData)
+                averageData = getAverage(rowDataList);
+
+                if (rowData > averageData)
                 {
                     if (rowData > (1.2 * averageData))
                     {
@@ -124,12 +86,48 @@ namespace ECG_Analyzer
                         sData.Add(rowData);
                     }
                 }
-
-                
             }
-            
-                       
         }
+
+        private void startBtn_Click(object sender, EventArgs e)
+        {     
+            if (portCBox.Text == "") { portErrorLabel.Visible = true; } else { portErrorLabel.Visible = false; }
+            if (boudCBox.Text == "") { boudeErrorLabel.Visible = true; } else { boudeErrorLabel.Visible = false; }
+            if (patientIdTBox.Text == "") { patientIdErrorLabel.Visible = true; } else { patientIdErrorLabel.Visible = false; }
+            if (dayCountTBox.Text == "") { dayCountTBoxErrorLabel.Visible = true; } else { dayCountTBoxErrorLabel.Visible = false; }
+            if (portErrorLabel.Visible || boudeErrorLabel.Visible ||patientIdErrorLabel.Visible || dayCountTBoxErrorLabel.Visible)
+            {
+                MessageBox.Show("Fields with * are Mandetory", "Error");
+            }
+            else
+            {
+                myPort = new SerialPort();
+                myPort.BaudRate = Convert.ToInt32(boudCBox.Text);
+                myPort.PortName = portCBox.Text;
+                myPort.Parity = Parity.None;
+                myPort.DataBits = 8;
+                myPort.StopBits = StopBits.One;
+                myPort.DataReceived += myport_DataReceived;
+                try
+                {
+                    myPort.Open();
+                    dataTBox.Text = "";
+                    startButtonClick = true;
+                    dataGridView.Enabled = false;
+                    saveDataBtn.Enabled = false;
+                    stopBtn.Enabled = true;                    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error");
+                    throw;
+                }
+                
+
+            }                                       
+        }
+
+       
 
 
 
@@ -139,9 +137,22 @@ namespace ECG_Analyzer
             string time = dateTime.Hour + ":" + dateTime.Minute + ":" + dateTime.Second;
             dataTBox.AppendText(time+"\t\t  "+in_data+"\n");
 
-            //Progressbar Code
-            //int data_value = Convert.ToInt32(in_data);
-            //progressBar.Value = data_value;
+            IsoElectricLineTexBox.Text = "Iso-Electric Line is: " + averageData;
+
+            int sl = 1;
+            //Code for DataGrid View
+            int n = dataGridView.Rows.Add();
+            dataGridView.Rows[n].Cells[0].Value = ++sl;
+            dataGridView.Rows[n].Cells[1].Value = patientIdTBox.Text;
+            dataGridView.Rows[n].Cells[2].Value = dateTime.Date;
+            dataGridView.Rows[n].Cells[3].Value = dayCountTBox.Text;
+            dataGridView.Rows[n].Cells[4].Value = ++sl;
+            dataGridView.Rows[n].Cells[5].Value = rowData;
+            dataGridView.Rows[n].Cells[6].Value = rowData;
+            dataGridView.Rows[n].Cells[7].Value = rowData;
+            dataGridView.Rows[n].Cells[8].Value = rowData;
+            dataGridView.Rows[n].Cells[9].Value = rowData;
+
         }
 
         private void stopBtn_Click(object sender, EventArgs e)
@@ -154,10 +165,10 @@ namespace ECG_Analyzer
                     saveDataBtn.Enabled = true;
                     myPort.Close();
 
-                    SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM pqrst", "server = GH-PALASH\\SQLEXPRESS; database = ccmsDB; Integrated Security=true;");
-                    DataSet ds = new DataSet();
-                    da.Fill(ds, "pqrst");
-                    dataGridView.DataSource = ds.Tables["pqrst"].DefaultView;
+                    //SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM pqrst", "server = GH-PALASH\\SQLEXPRESS; database = ccmsDB; Integrated Security=true;");
+                    //DataSet ds = new DataSet();
+                    //da.Fill(ds, "pqrst");
+                    //dataGridView.DataSource = ds.Tables["pqrst"].DefaultView;
                 }
                 catch (Exception exception)
                 {
@@ -176,40 +187,65 @@ namespace ECG_Analyzer
         {
             if (dataGridView.Enabled==true)
             {
-                try
+                string mainConn = ConfigurationManager.ConnectionStrings["MyConnection"].ConnectionString;
+                SqlConnection sqlconn = new SqlConnection(mainConn);
+                foreach (DataGridViewRow dr in dataGridView.Rows)
                 {
+                    string sqlInsertQuery= "INSERT INTO PQRST" +
+                        "(patientId,TestDate,Cycle,DayCount,PData,QData,RData,SData,TData) values"
+                    + "(@patientId,@TestDate,@Cycle,@DayCount,@PData,@QData,@RData,@SData,@TData)";
+                    SqlCommand cmd = new SqlCommand(sqlInsertQuery, sqlconn);
 
-                    SqlConnection con = new SqlConnection(@"server=GH-PALASH\SQLEXPRESS;database=ccmsDB;Integrated Security=True");
-                    string dataInsertQuery ="INSERT INTO PQRST"+
-                        "(patientId,TestDate,Cycle,DayCount,PData,QData,RData,SData,TData) values(@patientId,@TestDate,@Cycle,@DayCount,@PData,@QData,@RData,@SData,@TData)";
+                    cmd.Parameters.AddWithValue("@patientId", dr.Cells["patientId"].Value ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@TestDate", dr.Cells["TestDate"].Value ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Cycle", dr.Cells["DayCycle"].Value ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@DayCount", dr.Cells["Day_Count"].Value ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@PData", dr.Cells["P_Data"].Value ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@QData", dr.Cells["Q_Data"].Value ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@RData", dr.Cells["R_Data"].Value ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@SData", dr.Cells["S_Data"].Value ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@TData", dr.Cells["T_Data"].Value ?? DBNull.Value);
+                    sqlconn.Open();
+                    cmd.ExecuteNonQuery();
+                    sqlconn.Close();
+                    MessageBox.Show("Rows Inserted Successfully");
+                }
 
-                    SqlCommand cmd = new SqlCommand(dataInsertQuery, con);
+                //try
+                //{
 
-                    cmd.Parameters.AddWithValue("@patientId", patientIdTBox.Text);
-                    cmd.Parameters.AddWithValue("@TestDate", DateTime.Today);
-                    cmd.Parameters.AddWithValue("@Cycle", ++cycleCount);
-                    cmd.Parameters.AddWithValue("@DayCount", dayCountTBox.Text);
-                    cmd.Parameters.AddWithValue("@PData", 45);
-                    cmd.Parameters.AddWithValue("@QData", 52);
-                    cmd.Parameters.AddWithValue("@RData", 60);
-                    cmd.Parameters.AddWithValue("@SData", 72);
-                    cmd.Parameters.AddWithValue("@TData", 42);
-                    con.Open();
-                    int i = cmd.ExecuteNonQuery();
+                //    SqlConnection con = new SqlConnection(@"server=GH-PALASH\SQLEXPRESS;database=ccmsDB;Integrated Security=True");
+                //    string dataInsertQuery ="INSERT INTO PQRST"+
+                //        "(patientId,TestDate,Cycle,DayCount,PData,QData,RData,SData,TData) values"
+                //    +"(@patientId,@TestDate,@Cycle,@DayCount,@PData,@QData,@RData,@SData,@TData)";
 
-                    con.Close();
+                //    SqlCommand cmd = new SqlCommand(dataInsertQuery, con);
 
-                    //if (i != 0)
-                    //{
-                    //    MessageBox.Show(i + "Data Saved");
-                    //}
+                //    cmd.Parameters.AddWithValue("@patientId", patientIdTBox.Text);
+                //    cmd.Parameters.AddWithValue("@TestDate", DateTime.Today);
+                //    cmd.Parameters.AddWithValue("@Cycle", ++cycleCount);
+                //    cmd.Parameters.AddWithValue("@DayCount", dayCountTBox.Text);
+                //    cmd.Parameters.AddWithValue("@PData", pData);
+                //    cmd.Parameters.AddWithValue("@QData", qData);
+                //    cmd.Parameters.AddWithValue("@RData", 60);
+                //    cmd.Parameters.AddWithValue("@SData", 72);
+                //    cmd.Parameters.AddWithValue("@TData", 42);
+                //    con.Open();
+                //    int i = cmd.ExecuteNonQuery();
+
+                //    con.Close();
+
+                //    //if (i != 0)
+                //    //{
+                //    //    MessageBox.Show(i + "Data Saved");
+                //    //}
 
                     
-                }
-                catch (Exception exception3)
-                {
-                    MessageBox.Show(exception3.Message, "Error");
-                }
+                //}
+                //catch (Exception exception3)
+                //{
+                //    MessageBox.Show(exception3.Message, "Error");
+                //}
             }
             else
             {
@@ -244,6 +280,11 @@ namespace ECG_Analyzer
         private void dayCountTBox_TextChanged(object sender, EventArgs e)
         {
             if (dayCountTBox.Text == "") { dayCountTBoxErrorLabel.Visible = true; } else { dayCountTBoxErrorLabel.Visible = false; }
+        }
+
+        private void IsoElectricLineTexBox_TextChanged(object sender, EventArgs e)
+        {
+            IsoElectricLineTexBox.Text = "Iso-Electric Line is: " + averageData;
         }
     }
 }
