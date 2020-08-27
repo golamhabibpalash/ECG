@@ -47,12 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddPatient.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AddPatient.Designer.cs">
-      <DependentUpon>AddPatient.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\Personalization.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,9 +135,6 @@
     <Compile Include="UserForm.Designer.cs">
       <DependentUpon>UserForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddPatient.resx">
-      <DependentUpon>AddPatient.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Personalization.resx">
       <DependentUpon>Personalization.cs</DependentUpon>
     </EmbeddedResource>

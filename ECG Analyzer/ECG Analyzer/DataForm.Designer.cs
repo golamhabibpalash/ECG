@@ -57,7 +57,10 @@
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.Controls.Add(this.dataGridView);
+            this.masterLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
+            this.masterLayoutPanel.Size = new System.Drawing.Size(550, 410);
+            this.masterLayoutPanel.Controls.SetChildIndex(this.dataGridView, 0);
             // 
             // label1
             // 
@@ -82,7 +85,7 @@
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 37);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(194, 173);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(241, 173);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // label2
@@ -98,7 +101,7 @@
             // 
             this.patientIdTBox.Location = new System.Drawing.Point(3, 17);
             this.patientIdTBox.Name = "patientIdTBox";
-            this.patientIdTBox.Size = new System.Drawing.Size(188, 22);
+            this.patientIdTBox.Size = new System.Drawing.Size(238, 22);
             this.patientIdTBox.TabIndex = 0;
             // 
             // label3
@@ -115,7 +118,7 @@
             this.dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker.Location = new System.Drawing.Point(3, 59);
             this.dateTimePicker.Name = "dateTimePicker";
-            this.dateTimePicker.Size = new System.Drawing.Size(188, 22);
+            this.dateTimePicker.Size = new System.Drawing.Size(238, 22);
             this.dateTimePicker.TabIndex = 3;
             // 
             // label4
@@ -131,7 +134,7 @@
             // 
             this.dayTestCount.Location = new System.Drawing.Point(3, 101);
             this.dayTestCount.Name = "dayTestCount";
-            this.dayTestCount.Size = new System.Drawing.Size(188, 22);
+            this.dayTestCount.Size = new System.Drawing.Size(238, 22);
             this.dayTestCount.TabIndex = 0;
             // 
             // searchBtn
@@ -142,7 +145,7 @@
             this.searchBtn.ForeColor = System.Drawing.Color.Transparent;
             this.searchBtn.Location = new System.Drawing.Point(3, 129);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(188, 33);
+            this.searchBtn.Size = new System.Drawing.Size(238, 33);
             this.searchBtn.TabIndex = 2;
             this.searchBtn.Text = "Search";
             this.searchBtn.UseVisualStyleBackColor = true;
@@ -158,11 +161,11 @@
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.GridColor = System.Drawing.Color.Black;
-            this.dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView.Location = new System.Drawing.Point(0, 42);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.Size = new System.Drawing.Size(600, 389);
+            this.dataGridView.Size = new System.Drawing.Size(550, 368);
             this.dataGridView.TabIndex = 0;
             // 
             // DataForm

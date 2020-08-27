@@ -48,12 +48,6 @@
             this.leftMenuPanel.Controls.Add(this.button3);
             this.leftMenuPanel.Controls.Add(this.button2);
             this.leftMenuPanel.Controls.Add(this.button1);
-            this.leftMenuPanel.Size = new System.Drawing.Size(150, 410);
-            // 
-            // masterLayoutPanel
-            // 
-            this.masterLayoutPanel.Location = new System.Drawing.Point(150, 40);
-            this.masterLayoutPanel.Size = new System.Drawing.Size(650, 389);
             // 
             // button1
             // 
@@ -61,7 +55,7 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(4, 57);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 25);
+            this.button1.Size = new System.Drawing.Size(240, 25);
             this.button1.TabIndex = 0;
             this.button1.Text = "Add User";
             this.button1.UseVisualStyleBackColor = true;
@@ -72,7 +66,7 @@
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(4, 88);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 25);
+            this.button2.Size = new System.Drawing.Size(240, 25);
             this.button2.TabIndex = 0;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
@@ -83,7 +77,7 @@
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.Location = new System.Drawing.Point(4, 119);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 25);
+            this.button3.Size = new System.Drawing.Size(240, 25);
             this.button3.TabIndex = 0;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
@@ -94,7 +88,7 @@
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.Location = new System.Drawing.Point(3, 150);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(142, 25);
+            this.button4.Size = new System.Drawing.Size(240, 25);
             this.button4.TabIndex = 0;
             this.button4.Text = "Search";
             this.button4.UseVisualStyleBackColor = true;
@@ -105,7 +99,7 @@
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.Location = new System.Drawing.Point(4, 181);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(142, 25);
+            this.button5.Size = new System.Drawing.Size(240, 25);
             this.button5.TabIndex = 0;
             this.button5.Text = "button1";
             this.button5.UseVisualStyleBackColor = true;
@@ -119,7 +113,6 @@
             this.Text = "UserForm";
             this.Load += new System.EventHandler(this.UserForm_Load);
             this.headerPanel.ResumeLayout(false);
-            this.headerPanel.PerformLayout();
             this.leftMenuPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -61,7 +61,8 @@ namespace ECG_Analyzer
             in_data = myPort.ReadLine();
             if (!string.IsNullOrEmpty(in_data))
             {
-                rowData = Convert.ToInt32(in_data.Trim());
+                int in_data_int = Convert.ToInt32(in_data.Trim());
+                rowData = in_data_int/7;
                 rowDataList.Add(rowData);
                 averageData = getAverage(rowDataList);
 

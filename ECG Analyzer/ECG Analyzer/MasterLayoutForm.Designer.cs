@@ -32,8 +32,8 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.ccmsLabel = new System.Windows.Forms.Label();
             this.leftMenuPanel = new System.Windows.Forms.Panel();
-            this.masterLayoutPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.masterLayoutPanel = new System.Windows.Forms.Panel();
             this.headerPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -84,8 +84,17 @@
             this.leftMenuPanel.ForeColor = System.Drawing.Color.White;
             this.leftMenuPanel.Location = new System.Drawing.Point(0, 40);
             this.leftMenuPanel.Name = "leftMenuPanel";
-            this.leftMenuPanel.Size = new System.Drawing.Size(200, 408);
+            this.leftMenuPanel.Size = new System.Drawing.Size(250, 408);
             this.leftMenuPanel.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.masterLayoutPanel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(250, 40);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(543, 408);
+            this.panel1.TabIndex = 1;
             // 
             // masterLayoutPanel
             // 
@@ -94,17 +103,8 @@
             this.masterLayoutPanel.ForeColor = System.Drawing.Color.White;
             this.masterLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.masterLayoutPanel.Name = "masterLayoutPanel";
-            this.masterLayoutPanel.Size = new System.Drawing.Size(593, 408);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(543, 408);
             this.masterLayoutPanel.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.masterLayoutPanel);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(200, 40);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(593, 408);
-            this.panel1.TabIndex = 1;
             // 
             // MasterLayoutForm
             // 
@@ -129,10 +129,10 @@
 
         public System.Windows.Forms.Panel headerPanel;
         public System.Windows.Forms.Panel leftMenuPanel;
-        public System.Windows.Forms.Panel masterLayoutPanel;
         private System.Windows.Forms.Label ccmsLabel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Panel masterLayoutPanel;
     }
 }
 

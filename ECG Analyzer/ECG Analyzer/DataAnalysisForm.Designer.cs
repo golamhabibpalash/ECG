@@ -101,14 +101,16 @@
             this.leftMenuPanel.Controls.Add(this.boudeErrorLabel);
             this.leftMenuPanel.Controls.Add(this.portErrorLabel);
             this.leftMenuPanel.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.leftMenuPanel.Size = new System.Drawing.Size(200, 575);
+            this.leftMenuPanel.Size = new System.Drawing.Size(250, 575);
             // 
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.Controls.Add(this.panel2);
             this.masterLayoutPanel.Controls.Add(this.dataGridView);
             this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
-            this.masterLayoutPanel.Size = new System.Drawing.Size(816, 575);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(766, 575);
+            this.masterLayoutPanel.Controls.SetChildIndex(this.dataGridView, 0);
+            this.masterLayoutPanel.Controls.SetChildIndex(this.panel2, 0);
             // 
             // startBtn
             // 
@@ -118,7 +120,7 @@
             this.startBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startBtn.Location = new System.Drawing.Point(5, 5);
             this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(182, 35);
+            this.startBtn.Size = new System.Drawing.Size(227, 35);
             this.startBtn.TabIndex = 0;
             this.startBtn.Text = "Start";
             this.startBtn.UseVisualStyleBackColor = false;
@@ -132,7 +134,7 @@
             this.stopBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stopBtn.Location = new System.Drawing.Point(5, 46);
             this.stopBtn.Name = "stopBtn";
-            this.stopBtn.Size = new System.Drawing.Size(182, 35);
+            this.stopBtn.Size = new System.Drawing.Size(227, 35);
             this.stopBtn.TabIndex = 0;
             this.stopBtn.Text = "Stop";
             this.stopBtn.UseVisualStyleBackColor = false;
@@ -147,7 +149,7 @@
             this.saveDataBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveDataBtn.Location = new System.Drawing.Point(5, 87);
             this.saveDataBtn.Name = "saveDataBtn";
-            this.saveDataBtn.Size = new System.Drawing.Size(182, 35);
+            this.saveDataBtn.Size = new System.Drawing.Size(227, 35);
             this.saveDataBtn.TabIndex = 0;
             this.saveDataBtn.Text = "Save Data";
             this.saveDataBtn.UseVisualStyleBackColor = false;
@@ -176,7 +178,7 @@
             "115200"});
             this.boudCBox.Location = new System.Drawing.Point(9, 198);
             this.boudCBox.Name = "boudCBox";
-            this.boudCBox.Size = new System.Drawing.Size(183, 22);
+            this.boudCBox.Size = new System.Drawing.Size(233, 22);
             this.boudCBox.TabIndex = 2;
             this.boudCBox.SelectedIndexChanged += new System.EventHandler(this.boudCBox_SelectedIndexChanged);
             // 
@@ -186,7 +188,7 @@
             this.portCBox.FormattingEnabled = true;
             this.portCBox.Location = new System.Drawing.Point(9, 154);
             this.portCBox.Name = "portCBox";
-            this.portCBox.Size = new System.Drawing.Size(183, 22);
+            this.portCBox.Size = new System.Drawing.Size(233, 22);
             this.portCBox.TabIndex = 2;
             this.portCBox.SelectedIndexChanged += new System.EventHandler(this.portCBox_SelectedIndexChanged);
             // 
@@ -199,7 +201,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 16);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Boud";
+            this.label4.Text = "Baud";
             // 
             // label3
             // 
@@ -225,7 +227,7 @@
             this.dataTBox.Margin = new System.Windows.Forms.Padding(5);
             this.dataTBox.Multiline = true;
             this.dataTBox.Name = "dataTBox";
-            this.dataTBox.Size = new System.Drawing.Size(182, 221);
+            this.dataTBox.Size = new System.Drawing.Size(232, 221);
             this.dataTBox.TabIndex = 5;
             // 
             // dataGridView
@@ -259,7 +261,7 @@
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.Size = new System.Drawing.Size(816, 575);
+            this.dataGridView.Size = new System.Drawing.Size(766, 575);
             this.dataGridView.TabIndex = 2;
             // 
             // Id
@@ -328,7 +330,7 @@
             // 
             this.dayCountTBox.Location = new System.Drawing.Point(9, 284);
             this.dayCountTBox.Name = "dayCountTBox";
-            this.dayCountTBox.Size = new System.Drawing.Size(183, 22);
+            this.dayCountTBox.Size = new System.Drawing.Size(233, 22);
             this.dayCountTBox.TabIndex = 8;
             this.dayCountTBox.TextChanged += new System.EventHandler(this.dayCountTBox_TextChanged);
             // 
@@ -336,7 +338,7 @@
             // 
             this.patientIdTBox.Location = new System.Drawing.Point(9, 242);
             this.patientIdTBox.Name = "patientIdTBox";
-            this.patientIdTBox.Size = new System.Drawing.Size(183, 22);
+            this.patientIdTBox.Size = new System.Drawing.Size(233, 22);
             this.patientIdTBox.TabIndex = 8;
             this.patientIdTBox.TextChanged += new System.EventHandler(this.patientIdTBox_TextChanged);
             // 
@@ -349,7 +351,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(2);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(190, 132);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(240, 132);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
             // label2
@@ -379,7 +381,7 @@
             this.portErrorLabel.AutoSize = true;
             this.portErrorLabel.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.portErrorLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.portErrorLabel.Location = new System.Drawing.Point(176, 135);
+            this.portErrorLabel.Location = new System.Drawing.Point(227, 135);
             this.portErrorLabel.Name = "portErrorLabel";
             this.portErrorLabel.Size = new System.Drawing.Size(21, 24);
             this.portErrorLabel.TabIndex = 1;
@@ -391,7 +393,7 @@
             this.boudeErrorLabel.AutoSize = true;
             this.boudeErrorLabel.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boudeErrorLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.boudeErrorLabel.Location = new System.Drawing.Point(176, 179);
+            this.boudeErrorLabel.Location = new System.Drawing.Point(227, 179);
             this.boudeErrorLabel.Name = "boudeErrorLabel";
             this.boudeErrorLabel.Size = new System.Drawing.Size(21, 24);
             this.boudeErrorLabel.TabIndex = 1;
@@ -403,7 +405,7 @@
             this.patientIdErrorLabel.AutoSize = true;
             this.patientIdErrorLabel.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.patientIdErrorLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.patientIdErrorLabel.Location = new System.Drawing.Point(176, 223);
+            this.patientIdErrorLabel.Location = new System.Drawing.Point(227, 223);
             this.patientIdErrorLabel.Name = "patientIdErrorLabel";
             this.patientIdErrorLabel.Size = new System.Drawing.Size(21, 24);
             this.patientIdErrorLabel.TabIndex = 1;
@@ -415,7 +417,7 @@
             this.dayCountTBoxErrorLabel.AutoSize = true;
             this.dayCountTBoxErrorLabel.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dayCountTBoxErrorLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.dayCountTBoxErrorLabel.Location = new System.Drawing.Point(176, 265);
+            this.dayCountTBoxErrorLabel.Location = new System.Drawing.Point(227, 265);
             this.dayCountTBoxErrorLabel.Name = "dayCountTBoxErrorLabel";
             this.dayCountTBoxErrorLabel.Size = new System.Drawing.Size(21, 24);
             this.dayCountTBoxErrorLabel.TabIndex = 1;
@@ -438,7 +440,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(147, 312);
+            this.label7.Location = new System.Drawing.Point(203, 312);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 16);
             this.label7.TabIndex = 1;
@@ -450,7 +452,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 550);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(816, 25);
+            this.panel2.Size = new System.Drawing.Size(766, 25);
             this.panel2.TabIndex = 3;
             // 
             // IsoElectricLineTexBox
@@ -459,7 +461,7 @@
             this.IsoElectricLineTexBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsoElectricLineTexBox.Location = new System.Drawing.Point(0, 0);
             this.IsoElectricLineTexBox.Name = "IsoElectricLineTexBox";
-            this.IsoElectricLineTexBox.Size = new System.Drawing.Size(816, 23);
+            this.IsoElectricLineTexBox.Size = new System.Drawing.Size(766, 23);
             this.IsoElectricLineTexBox.TabIndex = 0;
             this.IsoElectricLineTexBox.TextChanged += new System.EventHandler(this.IsoElectricLineTexBox_TextChanged);
             // 

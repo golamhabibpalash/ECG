@@ -71,8 +71,7 @@
             // 
             // masterLayoutPanel
             // 
-            this.masterLayoutPanel.Location = new System.Drawing.Point(215, 40);
-            this.masterLayoutPanel.Size = new System.Drawing.Size(585, 389);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(585, 410);
             // 
             // saveBtn
             // 
@@ -82,9 +81,9 @@
             this.saveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveBtn.Font = new System.Drawing.Font("Lucida Bright", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveBtn.ForeColor = System.Drawing.Color.Black;
-            this.saveBtn.Location = new System.Drawing.Point(26, 310);
+            this.saveBtn.Location = new System.Drawing.Point(6, 310);
             this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Size = new System.Drawing.Size(178, 25);
+            this.saveBtn.Size = new System.Drawing.Size(202, 25);
             this.saveBtn.TabIndex = 5;
             this.saveBtn.Text = "&SAVE";
             this.saveBtn.UseVisualStyleBackColor = false;
@@ -94,10 +93,10 @@
             // 
             this.databaseTBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.databaseTBox.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.databaseTBox.Location = new System.Drawing.Point(25, 179);
+            this.databaseTBox.Location = new System.Drawing.Point(6, 179);
             this.databaseTBox.MaximumSize = new System.Drawing.Size(180, 20);
             this.databaseTBox.Name = "databaseTBox";
-            this.databaseTBox.Size = new System.Drawing.Size(178, 17);
+            this.databaseTBox.Size = new System.Drawing.Size(180, 17);
             this.databaseTBox.TabIndex = 1;
             this.databaseTBox.TextChanged += new System.EventHandler(this.databaseTBox_TextChanged);
             // 
@@ -105,7 +104,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 117);
+            this.label3.Location = new System.Drawing.Point(4, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 17);
             this.label3.TabIndex = 3;
@@ -115,7 +114,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 158);
+            this.label4.Location = new System.Drawing.Point(4, 158);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 17);
             this.label4.TabIndex = 4;
@@ -125,9 +124,9 @@
             // 
             this.dataSourceTBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataSourceTBox.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataSourceTBox.Location = new System.Drawing.Point(25, 138);
+            this.dataSourceTBox.Location = new System.Drawing.Point(6, 138);
             this.dataSourceTBox.Name = "dataSourceTBox";
-            this.dataSourceTBox.Size = new System.Drawing.Size(178, 17);
+            this.dataSourceTBox.Size = new System.Drawing.Size(202, 17);
             this.dataSourceTBox.TabIndex = 0;
             this.dataSourceTBox.TextChanged += new System.EventHandler(this.dataSourceTBox_TextChanged);
             // 
@@ -135,9 +134,9 @@
             // 
             this.usernameTBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.usernameTBox.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTBox.Location = new System.Drawing.Point(25, 220);
+            this.usernameTBox.Location = new System.Drawing.Point(6, 220);
             this.usernameTBox.Name = "usernameTBox";
-            this.usernameTBox.Size = new System.Drawing.Size(178, 17);
+            this.usernameTBox.Size = new System.Drawing.Size(202, 17);
             this.usernameTBox.TabIndex = 2;
             this.usernameTBox.TextChanged += new System.EventHandler(this.usernameTBox_TextChanged);
             // 
@@ -145,7 +144,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 240);
+            this.label1.Location = new System.Drawing.Point(4, 240);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 17);
             this.label1.TabIndex = 4;
@@ -155,7 +154,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 199);
+            this.label2.Location = new System.Drawing.Point(4, 199);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 3;
@@ -165,11 +164,11 @@
             // 
             this.passwrodTBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.passwrodTBox.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwrodTBox.Location = new System.Drawing.Point(25, 261);
+            this.passwrodTBox.Location = new System.Drawing.Point(6, 261);
             this.passwrodTBox.MaximumSize = new System.Drawing.Size(180, 20);
             this.passwrodTBox.Name = "passwrodTBox";
             this.passwrodTBox.PasswordChar = '*';
-            this.passwrodTBox.Size = new System.Drawing.Size(178, 17);
+            this.passwrodTBox.Size = new System.Drawing.Size(180, 17);
             this.passwrodTBox.TabIndex = 3;
             this.passwrodTBox.UseSystemPasswordChar = true;
             this.passwrodTBox.TextChanged += new System.EventHandler(this.passwrodTBox_TextChanged);
@@ -177,9 +176,9 @@
             // intigratedSecurityCBox
             // 
             this.intigratedSecurityCBox.AutoSize = true;
-            this.intigratedSecurityCBox.Location = new System.Drawing.Point(26, 285);
+            this.intigratedSecurityCBox.Location = new System.Drawing.Point(7, 285);
             this.intigratedSecurityCBox.Name = "intigratedSecurityCBox";
-            this.intigratedSecurityCBox.Size = new System.Drawing.Size(116, 19);
+            this.intigratedSecurityCBox.Size = new System.Drawing.Size(128, 18);
             this.intigratedSecurityCBox.TabIndex = 4;
             this.intigratedSecurityCBox.Text = "Intigrated Security";
             this.intigratedSecurityCBox.UseVisualStyleBackColor = true;
@@ -201,7 +200,7 @@
             this.dataSourceErrorLabel.AutoSize = true;
             this.dataSourceErrorLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataSourceErrorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
-            this.dataSourceErrorLabel.Location = new System.Drawing.Point(185, 117);
+            this.dataSourceErrorLabel.Location = new System.Drawing.Point(187, 120);
             this.dataSourceErrorLabel.Name = "dataSourceErrorLabel";
             this.dataSourceErrorLabel.Size = new System.Drawing.Size(18, 19);
             this.dataSourceErrorLabel.TabIndex = 3;
@@ -213,7 +212,7 @@
             this.databaseErrorLabel.AutoSize = true;
             this.databaseErrorLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.databaseErrorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
-            this.databaseErrorLabel.Location = new System.Drawing.Point(186, 158);
+            this.databaseErrorLabel.Location = new System.Drawing.Point(188, 161);
             this.databaseErrorLabel.Name = "databaseErrorLabel";
             this.databaseErrorLabel.Size = new System.Drawing.Size(18, 19);
             this.databaseErrorLabel.TabIndex = 3;
@@ -225,7 +224,7 @@
             this.usernameErrorLabel.AutoSize = true;
             this.usernameErrorLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameErrorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
-            this.usernameErrorLabel.Location = new System.Drawing.Point(185, 199);
+            this.usernameErrorLabel.Location = new System.Drawing.Point(187, 202);
             this.usernameErrorLabel.Name = "usernameErrorLabel";
             this.usernameErrorLabel.Size = new System.Drawing.Size(18, 19);
             this.usernameErrorLabel.TabIndex = 3;
@@ -237,7 +236,7 @@
             this.passwordErrorLabel.AutoSize = true;
             this.passwordErrorLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordErrorLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(108)))), ((int)(((byte)(50)))));
-            this.passwordErrorLabel.Location = new System.Drawing.Point(185, 239);
+            this.passwordErrorLabel.Location = new System.Drawing.Point(187, 242);
             this.passwordErrorLabel.Name = "passwordErrorLabel";
             this.passwordErrorLabel.Size = new System.Drawing.Size(18, 19);
             this.passwordErrorLabel.TabIndex = 3;
