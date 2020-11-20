@@ -174,8 +174,7 @@ namespace ECG_Analyzer
             }
             else
             {
-                MessageBox.Show("Please Click Start Button First");
-                startBtn.Focus();
+                MessageBox.Show("Please Click Start Button First");                
             }
         }        
         
@@ -205,7 +204,11 @@ namespace ECG_Analyzer
                     cmd.ExecuteNonQuery();
                     sqlconn.Close();                    
                 }
-                MessageBox.Show("Rows Inserted Successfully");
+                
+                dataGridView.DataSource = null;
+                dataGridView.Rows.Clear();
+                dataGridView.Refresh();
+                MessageBox.Show("Data Saved Successfully");
 
                 //try
                 //{

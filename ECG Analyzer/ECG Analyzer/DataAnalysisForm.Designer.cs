@@ -78,7 +78,8 @@
             // headerPanel
             // 
             this.headerPanel.Controls.Add(this.panel6);
-            this.headerPanel.Size = new System.Drawing.Size(1016, 40);
+            this.headerPanel.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.headerPanel.Size = new System.Drawing.Size(1355, 49);
             this.headerPanel.Controls.SetChildIndex(this.panel6, 0);
             this.headerPanel.Controls.SetChildIndex(this.backBtn, 0);
             // 
@@ -100,15 +101,17 @@
             this.leftMenuPanel.Controls.Add(this.patientIdErrorLabel);
             this.leftMenuPanel.Controls.Add(this.boudeErrorLabel);
             this.leftMenuPanel.Controls.Add(this.portErrorLabel);
-            this.leftMenuPanel.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.leftMenuPanel.Size = new System.Drawing.Size(250, 575);
+            this.leftMenuPanel.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.leftMenuPanel.Padding = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.leftMenuPanel.Size = new System.Drawing.Size(333, 708);
             // 
             // masterLayoutPanel
             // 
             this.masterLayoutPanel.Controls.Add(this.panel2);
             this.masterLayoutPanel.Controls.Add(this.dataGridView);
             this.masterLayoutPanel.ForeColor = System.Drawing.Color.Black;
-            this.masterLayoutPanel.Size = new System.Drawing.Size(766, 575);
+            this.masterLayoutPanel.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.masterLayoutPanel.Size = new System.Drawing.Size(1022, 708);
             this.masterLayoutPanel.Controls.SetChildIndex(this.dataGridView, 0);
             this.masterLayoutPanel.Controls.SetChildIndex(this.panel2, 0);
             // 
@@ -118,9 +121,10 @@
             this.startBtn.FlatAppearance.BorderSize = 0;
             this.startBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startBtn.Location = new System.Drawing.Point(5, 5);
+            this.startBtn.Location = new System.Drawing.Point(7, 6);
+            this.startBtn.Margin = new System.Windows.Forms.Padding(4);
             this.startBtn.Name = "startBtn";
-            this.startBtn.Size = new System.Drawing.Size(227, 35);
+            this.startBtn.Size = new System.Drawing.Size(303, 43);
             this.startBtn.TabIndex = 0;
             this.startBtn.Text = "Start";
             this.startBtn.UseVisualStyleBackColor = false;
@@ -132,9 +136,10 @@
             this.stopBtn.FlatAppearance.BorderSize = 0;
             this.stopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.stopBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stopBtn.Location = new System.Drawing.Point(5, 46);
+            this.stopBtn.Location = new System.Drawing.Point(7, 57);
+            this.stopBtn.Margin = new System.Windows.Forms.Padding(4);
             this.stopBtn.Name = "stopBtn";
-            this.stopBtn.Size = new System.Drawing.Size(227, 35);
+            this.stopBtn.Size = new System.Drawing.Size(303, 43);
             this.stopBtn.TabIndex = 0;
             this.stopBtn.Text = "Stop";
             this.stopBtn.UseVisualStyleBackColor = false;
@@ -147,9 +152,10 @@
             this.saveDataBtn.FlatAppearance.BorderSize = 0;
             this.saveDataBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveDataBtn.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveDataBtn.Location = new System.Drawing.Point(5, 87);
+            this.saveDataBtn.Location = new System.Drawing.Point(7, 108);
+            this.saveDataBtn.Margin = new System.Windows.Forms.Padding(4);
             this.saveDataBtn.Name = "saveDataBtn";
-            this.saveDataBtn.Size = new System.Drawing.Size(227, 35);
+            this.saveDataBtn.Size = new System.Drawing.Size(303, 43);
             this.saveDataBtn.TabIndex = 0;
             this.saveDataBtn.Text = "Save Data";
             this.saveDataBtn.UseVisualStyleBackColor = false;
@@ -176,9 +182,10 @@
             "38400",
             "57600",
             "115200"});
-            this.boudCBox.Location = new System.Drawing.Point(9, 198);
+            this.boudCBox.Location = new System.Drawing.Point(12, 244);
+            this.boudCBox.Margin = new System.Windows.Forms.Padding(4);
             this.boudCBox.Name = "boudCBox";
-            this.boudCBox.Size = new System.Drawing.Size(233, 22);
+            this.boudCBox.Size = new System.Drawing.Size(309, 26);
             this.boudCBox.TabIndex = 2;
             this.boudCBox.SelectedIndexChanged += new System.EventHandler(this.boudCBox_SelectedIndexChanged);
             // 
@@ -186,9 +193,10 @@
             // 
             this.portCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.portCBox.FormattingEnabled = true;
-            this.portCBox.Location = new System.Drawing.Point(9, 154);
+            this.portCBox.Location = new System.Drawing.Point(12, 190);
+            this.portCBox.Margin = new System.Windows.Forms.Padding(4);
             this.portCBox.Name = "portCBox";
-            this.portCBox.Size = new System.Drawing.Size(233, 22);
+            this.portCBox.Size = new System.Drawing.Size(309, 26);
             this.portCBox.TabIndex = 2;
             this.portCBox.SelectedIndexChanged += new System.EventHandler(this.portCBox_SelectedIndexChanged);
             // 
@@ -197,9 +205,10 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(8, 181);
+            this.label4.Location = new System.Drawing.Point(11, 223);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 16);
+            this.label4.Size = new System.Drawing.Size(47, 21);
             this.label4.TabIndex = 1;
             this.label4.Text = "Baud";
             // 
@@ -208,26 +217,28 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(8, 137);
+            this.label3.Location = new System.Drawing.Point(11, 169);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 16);
+            this.label3.Size = new System.Drawing.Size(40, 21);
             this.label3.TabIndex = 1;
             this.label3.Text = "Port";
             // 
             // panel6
             // 
-            this.panel6.Location = new System.Drawing.Point(509, 40);
+            this.panel6.Location = new System.Drawing.Point(679, 49);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(507, 548);
+            this.panel6.Size = new System.Drawing.Size(676, 674);
             this.panel6.TabIndex = 4;
             // 
             // dataTBox
             // 
-            this.dataTBox.Location = new System.Drawing.Point(10, 333);
-            this.dataTBox.Margin = new System.Windows.Forms.Padding(5);
+            this.dataTBox.Location = new System.Drawing.Point(13, 410);
+            this.dataTBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.dataTBox.Multiline = true;
             this.dataTBox.Name = "dataTBox";
-            this.dataTBox.Size = new System.Drawing.Size(232, 221);
+            this.dataTBox.Size = new System.Drawing.Size(308, 271);
             this.dataTBox.TabIndex = 5;
             // 
             // dataGridView
@@ -257,88 +268,102 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView.Location = new System.Drawing.Point(0, 52);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
             this.dataGridView.RowHeadersVisible = false;
-            this.dataGridView.Size = new System.Drawing.Size(766, 575);
+            this.dataGridView.RowHeadersWidth = 51;
+            this.dataGridView.Size = new System.Drawing.Size(1022, 656);
             this.dataGridView.TabIndex = 2;
             // 
             // Id
             // 
             this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.Id.HeaderText = "Id";
+            this.Id.MinimumWidth = 6;
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
-            this.Id.Width = 41;
+            this.Id.Width = 48;
             // 
             // PatientId
             // 
             this.PatientId.HeaderText = "Patient ID";
+            this.PatientId.MinimumWidth = 6;
             this.PatientId.Name = "PatientId";
             this.PatientId.ReadOnly = true;
             // 
             // TestDate
             // 
             this.TestDate.HeaderText = "Test Date";
+            this.TestDate.MinimumWidth = 6;
             this.TestDate.Name = "TestDate";
             this.TestDate.ReadOnly = true;
             // 
             // Day_Count
             // 
             this.Day_Count.HeaderText = "Day Count";
+            this.Day_Count.MinimumWidth = 6;
             this.Day_Count.Name = "Day_Count";
             this.Day_Count.ReadOnly = true;
             // 
             // DayCycle
             // 
             this.DayCycle.HeaderText = "Cycle";
+            this.DayCycle.MinimumWidth = 6;
             this.DayCycle.Name = "DayCycle";
             this.DayCycle.ReadOnly = true;
             // 
             // P_Data
             // 
             this.P_Data.HeaderText = "P";
+            this.P_Data.MinimumWidth = 6;
             this.P_Data.Name = "P_Data";
             this.P_Data.ReadOnly = true;
             // 
             // Q_Data
             // 
             this.Q_Data.HeaderText = "Q";
+            this.Q_Data.MinimumWidth = 6;
             this.Q_Data.Name = "Q_Data";
             this.Q_Data.ReadOnly = true;
             // 
             // R_Data
             // 
             this.R_Data.HeaderText = "R";
+            this.R_Data.MinimumWidth = 6;
             this.R_Data.Name = "R_Data";
             this.R_Data.ReadOnly = true;
             // 
             // S_Data
             // 
             this.S_Data.HeaderText = "S";
+            this.S_Data.MinimumWidth = 6;
             this.S_Data.Name = "S_Data";
             this.S_Data.ReadOnly = true;
             // 
             // T_Data
             // 
             this.T_Data.HeaderText = "T";
+            this.T_Data.MinimumWidth = 6;
             this.T_Data.Name = "T_Data";
             this.T_Data.ReadOnly = true;
             // 
             // dayCountTBox
             // 
-            this.dayCountTBox.Location = new System.Drawing.Point(9, 284);
+            this.dayCountTBox.Location = new System.Drawing.Point(12, 350);
+            this.dayCountTBox.Margin = new System.Windows.Forms.Padding(4);
             this.dayCountTBox.Name = "dayCountTBox";
-            this.dayCountTBox.Size = new System.Drawing.Size(233, 22);
+            this.dayCountTBox.Size = new System.Drawing.Size(309, 26);
             this.dayCountTBox.TabIndex = 8;
             this.dayCountTBox.TextChanged += new System.EventHandler(this.dayCountTBox_TextChanged);
             // 
             // patientIdTBox
             // 
-            this.patientIdTBox.Location = new System.Drawing.Point(9, 242);
+            this.patientIdTBox.Location = new System.Drawing.Point(12, 298);
+            this.patientIdTBox.Margin = new System.Windows.Forms.Padding(4);
             this.patientIdTBox.Name = "patientIdTBox";
-            this.patientIdTBox.Size = new System.Drawing.Size(233, 22);
+            this.patientIdTBox.Size = new System.Drawing.Size(309, 26);
             this.patientIdTBox.TabIndex = 8;
             this.patientIdTBox.TextChanged += new System.EventHandler(this.patientIdTBox_TextChanged);
             // 
@@ -348,10 +373,11 @@
             this.flowLayoutPanel1.Controls.Add(this.stopBtn);
             this.flowLayoutPanel1.Controls.Add(this.saveDataBtn);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(5, 0);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(2);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(240, 132);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(319, 162);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
             // label2
@@ -359,9 +385,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(8, 225);
+            this.label2.Location = new System.Drawing.Point(11, 277);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 16);
+            this.label2.Size = new System.Drawing.Size(82, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "Patient Id";
             // 
@@ -370,9 +397,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(8, 267);
+            this.label5.Location = new System.Drawing.Point(11, 329);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 16);
+            this.label5.Size = new System.Drawing.Size(91, 21);
             this.label5.TabIndex = 1;
             this.label5.Text = "Test Count";
             // 
@@ -381,9 +409,10 @@
             this.portErrorLabel.AutoSize = true;
             this.portErrorLabel.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.portErrorLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.portErrorLabel.Location = new System.Drawing.Point(227, 135);
+            this.portErrorLabel.Location = new System.Drawing.Point(303, 166);
+            this.portErrorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.portErrorLabel.Name = "portErrorLabel";
-            this.portErrorLabel.Size = new System.Drawing.Size(21, 24);
+            this.portErrorLabel.Size = new System.Drawing.Size(27, 30);
             this.portErrorLabel.TabIndex = 1;
             this.portErrorLabel.Text = "*";
             this.portErrorLabel.Visible = false;
@@ -393,9 +422,10 @@
             this.boudeErrorLabel.AutoSize = true;
             this.boudeErrorLabel.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boudeErrorLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.boudeErrorLabel.Location = new System.Drawing.Point(227, 179);
+            this.boudeErrorLabel.Location = new System.Drawing.Point(303, 220);
+            this.boudeErrorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.boudeErrorLabel.Name = "boudeErrorLabel";
-            this.boudeErrorLabel.Size = new System.Drawing.Size(21, 24);
+            this.boudeErrorLabel.Size = new System.Drawing.Size(27, 30);
             this.boudeErrorLabel.TabIndex = 1;
             this.boudeErrorLabel.Text = "*";
             this.boudeErrorLabel.Visible = false;
@@ -405,9 +435,10 @@
             this.patientIdErrorLabel.AutoSize = true;
             this.patientIdErrorLabel.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.patientIdErrorLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.patientIdErrorLabel.Location = new System.Drawing.Point(227, 223);
+            this.patientIdErrorLabel.Location = new System.Drawing.Point(303, 274);
+            this.patientIdErrorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.patientIdErrorLabel.Name = "patientIdErrorLabel";
-            this.patientIdErrorLabel.Size = new System.Drawing.Size(21, 24);
+            this.patientIdErrorLabel.Size = new System.Drawing.Size(27, 30);
             this.patientIdErrorLabel.TabIndex = 1;
             this.patientIdErrorLabel.Text = "*";
             this.patientIdErrorLabel.Visible = false;
@@ -417,9 +448,10 @@
             this.dayCountTBoxErrorLabel.AutoSize = true;
             this.dayCountTBoxErrorLabel.Font = new System.Drawing.Font("Tahoma", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dayCountTBoxErrorLabel.ForeColor = System.Drawing.Color.Yellow;
-            this.dayCountTBoxErrorLabel.Location = new System.Drawing.Point(227, 265);
+            this.dayCountTBoxErrorLabel.Location = new System.Drawing.Point(303, 326);
+            this.dayCountTBoxErrorLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dayCountTBoxErrorLabel.Name = "dayCountTBoxErrorLabel";
-            this.dayCountTBoxErrorLabel.Size = new System.Drawing.Size(21, 24);
+            this.dayCountTBoxErrorLabel.Size = new System.Drawing.Size(27, 30);
             this.dayCountTBoxErrorLabel.TabIndex = 1;
             this.dayCountTBoxErrorLabel.Text = "*";
             this.dayCountTBoxErrorLabel.Visible = false;
@@ -429,9 +461,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 312);
+            this.label6.Location = new System.Drawing.Point(16, 384);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(37, 16);
+            this.label6.Size = new System.Drawing.Size(47, 21);
             this.label6.TabIndex = 1;
             this.label6.Text = "Time";
             // 
@@ -440,9 +473,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(203, 312);
+            this.label7.Location = new System.Drawing.Point(271, 384);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(34, 16);
+            this.label7.Size = new System.Drawing.Size(46, 21);
             this.label7.TabIndex = 1;
             this.label7.Text = "Data";
             // 
@@ -450,9 +484,10 @@
             // 
             this.panel2.Controls.Add(this.IsoElectricLineTexBox);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 550);
+            this.panel2.Location = new System.Drawing.Point(0, 677);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(766, 25);
+            this.panel2.Size = new System.Drawing.Size(1022, 31);
             this.panel2.TabIndex = 3;
             // 
             // IsoElectricLineTexBox
@@ -460,16 +495,18 @@
             this.IsoElectricLineTexBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.IsoElectricLineTexBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsoElectricLineTexBox.Location = new System.Drawing.Point(0, 0);
+            this.IsoElectricLineTexBox.Margin = new System.Windows.Forms.Padding(4);
             this.IsoElectricLineTexBox.Name = "IsoElectricLineTexBox";
-            this.IsoElectricLineTexBox.Size = new System.Drawing.Size(766, 23);
+            this.IsoElectricLineTexBox.Size = new System.Drawing.Size(1022, 26);
             this.IsoElectricLineTexBox.TabIndex = 0;
             this.IsoElectricLineTexBox.TextChanged += new System.EventHandler(this.IsoElectricLineTexBox_TextChanged);
             // 
             // DataAnalysisForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 615);
+            this.ClientSize = new System.Drawing.Size(1355, 757);
+            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "DataAnalysisForm";
             this.Text = "DataAnalysis";
             this.Load += new System.EventHandler(this.DataAnalysis_Load);

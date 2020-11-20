@@ -23,7 +23,7 @@ namespace ECG_Analyzer
             try
             {
                 SqlDataAdapter da = new SqlDataAdapter("select Cycle,PData,QData,RData,SData, TData from pqrst where PatientId='"+patientIdTBox.Text+"' and DayCount='"+dayTestCount.Text+"'",
-                    "server = GH-PALASH\\SQLEXPRESS; database = ccmsDB; Integrated Security=true;");
+                    "server = .; database = ccmsDB; Integrated Security=true;");
                 DataSet ds = new DataSet();
                 da.Fill(ds, "pqrst");
                 dataGridView.DataSource = ds.Tables["pqrst"].DefaultView;

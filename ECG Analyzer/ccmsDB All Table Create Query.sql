@@ -1,4 +1,4 @@
-Create Database 
+Create Database ccmsDB
 create table pqrst
 (
 Id int not null primary key identity,
